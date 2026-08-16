@@ -1,0 +1,52 @@
+name: Daily mark & publish
+
+on:
+  schedule:
+    - cron: "15 21 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: portfolio-desk
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install optional data fallback
+        run: pip install --quiet yfinance || true
+
+      - name: Mark to market, enforce rules, publish
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          ALPHAVANTAGE_KEY: ${{ secrets.ALPHAVANTAGE_KEY }}
+          FINNHUB_KEY: ${{ secrets.FINNHUB_KEY }}
+          DASHBOARD_URL: ${{ vars.DASHBOARD_URL }}
+        run: python -m engine.run daily
+
+      - name: Commit the day's state
+        run: |
+          git config user.name  "portfolio-desk[bot]"
+          git config user.email "portfolio-desk@users.noreply.github.com"
+          git add -A state docs orders
+          if git diff --staged --quiet; then
+            echo "Nothing changed today."
+          else
+            git commit -m "desk: $(date -u +%Y-%m-%d) marks"
+            for i in 1 2 3; do
+              git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && \
+              git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+              sleep 5
+            done
+            echo "::error::could not push state after 3 attempts"
+            exit 1
+          fi

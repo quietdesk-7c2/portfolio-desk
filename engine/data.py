@@ -272,6 +272,18 @@ def get_history(ticker: str, days: int = 400) -> list[tuple[str, float]]:
     return []
 
 
+def get_previous_close(ticker: str) -> tuple[float, str] | None:
+    """
+    The close BEFORE the most recent one. Used to seed a day-change baseline on
+    the first run, when state has no prior mark to compare against.
+    """
+    series = get_history(ticker, days=14)
+    if len(series) < 2:
+        return None
+    date, price = series[-2]
+    return (float(price), date) if price and price > 0 else None
+
+
 def selftest(tickers: list[str] | None = None) -> None:
     """Run me after setup. Tells you which data sources are alive today."""
     tickers = tickers or ["AAPL", "SPY", "NVDA"]

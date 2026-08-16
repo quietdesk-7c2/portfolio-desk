@@ -20,7 +20,8 @@ from datetime import datetime, timezone
 
 from . import notify
 from .config import ALL_BENCHMARKS, ORDERS_DIR, PORTFOLIOS, RESEARCH_DIR
-from .data import PriceUnavailable, get_quotes, selftest as data_selftest
+from .data import (PriceUnavailable, get_previous_close, get_quotes,
+                   selftest as data_selftest)
 from .portfolio import Portfolio, load_all
 from .rules import (check_concentration, check_drawdown, check_house_money,
                     check_stops, validate_order)
@@ -160,6 +161,22 @@ def cmd_daily(skip_execute_check: bool = False) -> None:
 
     for pf in pfs.values():
         pf.mark(quotes)
+
+    # Seed a previous close for anything that has never had one. Costs one
+    # history fetch per ticker, once ever -- after that mark() rolls it forward.
+    needs_prev = sorted({t for pf in pfs.values() for t in pf.positions
+                         if pf.prev_price_of(t) is None})
+    if needs_prev:
+        _log(f"Seeding previous close for {len(needs_prev)} symbol(s)...")
+        for t in needs_prev:
+            try:
+                res = get_previous_close(t)
+            except Exception:
+                res = None
+            if res:
+                for pf in pfs.values():
+                    if t in pf.positions:
+                        pf.set_previous_close(t, res[0], res[1])
 
     auto_trades = []
     for pf in pfs.values():

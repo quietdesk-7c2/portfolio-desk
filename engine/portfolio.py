@@ -80,14 +80,56 @@ class Portfolio:
         return self.d["positions"]
 
     def mark(self, quotes: dict[str, dict]) -> None:
-        """Attach latest prices. Positions without a quote keep their last mark."""
+        """
+        Attach latest prices. Positions without a quote keep their last mark.
+
+        Also rolls the PREVIOUS close forward: when a quote arrives with a later
+        'asof' date than the mark we already hold, today's old price becomes
+        yesterday's close. That is what makes a day's gain computable at all --
+        without it there is nothing to compare against.
+        """
         for ticker in self.positions:
             q = quotes.get(ticker)
-            if q:
-                self.d["marks"][ticker] = {
-                    "price": q["price"], "asof": q["asof"], "source": q["source"],
-                }
+            if not q:
+                continue
+            existing = self.d["marks"].get(ticker)
+            prev = (existing or {}).get("prev")
+            if existing and existing.get("asof") and q.get("asof") \
+                    and q["asof"] != existing["asof"]:
+                prev = {"price": existing["price"], "asof": existing["asof"]}
+            self.d["marks"][ticker] = {
+                "price": q["price"], "asof": q["asof"], "source": q["source"],
+            }
+            if prev:
+                self.d["marks"][ticker]["prev"] = prev
         self.d["last_marked"] = _now()
+
+    def set_previous_close(self, ticker: str, price: float, asof: str) -> None:
+        """Seed a previous close (used on the first run, where none exists yet)."""
+        m = self.d["marks"].get(ticker.upper())
+        if m and not m.get("prev") and price and price > 0:
+            m["prev"] = {"price": round(float(price), 4), "asof": asof}
+
+    def prev_price_of(self, ticker: str) -> float | None:
+        m = self.d["marks"].get(ticker.upper()) or {}
+        prev = m.get("prev")
+        return float(prev["price"]) if prev and prev.get("price") else None
+
+    def day_change(self) -> tuple[float, float | None]:
+        """(dollar change today, percent change today) across marked positions."""
+        delta = 0.0
+        prior_value = 0.0
+        for t, pos in self.positions.items():
+            prev = self.prev_price_of(t)
+            price = self.price_of(t)
+            if prev is None or price is None:
+                continue
+            delta += pos["shares"] * (price - prev)
+            prior_value += pos["shares"] * prev
+        if prior_value <= 0:
+            return 0.0, None
+        prior_equity = self.cash + prior_value
+        return delta, (delta / prior_equity if prior_equity else None)
 
     def price_of(self, ticker: str) -> float | None:
         m = self.d["marks"].get(ticker)
@@ -177,7 +219,8 @@ class Portfolio:
             }
 
         self.d["cash"] = round(self.cash - cost, 2)
-              # Mark the new position immediately at the market price we just traded
+
+        # Mark the new position immediately at the market price we just traded
         # against. Without this, a freshly bought position has no mark, counts
         # as zero in equity(), and the book value used by every percentage rule
         # collapses toward cash-only -- which silently inflates the computed
@@ -187,6 +230,7 @@ class Portfolio:
             "asof": _today(),
             "source": source or "fill",
         }
+
         return self._log("BUY", ticker, shares, fill, reason, thesis_id, tags, source)
 
     def sell(self, ticker: str, shares: float, price: float, *,
@@ -243,13 +287,19 @@ class Portfolio:
         rows = []
         for t, pos in sorted(self.positions.items()):
             price = self.price_of(t)
+            prev = self.prev_price_of(t)
             mv = self.position_value(t)
             cost = pos["cost_basis"]
+            day_d = (pos["shares"] * (price - prev)) if (price is not None and prev) else None
+            day_p = ((price - prev) / prev) if (price is not None and prev) else None
             rows.append({
                 "ticker": t,
                 "shares": pos["shares"],
                 "avg_cost": pos["avg_cost"],
                 "price": price,
+                "prev_close": prev,
+                "day_change": round(day_d, 2) if day_d is not None else None,
+                "day_change_pct": round(day_p, 4) if day_p is not None else None,
                 "market_value": round(mv, 2),
                 "cost_basis": round(cost, 2),
                 "unrealized": round(mv - cost, 2),
@@ -279,6 +329,9 @@ class Portfolio:
             "equity": round(eq, 2),
             "invested": round(self.invested(), 2),
             "total_return": round(self.total_return(), 4),
+            "day_change": round(self.day_change()[0], 2),
+            "day_change_pct": (round(self.day_change()[1], 5)
+                               if self.day_change()[1] is not None else None),
             "realized_pnl": round(self.realized_pnl(), 2),
             "unrealized_pnl": round(self.unrealized_pnl(), 2),
             "high_water": round(float(self.d.get("high_water") or 0), 2),

@@ -175,12 +175,24 @@ probs = rules.validate_order({"portfolio":"core","action":"BUY","ticker":"I","do
 check("many INCEPTION orders on the SAME day are all allowed (one deployment)",
       not any("already used its one INCEPTION" in p for p in probs), str(probs))
 for tr in inc.d["trades"]:
-    tr["date"] = "2026-01-02"          # pretend the deployment was an earlier day
+    tr["date"] = "2026-01-02"          # pretend the deployment was months ago
 probs = rules.validate_order({"portfolio":"core","action":"BUY","ticker":"I","dollars":1000,
                               "reason":"r","thesis_id":"i","tags":["INCEPTION"]},
                              inc, 10.0, {"core": inc})
-check("a LATER-day INCEPTION deployment is refused",
+check("an INCEPTION deployment beyond the 7-day window is refused",
       any("already used its one INCEPTION" in p for p in probs), str(probs))
+import datetime as _dt
+recent = Portfolio(cfg.PORTFOLIOS["core"], Portfolio._blank(cfg.PORTFOLIOS["core"]))
+recent.mark(q({"I": 10.0}))
+_two_days_ago = (_dt.datetime.now(_dt.timezone.utc) - _dt.timedelta(days=2)).strftime("%Y-%m-%d")
+recent.d["trades"].append({"date": _two_days_ago, "tags": ["INCEPTION"],
+                           "action": "BUY", "ticker": "I"})
+probs = rules.validate_order({"portfolio":"core","action":"BUY","ticker":"I","dollars":1000,
+                              "reason":"r","thesis_id":"i","tags":["INCEPTION"]},
+                             recent, 10.0, {"core": recent})
+check("finishing a deployment 2 days later is still allowed (7-day window)",
+      not any("already used its one INCEPTION" in p for p in probs), str(probs))
+
 fresh = Portfolio(cfg.PORTFOLIOS["core"], Portfolio._blank(cfg.PORTFOLIOS["core"]))
 fresh.mark(q({"I": 10.0}))
 for i in range(cfg.MAX_DISCRETIONARY_TRADES_PER_MONTH + 4):
@@ -259,6 +271,38 @@ _p = os.path.join(cfg.HISTORY_DIR, "core.csv")
 _rows = [r for r in open(_p).read().strip().split("\n") if r and not r.startswith("date,")]
 check("re-running the same day writes ONE history row, not three",
       len(_rows) == 1, f"{len(_rows)} rows")
+
+print("\n=== 13b. REGRESSION: batch buys must not shrink the equity denominator ===")
+# The bug this catches: buy() used to create a position with no mark, so
+# equity() counted only cash. Each buy in a batch then made the book look
+# smaller, inflating the computed weight of the NEXT order until the position
+# cap wrongly rejected it. Deliberately NO mark() call between buys.
+batch = Portfolio(cfg.PORTFOLIOS["core"], Portfolio._blank(cfg.PORTFOLIOS["core"]))
+batch.mark(q({"A": 100.0, "B": 100.0, "C": 100.0}))
+check("equity starts at the full book", abs(batch.equity() - 100_000) < 1)
+batch.buy("A", 7900.0, 100.0, reason="t", thesis_id="a")
+check("equity is UNCHANGED right after a buy (cash converted to position)",
+      abs(batch.equity() - 100_000) < 10, f"equity={batch.equity():,.2f}")
+probs = rules.validate_order(
+    {"portfolio":"core","action":"BUY","ticker":"B","dollars":7900,
+     "reason":"r","thesis_id":"b","tags":["INCEPTION"]}, batch, 100.0, {"core": batch})
+check("a legal 7.9% order is NOT rejected after a prior buy in the same batch",
+      not any("cap at cost" in p for p in probs), str(probs))
+batch.buy("B", 7900.0, 100.0, reason="t", thesis_id="b")
+probs = rules.validate_order(
+    {"portfolio":"core","action":"BUY","ticker":"C","dollars":7800,
+     "reason":"r","thesis_id":"c","tags":["INCEPTION"]}, batch, 100.0, {"core": batch})
+check("still not rejected after TWO prior buys", 
+      not any("cap at cost" in p for p in probs), str(probs))
+batch.buy("C", 7800.0, 100.0, reason="t", thesis_id="c")
+check("three buys land, book value intact",
+      len(batch.positions) == 3 and abs(batch.equity() - 100_000) < 30,
+      f"n={len(batch.positions)} equity={batch.equity():,.2f}")
+over = rules.validate_order(
+    {"portfolio":"core","action":"BUY","ticker":"D","dollars":9000,
+     "reason":"r","thesis_id":"d","tags":["INCEPTION"]}, batch, 100.0, {"core": batch})
+check("a genuinely oversized 9% order is STILL rejected (cap still works)",
+      any("cap at cost" in p for p in over), str(over))
 
 print("\n=== 14b. Valuation gate (IPS 3a) ===")
 import engine.rules as _r

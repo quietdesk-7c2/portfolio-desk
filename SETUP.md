@@ -22,7 +22,9 @@ dashboard to a web address. You won't use GitHub day to day.)*
 
 1. Click the **+** in the top-right → **New repository**
 2. Repository name: **`portfolio-desk`**
-3. Choose **Private** (only you can see it)
+3. Choose **Public** (GitHub Pages needs a paid plan on private repos).
+   Nothing sensitive lives in this repo - no keys, no personal data, and the
+   ntfy topic is stored as an encrypted Secret, never as a file.
 4. Do **not** check "Add a README file"
 5. Click **Create repository**
 
@@ -73,18 +75,19 @@ weekday just after the market closes.
 2. Open it, tap **+**, and subscribe to this exact topic:
 
 ```
-desk-81qhot04bv08gc
+<the topic Claude gives you in conversation>
 ```
 
-I generated that string randomly. ntfy topics are public to anyone who knows
-the name, so treat it like a password — don't post it anywhere. If you'd rather
-pick your own, use something equally unguessable and change it in both places
-below.
+**The topic name is a password.** Anyone who knows it can read your trade alerts
+and send you fake ones. It is deliberately NOT written in this file or anywhere
+else in this repository — if the repo is ever public, its git history is public
+too, and a secret committed even once is compromised permanently. It lives only
+in GitHub's encrypted Secrets store.
 
 3. Back in GitHub: **Settings → Secrets and variables → Actions**
 4. Click **New repository secret**
    - Name: `NTFY_TOPIC`
-   - Secret: `desk-81qhot04bv08gc`
+   - Secret: the topic name from step 2
    - **Add secret**
 5. Click the **Variables** tab → **New repository variable**
    - Name: `DASHBOARD_URL`
@@ -133,7 +136,7 @@ open docs/index.html              # (Linux: xdg-open, Windows: start)
 Run the test suite any time you change something:
 
 ```bash
-python3 -m tests.test_offline     # 41 checks, no network needed
+python3 -m tests.test_offline     # 49 checks, no network needed
 ```
 
 ---

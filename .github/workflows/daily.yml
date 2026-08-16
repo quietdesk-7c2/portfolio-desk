@@ -1,12 +1,26 @@
 name: Daily mark & publish
 
+# Marks, enforces rules, publishes. Runs every weekday regardless of the
+# research cadence -- risk rules never take a week off.
+
 on:
+  # Auto-run when the engine, orders or research change, so a push from Claude
+  # applies immediately. The bot's own commits carry [skip ci] so this cannot
+  # trigger itself in a loop.
+  push:
+    paths:
+      - "engine/**"
+      - "orders/pending.json"
+      - "research/**"
+      - ".github/workflows/daily.yml"
   schedule:
+    # 21:15 UTC on weekdays = just after the US close year-round
+    # (17:15 ET during daylight time, 16:15 ET during standard time).
     - cron: "15 21 * * 1-5"
-  workflow_dispatch:
+  workflow_dispatch:        # lets you run it by hand from the Actions tab
 
 permissions:
-  contents: write
+  contents: write           # needed to commit updated state back to the repo
 
 concurrency:
   group: portfolio-desk
@@ -16,9 +30,9 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
@@ -41,7 +55,8 @@ jobs:
           if git diff --staged --quiet; then
             echo "Nothing changed today."
           else
-            git commit -m "desk: $(date -u +%Y-%m-%d) marks"
+            git commit -m "desk: $(date -u +%Y-%m-%d) marks [skip ci]"
+            # Another run may have landed while this one worked; rebase and retry.
             for i in 1 2 3; do
               git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && \
               git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0

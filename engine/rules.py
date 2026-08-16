@@ -242,6 +242,11 @@ def inception_used(pf: Portfolio) -> bool:
     rejected and need re-issuing, and staging capital deliberately takes time.
     So the exemption opens on a book's first INCEPTION trade and closes
     permanently INCEPTION_WINDOW_DAYS later -- once, ever, per book.
+
+    Widened from same-day on 2026-08-15 after an engine bug wrongly rejected
+    five orders from the opening deployment. The rule should not punish a
+    legitimate multi-day inception; the turnover cap it protects is about
+    ongoing trading, not about building the book in the first place.
     """
     dates = sorted(d for d in
                    {t.get("date") for t in pf.d["trades"] if "INCEPTION" in t.get("tags", [])}

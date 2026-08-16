@@ -1,0 +1,62 @@
+{
+  "created": "2026-08-15",
+  "cycle": "Inception \u2014 tranche 1, part 2 (catch-up after engine fix)",
+  "note": "These five orders were part of the original opening deployment. They were wrongly rejected by a bug in engine/portfolio.py: newly bought positions were not being marked, so equity() counted only cash and the book value used by the position-size rule shrank with every purchase, inflating each subsequent order's computed weight. The rule was correct; the denominator was wrong. Fixed and covered by a regression test. Re-issuing at current market prices - NOT at the prices they would have filled at earlier, because pretending otherwise would flatter the track record.",
+  "orders": [
+    {
+      "portfolio": "core",
+      "action": "BUY",
+      "ticker": "GOOGL",
+      "dollars": 7900,
+      "thesis_id": "googl",
+      "tags": [
+        "INCEPTION"
+      ],
+      "reason": "Owns the full stack \u2014 own silicon, own data centers, own models, and a search business funding it. 26.07x forward, 23.9% upside. Carries Project Suncatcher orbital-compute optionality at no extra cost. Re-issued after an engine bug wrongly rejected it."
+    },
+    {
+      "portfolio": "core",
+      "action": "BUY",
+      "ticker": "MSFT",
+      "dollars": 7800,
+      "thesis_id": "msft",
+      "tags": [
+        "INCEPTION"
+      ],
+      "reason": "25.21x forward against 31.6% EPS growth, growth-adjusted 0.80. Sits exactly at the 15% upside floor \u2014 passes, but not a bargain. Re-issued after an engine bug wrongly rejected it."
+    },
+    {
+      "portfolio": "core",
+      "action": "BUY",
+      "ticker": "AMZN",
+      "dollars": 7500,
+      "thesis_id": "amzn",
+      "tags": [
+        "INCEPTION"
+      ],
+      "reason": "24.2% upside across 60 analysts. Least comfortable pass in the book at 1.81 growth-adjusted, and its forward multiple sits above trailing. Sized below the others because of it. Re-issued after an engine bug wrongly rejected it."
+    },
+    {
+      "portfolio": "ai",
+      "action": "BUY",
+      "ticker": "TSM",
+      "dollars": 10000,
+      "thesis_id": "tsm",
+      "tags": [
+        "INCEPTION"
+      ],
+      "reason": "FOUNDRY. Every other name in this book queues here. 19.22x forward, 28.3% upside, FY26 revenue guided above 40% growth in USD. Re-issued after an engine bug wrongly rejected it."
+    },
+    {
+      "portfolio": "ai",
+      "action": "BUY",
+      "ticker": "AVGO",
+      "dollars": 9500,
+      "thesis_id": "avgo",
+      "tags": [
+        "INCEPTION"
+      ],
+      "reason": "CUSTOM SILICON. Every hyperscaler escaping Nvidia's margin builds with Broadcom. 26.51x forward, 34.3% upside. The in-book hedge if NVDA disappoints. Re-issued after an engine bug wrongly rejected it."
+    }
+  ]
+}

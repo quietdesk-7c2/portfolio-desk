@@ -1,12 +1,12 @@
 {
-  "generated": "2026-08-16T02:57:33+00:00",
+  "generated": "2026-08-16T03:35:28+00:00",
   "inception": "2026-08-14",
   "total": {
-    "equity": 299959.09,
+    "equity": 299937.76,
     "starting": 300000.0,
-    "return": -0.0001,
-    "cash": 218200.04,
-    "positions": 11
+    "return": -0.0002,
+    "cash": 175500.01,
+    "positions": 16
   },
   "portfolios": {
     "core": {
@@ -20,16 +20,33 @@
       "status_note": "",
       "inception": "2026-08-14",
       "starting_cash": 100000.0,
-      "cash": 80200.03,
-      "cash_pct": 0.8021,
-      "equity": 99990.09,
-      "invested": 19790.06,
-      "total_return": -0.0001,
+      "cash": 57000.02,
+      "cash_pct": 0.5701,
+      "equity": 99978.5,
+      "invested": 42978.48,
+      "total_return": -0.0002,
       "realized_pnl": 0.0,
-      "unrealized_pnl": -9.91,
+      "unrealized_pnl": -21.5,
       "high_water": 100000.0,
-      "drawdown": -0.0001,
+      "drawdown": -0.0002,
       "holdings": [
+        {
+          "ticker": "GOOGL",
+          "shares": 22.8276,
+          "avg_cost": 346.0729,
+          "price": 345.9,
+          "market_value": 7896.07,
+          "cost_basis": 7900.01,
+          "unrealized": -3.94,
+          "unrealized_pct": -0.0005,
+          "weight": 0.079,
+          "opened": "2026-08-16",
+          "thesis_id": "googl",
+          "house_money_taken": false,
+          "realized": 0.0,
+          "mark_source": "yfinance",
+          "mark_asof": "2026-08-14"
+        },
         {
           "ticker": "META",
           "shares": 13.3865,
@@ -42,6 +59,40 @@
           "weight": 0.079,
           "opened": "2026-08-16",
           "thesis_id": "meta",
+          "house_money_taken": false,
+          "realized": 0.0,
+          "mark_source": "yfinance",
+          "mark_asof": "2026-08-14"
+        },
+        {
+          "ticker": "MSFT",
+          "shares": 15.737,
+          "avg_cost": 495.6477,
+          "price": 495.4,
+          "market_value": 7796.11,
+          "cost_basis": 7800.01,
+          "unrealized": -3.9,
+          "unrealized_pct": -0.0005,
+          "weight": 0.078,
+          "opened": "2026-08-16",
+          "thesis_id": "msft",
+          "house_money_taken": false,
+          "realized": 0.0,
+          "mark_source": "yfinance",
+          "mark_asof": "2026-08-14"
+        },
+        {
+          "ticker": "AMZN",
+          "shares": 28.5408,
+          "avg_cost": 262.7813,
+          "price": 262.65,
+          "market_value": 7496.24,
+          "cost_basis": 7499.99,
+          "unrealized": -3.75,
+          "unrealized_pct": -0.0005,
+          "weight": 0.075,
+          "opened": "2026-08-16",
+          "thesis_id": "amzn",
           "house_money_taken": false,
           "realized": 0.0,
           "mark_source": "yfinance",
@@ -82,7 +133,7 @@
           "mark_asof": "2026-08-14"
         }
       ],
-      "n_holdings": 3,
+      "n_holdings": 6,
       "closed": [],
       "trades": [
         {
@@ -135,13 +186,64 @@
             "INCEPTION"
           ],
           "price_source": "yfinance"
+        },
+        {
+          "id": "core-0004",
+          "ts": "2026-08-16T03:35:28+00:00",
+          "date": "2026-08-16",
+          "portfolio": "core",
+          "action": "BUY",
+          "ticker": "GOOGL",
+          "shares": 22.8276,
+          "price": 346.0729,
+          "value": 7900.01,
+          "reason": "Owns the full stack \u2014 own silicon, own data centers, own models, and a search business funding it. 26.07x forward, 23.9% upside. Carries Project Suncatcher orbital-compute optionality at no extra cost. Re-issued after an engine bug wrongly rejected it.",
+          "thesis_id": "googl",
+          "tags": [
+            "INCEPTION"
+          ],
+          "price_source": "yfinance"
+        },
+        {
+          "id": "core-0005",
+          "ts": "2026-08-16T03:35:28+00:00",
+          "date": "2026-08-16",
+          "portfolio": "core",
+          "action": "BUY",
+          "ticker": "MSFT",
+          "shares": 15.737,
+          "price": 495.6477,
+          "value": 7800.01,
+          "reason": "25.21x forward against 31.6% EPS growth, growth-adjusted 0.80. Sits exactly at the 15% upside floor \u2014 passes, but not a bargain. Re-issued after an engine bug wrongly rejected it.",
+          "thesis_id": "msft",
+          "tags": [
+            "INCEPTION"
+          ],
+          "price_source": "yfinance"
+        },
+        {
+          "id": "core-0006",
+          "ts": "2026-08-16T03:35:28+00:00",
+          "date": "2026-08-16",
+          "portfolio": "core",
+          "action": "BUY",
+          "ticker": "AMZN",
+          "shares": 28.5408,
+          "price": 262.7813,
+          "value": 7499.99,
+          "reason": "24.2% upside across 60 analysts. Least comfortable pass in the book at 1.81 growth-adjusted, and its forward multiple sits above trailing. Sized below the others because of it. Re-issued after an engine bug wrongly rejected it.",
+          "thesis_id": "amzn",
+          "tags": [
+            "INCEPTION"
+          ],
+          "price_source": "yfinance"
         }
       ],
-      "last_marked": "2026-08-16T02:57:30+00:00",
+      "last_marked": "2026-08-16T03:35:28+00:00",
       "nav_history": [
         {
           "date": "2026-08-16",
-          "equity": 99990.09
+          "equity": 99978.5
         }
       ]
     },
@@ -205,7 +307,7 @@
           "price_source": "yfinance"
         }
       ],
-      "last_marked": "2026-08-16T02:57:30+00:00",
+      "last_marked": "2026-08-16T03:35:28+00:00",
       "nav_history": [
         {
           "date": "2026-08-16",
@@ -224,15 +326,15 @@
       "status_note": "",
       "inception": "2026-08-14",
       "starting_cash": 100000.0,
-      "cash": 46000.02,
-      "cash_pct": 0.4601,
-      "equity": 99973.0,
-      "invested": 53972.98,
-      "total_return": -0.0003,
+      "cash": 26500.0,
+      "cash_pct": 0.2651,
+      "equity": 99963.26,
+      "invested": 73463.26,
+      "total_return": -0.0004,
       "realized_pnl": 0.0,
-      "unrealized_pnl": -27.0,
+      "unrealized_pnl": -36.74,
       "high_water": 100000.0,
-      "drawdown": -0.0003,
+      "drawdown": -0.0004,
       "holdings": [
         {
           "ticker": "NVDA",
@@ -252,6 +354,23 @@
           "mark_asof": "2026-08-14"
         },
         {
+          "ticker": "TSM",
+          "shares": 23.4432,
+          "avg_cost": 426.5632,
+          "price": 426.35,
+          "market_value": 9995.01,
+          "cost_basis": 10000.01,
+          "unrealized": -5.0,
+          "unrealized_pct": -0.0005,
+          "weight": 0.1,
+          "opened": "2026-08-16",
+          "thesis_id": "tsm",
+          "house_money_taken": false,
+          "realized": 0.0,
+          "mark_source": "yfinance",
+          "mark_asof": "2026-08-14"
+        },
+        {
           "ticker": "MU",
           "shares": 10.2865,
           "avg_cost": 972.1458,
@@ -263,6 +382,23 @@
           "weight": 0.1,
           "opened": "2026-08-16",
           "thesis_id": "mu",
+          "house_money_taken": false,
+          "realized": 0.0,
+          "mark_source": "yfinance",
+          "mark_asof": "2026-08-14"
+        },
+        {
+          "ticker": "AVGO",
+          "shares": 24.1616,
+          "avg_cost": 393.1865,
+          "price": 392.99,
+          "market_value": 9495.27,
+          "cost_basis": 9500.01,
+          "unrealized": -4.74,
+          "unrealized_pct": -0.0005,
+          "weight": 0.095,
+          "opened": "2026-08-16",
+          "thesis_id": "avgo",
           "house_money_taken": false,
           "realized": 0.0,
           "mark_source": "yfinance",
@@ -354,7 +490,7 @@
           "mark_asof": "2026-08-14"
         }
       ],
-      "n_holdings": 7,
+      "n_holdings": 9,
       "closed": [],
       "trades": [
         {
@@ -475,13 +611,47 @@
             "INCEPTION"
           ],
           "price_source": "yfinance"
+        },
+        {
+          "id": "ai-0008",
+          "ts": "2026-08-16T03:35:28+00:00",
+          "date": "2026-08-16",
+          "portfolio": "ai",
+          "action": "BUY",
+          "ticker": "TSM",
+          "shares": 23.4432,
+          "price": 426.5632,
+          "value": 10000.01,
+          "reason": "FOUNDRY. Every other name in this book queues here. 19.22x forward, 28.3% upside, FY26 revenue guided above 40% growth in USD. Re-issued after an engine bug wrongly rejected it.",
+          "thesis_id": "tsm",
+          "tags": [
+            "INCEPTION"
+          ],
+          "price_source": "yfinance"
+        },
+        {
+          "id": "ai-0009",
+          "ts": "2026-08-16T03:35:28+00:00",
+          "date": "2026-08-16",
+          "portfolio": "ai",
+          "action": "BUY",
+          "ticker": "AVGO",
+          "shares": 24.1616,
+          "price": 393.1865,
+          "value": 9500.01,
+          "reason": "CUSTOM SILICON. Every hyperscaler escaping Nvidia's margin builds with Broadcom. 26.51x forward, 34.3% upside. The in-book hedge if NVDA disappoints. Re-issued after an engine bug wrongly rejected it.",
+          "thesis_id": "avgo",
+          "tags": [
+            "INCEPTION"
+          ],
+          "price_source": "yfinance"
         }
       ],
-      "last_marked": "2026-08-16T02:57:30+00:00",
+      "last_marked": "2026-08-16T03:35:28+00:00",
       "nav_history": [
         {
           "date": "2026-08-16",
-          "equity": 99973.0
+          "equity": 99963.26
         }
       ]
     }

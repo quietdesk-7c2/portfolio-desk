@@ -3,7 +3,7 @@
   "name": "Core",
   "inception": "2026-08-14",
   "starting_cash": 100000.0,
-  "cash": 80200.03,
+  "cash": 57000.02,
   "positions": {
     "META": {
       "ticker": "META",
@@ -37,6 +37,39 @@
       "house_money_taken": false,
       "realized": 0.0,
       "initial_cost": 5400.0
+    },
+    "GOOGL": {
+      "ticker": "GOOGL",
+      "shares": 22.8276,
+      "cost_basis": 7900.01,
+      "avg_cost": 346.0729,
+      "opened": "2026-08-16",
+      "thesis_id": "googl",
+      "house_money_taken": false,
+      "realized": 0.0,
+      "initial_cost": 7900.01
+    },
+    "MSFT": {
+      "ticker": "MSFT",
+      "shares": 15.737,
+      "cost_basis": 7800.01,
+      "avg_cost": 495.6477,
+      "opened": "2026-08-16",
+      "thesis_id": "msft",
+      "house_money_taken": false,
+      "realized": 0.0,
+      "initial_cost": 7800.01
+    },
+    "AMZN": {
+      "ticker": "AMZN",
+      "shares": 28.5408,
+      "cost_basis": 7499.99,
+      "avg_cost": 262.7813,
+      "opened": "2026-08-16",
+      "thesis_id": "amzn",
+      "house_money_taken": false,
+      "realized": 0.0,
+      "initial_cost": 7499.99
     }
   },
   "closed": [],
@@ -91,12 +124,63 @@
         "INCEPTION"
       ],
       "price_source": "yfinance"
+    },
+    {
+      "id": "core-0004",
+      "ts": "2026-08-16T03:35:28+00:00",
+      "date": "2026-08-16",
+      "portfolio": "core",
+      "action": "BUY",
+      "ticker": "GOOGL",
+      "shares": 22.8276,
+      "price": 346.0729,
+      "value": 7900.01,
+      "reason": "Owns the full stack \u2014 own silicon, own data centers, own models, and a search business funding it. 26.07x forward, 23.9% upside. Carries Project Suncatcher orbital-compute optionality at no extra cost. Re-issued after an engine bug wrongly rejected it.",
+      "thesis_id": "googl",
+      "tags": [
+        "INCEPTION"
+      ],
+      "price_source": "yfinance"
+    },
+    {
+      "id": "core-0005",
+      "ts": "2026-08-16T03:35:28+00:00",
+      "date": "2026-08-16",
+      "portfolio": "core",
+      "action": "BUY",
+      "ticker": "MSFT",
+      "shares": 15.737,
+      "price": 495.6477,
+      "value": 7800.01,
+      "reason": "25.21x forward against 31.6% EPS growth, growth-adjusted 0.80. Sits exactly at the 15% upside floor \u2014 passes, but not a bargain. Re-issued after an engine bug wrongly rejected it.",
+      "thesis_id": "msft",
+      "tags": [
+        "INCEPTION"
+      ],
+      "price_source": "yfinance"
+    },
+    {
+      "id": "core-0006",
+      "ts": "2026-08-16T03:35:28+00:00",
+      "date": "2026-08-16",
+      "portfolio": "core",
+      "action": "BUY",
+      "ticker": "AMZN",
+      "shares": 28.5408,
+      "price": 262.7813,
+      "value": 7499.99,
+      "reason": "24.2% upside across 60 analysts. Least comfortable pass in the book at 1.81 growth-adjusted, and its forward multiple sits above trailing. Sized below the others because of it. Re-issued after an engine bug wrongly rejected it.",
+      "thesis_id": "amzn",
+      "tags": [
+        "INCEPTION"
+      ],
+      "price_source": "yfinance"
     }
   ],
   "high_water": 100000.0,
   "status": "active",
   "status_note": "",
-  "last_marked": "2026-08-16T02:57:30+00:00",
+  "last_marked": "2026-08-16T03:35:28+00:00",
   "marks": {
     "META": {
       "price": 589.85,
@@ -110,6 +194,21 @@
     },
     "XLV": {
       "price": 167.37,
+      "asof": "2026-08-14",
+      "source": "yfinance"
+    },
+    "GOOGL": {
+      "price": 345.9,
+      "asof": "2026-08-14",
+      "source": "yfinance"
+    },
+    "MSFT": {
+      "price": 495.4,
+      "asof": "2026-08-14",
+      "source": "yfinance"
+    },
+    "AMZN": {
+      "price": 262.65,
       "asof": "2026-08-14",
       "source": "yfinance"
     }

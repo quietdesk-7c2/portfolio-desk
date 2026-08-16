@@ -3,7 +3,7 @@
   "name": "AI Trade",
   "inception": "2026-08-14",
   "starting_cash": 100000.0,
-  "cash": 46000.02,
+  "cash": 26500.0,
   "positions": {
     "NVDA": {
       "ticker": "NVDA",
@@ -81,6 +81,28 @@
       "house_money_taken": false,
       "realized": 0.0,
       "initial_cost": 5000.0
+    },
+    "TSM": {
+      "ticker": "TSM",
+      "shares": 23.4432,
+      "cost_basis": 10000.01,
+      "avg_cost": 426.5632,
+      "opened": "2026-08-16",
+      "thesis_id": "tsm",
+      "house_money_taken": false,
+      "realized": 0.0,
+      "initial_cost": 10000.01
+    },
+    "AVGO": {
+      "ticker": "AVGO",
+      "shares": 24.1616,
+      "cost_basis": 9500.01,
+      "avg_cost": 393.1865,
+      "opened": "2026-08-16",
+      "thesis_id": "avgo",
+      "house_money_taken": false,
+      "realized": 0.0,
+      "initial_cost": 9500.01
     }
   },
   "closed": [],
@@ -203,12 +225,46 @@
         "INCEPTION"
       ],
       "price_source": "yfinance"
+    },
+    {
+      "id": "ai-0008",
+      "ts": "2026-08-16T03:35:28+00:00",
+      "date": "2026-08-16",
+      "portfolio": "ai",
+      "action": "BUY",
+      "ticker": "TSM",
+      "shares": 23.4432,
+      "price": 426.5632,
+      "value": 10000.01,
+      "reason": "FOUNDRY. Every other name in this book queues here. 19.22x forward, 28.3% upside, FY26 revenue guided above 40% growth in USD. Re-issued after an engine bug wrongly rejected it.",
+      "thesis_id": "tsm",
+      "tags": [
+        "INCEPTION"
+      ],
+      "price_source": "yfinance"
+    },
+    {
+      "id": "ai-0009",
+      "ts": "2026-08-16T03:35:28+00:00",
+      "date": "2026-08-16",
+      "portfolio": "ai",
+      "action": "BUY",
+      "ticker": "AVGO",
+      "shares": 24.1616,
+      "price": 393.1865,
+      "value": 9500.01,
+      "reason": "CUSTOM SILICON. Every hyperscaler escaping Nvidia's margin builds with Broadcom. 26.51x forward, 34.3% upside. The in-book hedge if NVDA disappoints. Re-issued after an engine bug wrongly rejected it.",
+      "thesis_id": "avgo",
+      "tags": [
+        "INCEPTION"
+      ],
+      "price_source": "yfinance"
     }
   ],
   "high_water": 100000.0,
   "status": "active",
   "status_note": "",
-  "last_marked": "2026-08-16T02:57:30+00:00",
+  "last_marked": "2026-08-16T03:35:28+00:00",
   "marks": {
     "NVDA": {
       "price": 225.16,
@@ -242,6 +298,16 @@
     },
     "ALAB": {
       "price": 321.61,
+      "asof": "2026-08-14",
+      "source": "yfinance"
+    },
+    "TSM": {
+      "price": 426.35,
+      "asof": "2026-08-14",
+      "source": "yfinance"
+    },
+    "AVGO": {
+      "price": 392.99,
       "asof": "2026-08-14",
       "source": "yfinance"
     }

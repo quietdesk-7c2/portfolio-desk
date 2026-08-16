@@ -1,0 +1,31 @@
+{
+  "created": "2026-08-14",
+  "note": "Example order file. Rename to pending.json to arm it. Every field shown is required except tags and override_justification.",
+  "orders": [
+    {
+      "portfolio": "ai",
+      "action": "BUY",
+      "ticker": "NVDA",
+      "dollars": 8000,
+      "thesis_id": "nvda",
+      "reason": "One-line summary of why, which is what appears in the phone notification and the trade log."
+    },
+    {
+      "portfolio": "moonshot",
+      "action": "SELL",
+      "ticker": "IONQ",
+      "shares": "ALL",
+      "thesis_id": "ionq",
+      "reason": "Which specific pillar of the original thesis failed."
+    },
+    {
+      "portfolio": "core",
+      "action": "BUY",
+      "ticker": "COST",
+      "dollars": 5000,
+      "thesis_id": "cost",
+      "tags": ["OVERRIDE"],
+      "override_justification": "Required whenever a soft rule is being overridden. Explains what I see that the rule does not."
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# Core engine needs nothing beyond the standard library.
+# yfinance is an optional fallback source; the engine works without it.
+yfinance>=0.2.40

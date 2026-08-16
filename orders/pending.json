@@ -1,0 +1,183 @@
+{
+  "created": "2026-08-14",
+  "cycle": "Inception \u2014 tranche 1 of 3 (REVISED after the valuation gate)",
+  "note": "Revised roster. Four names from the first draft (GEV, ETN, COST, LIN) plus JPM were REJECTED by the new valuation gate in IPS 3a \u2014 their good news was already in the price. See VALUATION_CHECK.md. AI book expanded to cover the full stack: compute, custom silicon, foundry, memory, power, thermal. Two further names (COHR, ALAB) were added the same day from the first run of the emerging-theme radar - they fill the optical interconnect gap the AI book was missing.",
+  "orders": [
+    {
+      "portfolio": "core",
+      "action": "BUY",
+      "ticker": "META",
+      "dollars": 7900,
+      "thesis_id": "meta",
+      "tags": [
+        "INCEPTION"
+      ],
+      "reason": "Strongest valuation pass in the Core book: 18.58x forward with the forward multiple BELOW trailing (earnings expected to rise), 27.7% revenue growth, and 27.9% upside to a 62-analyst target. Cheap, growing, and with room left."
+    },
+    {
+      "portfolio": "core",
+      "action": "BUY",
+      "ticker": "GOOGL",
+      "dollars": 7900,
+      "thesis_id": "googl",
+      "tags": [
+        "INCEPTION"
+      ],
+      "reason": "Owns the full stack \u2014 own silicon, own data centers, own models, and a search business funding it. 26.07x forward, 23.9% upside. Also carries Project Suncatcher, the orbital-compute optionality, at no extra cost."
+    },
+    {
+      "portfolio": "core",
+      "action": "BUY",
+      "ticker": "MSFT",
+      "dollars": 7800,
+      "thesis_id": "msft",
+      "tags": [
+        "INCEPTION"
+      ],
+      "reason": "25.21x forward against 31.6% EPS growth, growth-adjusted 0.80. Sits exactly at the 15% upside floor \u2014 it passes, but it is not a bargain, and it is sized as a quality holding rather than a value one."
+    },
+    {
+      "portfolio": "core",
+      "action": "BUY",
+      "ticker": "AMZN",
+      "dollars": 7500,
+      "thesis_id": "amzn",
+      "tags": [
+        "INCEPTION"
+      ],
+      "reason": "24.2% upside across 60 analysts. Least comfortable pass in the book at 1.81 growth-adjusted, and its forward multiple sits above trailing, so trailing earnings are flattered. Sized below the others because of it."
+    },
+    {
+      "portfolio": "core",
+      "action": "BUY",
+      "ticker": "UNH",
+      "dollars": 6500,
+      "thesis_id": "unh",
+      "tags": [
+        "INCEPTION"
+      ],
+      "reason": "The non-tech ballast. 18.88x forward vs 25.86x trailing implies ~37% earnings recovery, and the company just beat and raised. 18.3% upside. A turnaround with the multiple already de-rated."
+    },
+    {
+      "portfolio": "core",
+      "action": "BUY",
+      "ticker": "XLV",
+      "dollars": 5400,
+      "thesis_id": "xlv",
+      "tags": [
+        "INCEPTION"
+      ],
+      "reason": "Healthcare is where I have the least edge \u2014 one FDA decision can halve a single name. Buying the sector rather than pretending I can pick within it."
+    },
+    {
+      "portfolio": "ai",
+      "action": "BUY",
+      "ticker": "NVDA",
+      "dollars": 12000,
+      "thesis_id": "nvda",
+      "tags": [
+        "INCEPTION"
+      ],
+      "reason": "Now the largest position, not the second. 22.60x forward against 70.7% revenue growth is the cheapest growth on the desk, and 34.5% upside across 61 analysts. Also the cleanest orbital-compute exposure: a disclosed $21B SpaceX stake and the compute partnership for Starmind AI1."
+    },
+    {
+      "portfolio": "ai",
+      "action": "BUY",
+      "ticker": "MU",
+      "dollars": 10000,
+      "thesis_id": "mu",
+      "tags": [
+        "INCEPTION"
+      ],
+      "reason": "MEMORY \u2014 the leg this book was missing. 6.61x forward earnings with revenue up 167% and 54.6% upside across 46 Strong Buys. The market is pricing these as peak-cycle earnings that collapse. That is the bet."
+    },
+    {
+      "portfolio": "ai",
+      "action": "BUY",
+      "ticker": "TSM",
+      "dollars": 10000,
+      "thesis_id": "tsm",
+      "tags": [
+        "INCEPTION"
+      ],
+      "reason": "FOUNDRY. Every other name in this book queues here. 19.22x forward, 28.3% upside, management guiding FY26 revenue growth above 40% in USD. Owning the bottleneck instead of guessing which architecture wins."
+    },
+    {
+      "portfolio": "ai",
+      "action": "BUY",
+      "ticker": "AVGO",
+      "dollars": 9500,
+      "thesis_id": "avgo",
+      "tags": [
+        "INCEPTION"
+      ],
+      "reason": "CUSTOM SILICON. Every hyperscaler trying to escape Nvidia's margin builds with Broadcom. 26.51x forward, 34.3% upside. The in-book hedge for the scenario where NVDA disappoints."
+    },
+    {
+      "portfolio": "ai",
+      "action": "BUY",
+      "ticker": "AMD",
+      "dollars": 8000,
+      "thesis_id": "amd",
+      "tags": [
+        "INCEPTION"
+      ],
+      "reason": "Cut from $11,000. The fundamentals are excellent \u2014 data center +107% y/y \u2014 but at 43.49x forward and only 19.1% upside it is the richest multiple among the compute names. Same conviction, smaller size, because price matters."
+    },
+    {
+      "portfolio": "ai",
+      "action": "BUY",
+      "ticker": "CEG",
+      "dollars": 7000,
+      "thesis_id": "ceg",
+      "tags": [
+        "INCEPTION"
+      ],
+      "reason": "POWER. 23.53x forward, 22.4% upside, FY26 guidance raised to $11.50-$12.50. The constraint is shifting from chips to electricity, and nuclear is the always-on carbon-free answer."
+    },
+    {
+      "portfolio": "ai",
+      "action": "BUY",
+      "ticker": "VRT",
+      "dollars": 5500,
+      "thesis_id": "vrt",
+      "tags": [
+        "INCEPTION"
+      ],
+      "reason": "THERMAL AND POWER DISTRIBUTION inside the rack. Revenue +26.2%. Scrapes past the 15% upside floor at 15.08%, so it is the smallest position in the book by design."
+    },
+    {
+      "portfolio": "moonshot",
+      "action": "BUY",
+      "ticker": "CBRS",
+      "dollars": 8000,
+      "thesis_id": "cbrs",
+      "tags": [
+        "INCEPTION"
+      ],
+      "reason": "Q1 2026 verified at IR: revenue $193.4M +94%, cloud/services +178%, FY26 guided $855-865M, near break-even. Held to 8% because the company discloses OpenAI/G42 concentration, has 3 months of public history, and guides FY26 gross margin DOWN to 38-41%."
+    },
+    {
+      "portfolio": "ai",
+      "action": "BUY",
+      "ticker": "COHR",
+      "dollars": 6500,
+      "thesis_id": "cohr",
+      "tags": [
+        "INCEPTION"
+      ],
+      "reason": "OPTICAL INTERCONNECT \u2014 found by the theme radar, not by reading about it in the news. The AI bottleneck is moving from the chip to the link between chips. 35.20x forward BELOW 79.09 trailing (earnings rising), +26.1% upside, and it trades 26% under its 52-week high."
+    },
+    {
+      "portfolio": "ai",
+      "action": "BUY",
+      "ticker": "ALAB",
+      "dollars": 5000,
+      "thesis_id": "alab",
+      "tags": [
+        "INCEPTION"
+      ],
+      "reason": "AI FABRIC AND CONNECTIVITY. Revenue +98.5% y/y with Q3 guided to $540-560M against $392.4M actual. 57.31x forward is the richest thing I have bought, but 0.58 growth-adjusted is among the best on the desk. Sized small precisely because the absolute multiple allows no miss."
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "_purpose": "Emerging theme radar. The client's instruction: space data centers was an EXAMPLE of a class - themes with low absolute chatter and rising interest, where the upside is caught early. This file tracks those themes between cycles, so the hunt is systematic rather than whatever I happened to think of that week. Reviewed every two weeks. IPS 3b.",
+  "_scoring": {
+    "chatter": "LOW / MEDIUM / HIGH - absolute mainstream coverage. LOW is what we want.",
+    "trajectory": "RISING / FLAT / FALLING - direction of interest. RISING + LOW is the target quadrant.",
+    "capital_committed": "Has real money moved? Funding rounds, capex line items, regulatory filings. Money moves before articles do.",
+    "vehicle_quality": "GOOD / DILUTED / NONE - is there a public company whose economics actually concentrate the theme? This is the test most themes fail.",
+    "time_to_pnl": "When does this hit an income statement?",
+    "status": "WATCHING / ACTIONABLE / BOUGHT / REJECTED"
+  },
+  "_last_review": "2026-08-14",
+  "_next_review": "2026-08-28",
+  "themes": [
+    {
+      "id": "co-packaged-optics",
+      "name": "Co-packaged optics / silicon photonics",
+      "thesis": "The AI bottleneck is moving from the chip to the interconnect between chips. Copper is running out of headroom on power and latency at cluster scale, forcing optics directly into the package. Broadcom's framing is the tell: 'our switches and XPUs are going to be lower power with optics than with copper' - optics justify themselves on efficiency, not just bandwidth.",
+      "chatter": "MEDIUM",
+      "trajectory": "RISING",
+      "capital_committed": "NVIDIA invested $2B in Lumentum as part of a reported $4B optical strategy. The Open Compute Interconnect standard was founded by AMD, Broadcom, NVIDIA, Meta, Microsoft and OpenAI together. Samsung and ST are bringing silicon photonics to 300mm wafer platforms.",
+      "vehicle_quality": "GOOD",
+      "time_to_pnl": "Revenue now, inflection at 2028 volume production for CPO integration; 2029 for full GPU-HBM package integration.",
+      "status": "BOUGHT",
+      "vehicles": {
+        "COHR": "BOUGHT. Passes the gate: 35.20x fwd, +26.1% upside, forward BELOW trailing. Trades 26% below its 52-week high, so not chasing a top.",
+        "ALAB": "BOUGHT. Passes: 57.31x fwd but revenue +98.5% gives 0.58 growth-adjusted. Q3 guided $540-560M vs $392.4M actual.",
+        "LITE": "REJECTED - already ran. $111.20 to $926.14 across the 52-week range, market cap +888% y/y. Negative trailing earnings. The theme is real; this vehicle is late. Being right about a theme and buying it at 8x is still losing.",
+        "MRVL/AVGO/NVDA": "Already held or adjacent exposure via AVGO and NVDA."
+      },
+      "sources": [
+        "OFC 2026 conference coverage (SemiWiki, EE Times)",
+        "io-fund on NVIDIA's optical strategy"
+      ]
+    },
+    {
+      "id": "transformer-goes-shortage",
+      "name": "Power transformers and grain-oriented electrical steel",
+      "thesis": "A real, well-documented hard constraint on the AI buildout: power transformer lead times went from ~50 weeks in 2021 to ~120 weeks by 2024 (Wood Mackenzie), large units run 80-210 weeks, prices are up 60-80% since Jan 2020, and only ~20% of US demand can be met domestically. It slows the PACE of the buildout and favours the supply-constrained names. CORRECTION 2026-08-14: I originally carried a '30-50% of 2026 capacity cancelled' bear claim here as a risk to this desk's own AI book. On verification that framing is substantially overstated \u2014 SemiAnalysis showed the underlying denominator is off by multiples, the shortfall sits in speculative announcements that were never real 2026 projects, and their own forecast moved ~1% in six months. Meanwhile hyperscaler capex was RAISED to $725B (+77% y/y). Constraint: real. Demand threat: not supported. See the full note below.",
+      "chatter": "LOW",
+      "trajectory": "RISING",
+      "capital_committed": "Cleveland-Cliffs' Butler Works is the only domestic producer of grain-oriented electrical steel and the only domestic source of the high-permeability grade used in power transformers. Its $170M expansion does not arrive until 2028.",
+      "vehicle_quality": "DILUTED",
+      "time_to_pnl": "Now, but buried inside larger businesses.",
+      "status": "WATCHING \u00b7 BEAR CASE DOWNGRADED",
+      "vehicles": {
+        "CLF": "REJECTED. The perfect narrative and the wrong vehicle. Consensus target $11.80 against an $11.90 price = -0.8% DOWNSIDE, Hold rating from 13 analysts, and the company is lossmaking (-$876M net income, EPS -$1.60). The GOES monopoly is a rounding error inside $19.2B of commodity steel revenue that mostly serves autos. An under-covered theme is only investable if some vehicle's economics actually concentrate it.",
+        "_todo": "Still the highest-priority open item: find a liquid US-listed pure-play transformer or grid-equipment vehicle. Screen Hitachi Energy, Siemens Energy, Prolec, Hammond Power for a US listing or ADR clearing IPS 8 liquidity."
+      },
+      "note": "VERIFIED AND REVISED 2026-08-14. I initially flagged '30-50% of announced data center capacity may slip' as a risk to this desk's AI book, on the strength of one Medium post and a Forbes piece. That was below the evidence standard I apply to buying a stock, so it should not have been enough to argue against one. On checking:\n\nSOURCE OF THE CLAIM: Currence, an energy intelligence firm, tracking 777 announced AI factories >50MW. ~190GW announced since 2024; 16GW scheduled for 2026 operation; ~5GW under construction.\n\nTHE REBUTTAL (SemiAnalysis, the most credible source in this niche, published specifically to correct this): (1) the 5GW denominator is 'off by multiples' \u2014 their satellite imagery shows the top TWO hyperscalers alone exceed 5GW under construction; (2) the cancellations cluster in early-stage speculative announcements lacking site control, financing or interconnection \u2014 projects never realistic for 2026 anyway; (3) SemiAnalysis's own year-end 2026 North America hyperscaler self-build forecast moved only ~1% over six months, colocation under 5% \u2014 the people modeling this most carefully barely changed their numbers; (4) the meme traces to an April 2026 Bloomberg piece about Chinese electrical parts, sharpened into clickbait downstream.\n\nALSO: 'delayed' is not 'cancelled'. Currence itself measures timeline slippage, not abandonment. Delays push revenue right; they do not destroy it.\n\nMEANWHILE THE DEMAND SIDE ACCELERATED: 2026 hyperscaler capex $725B, up 77% from $410B in 2025 \u2014 MSFT $190B, Alphabet up to $190B (+$5B), Meta $145B+ (+$10B). Guidance RAISED, not cut. And the revenue is showing up: Google Cloud +63% y/y to $20B/quarter, Meta +33% to $56.3B, Alphabet net income +81% to $62.6B. GE Vernova's Q2 call disclosed Gas Power capacity rising to 30GW by 2030, near-full utilization of 2030 slots, and >50% of 2031 capacity contracted by year-end 2026 \u2014 contracted, prepaid, multi-year commitments are the opposite of a demand air pocket.\n\nCONCLUSION: the transformer constraint is real and well documented (Wood Mackenzie: lead times 50wk in 2021 to 120wk by 2024, large units 80-210wk, prices +60-80% since Jan 2020, only ~20% of US demand met domestically). It slows the PACE of buildout. It does not undermine the demand thesis, and the '30-50% cancelled' framing is substantially overstated. I am REMOVING this as a bear case against the AI book and keeping it as a TIMING consideration that favours the supply-constrained names over those needing new capacity online fast.\n\nWHAT I GOT WRONG: I amplified a thinly-sourced bear claim without checking it, in the same session I wrote a rule requiring primary-source verification. The client asked me to explain it, which is what surfaced the error.",
+      "sources": [
+        "The Geopolitical Economist on the transformer shortage",
+        "Forbes on transformers vs chips"
+      ],
+      "tripwires": [
+        "GE Vernova order growth decelerating (quarterly, public)",
+        "Any hyperscaler CUTTING capex guidance \u2014 none have; all raised",
+        "Transformer lead times extending materially beyond ~120-128 weeks",
+        "SemiAnalysis revising its self-build forecast down by more than 5%"
+      ]
+    },
+    {
+      "id": "orbital-compute",
+      "name": "Space / orbital data centers",
+      "thesis": "Terrestrial data centers are constrained by land, power and water. Orbital compute is constrained by launch cost, which falls on a technology curve rather than a resource curve.",
+      "chatter": "LOW",
+      "trajectory": "RISING",
+      "capital_committed": "Blue Origin filed for 51,600 data center satellites. Starcloud reached a $1.1B valuation. Meta signed a space-based power agreement with Overview Energy. Google's Project Suncatcher completed radiation testing with two prototypes planned for early 2027. SpaceX targets Starmind AI1 as early as 2027 using NVIDIA Vera CPUs and Rubin GPUs.",
+      "vehicle_quality": "DILUTED",
+      "time_to_pnl": "2027 prototypes; economic parity projected 2038-2040.",
+      "status": "WATCHING",
+      "vehicles": {
+        "NVDA": "HELD. Disclosed $21B stake in SpaceX plus the Starmind AI1 compute partnership. The cleanest exposure, and free inside a position owned for other reasons.",
+        "GOOGL": "HELD. Project Suncatcher.",
+        "RKLB": "MOONSHOT-PENDING. 2 of 4 Moonshot criteria verified. Trades 47% below its 52-week high, so not disqualified for having run.",
+        "RDW / PL": "Unscreened.",
+        "_todo": "CLIENT DIRECTION 2026-08-14, priority order. PRIMARY: public companies holding disclosed stakes in private space/AI-infrastructure leaders. NVDA's $21B in SpaceX is the model and is already owned free inside a position held for other reasons \u2014 screen for others of that shape, since it converts private-market exposure into something liquid and gate-checkable. SECONDARY, pursue if research supports it: (a) radiation-hardened semiconductors \u2014 the highest-quality bottleneck in the chain, few qualified suppliers, Intel Starfire and Microchip as starting points; (b) launch capacity \u2014 Blue Origin's 51,600-satellite filing and Starcloud need lift, RKLB the main listed pure-play, and the open question is whether launch is a constraint or a commodity; (c) thermal/power/structures \u2014 cooling in vacuum is an unsolved engineering problem, Redwire and satellite component makers. The client noted these are unfamiliar to them, so any position here needs the thesis written for someone starting from zero, not for someone who already follows the sector."
+      },
+      "note": "Honest economics: orbital compute currently costs ~4x terrestrial ($8.64 vs $2.37 per GPU-hour). This is 2027+ optionality, not a 2026 revenue story. Do not let a good narrative become a valuation argument.",
+      "sources": [
+        "InvestorPlace on Starmind AI1",
+        "Fierce Network on space data centers",
+        "GeekWire on Starcloud"
+      ]
+    },
+    {
+      "id": "physical-ai",
+      "name": "Physical AI / robotics / edge inference",
+      "thesis": "Inference moving off the data center and into machines that act on the world. Distinct from the buildout trade because the economics are unit-volume driven rather than capex driven.",
+      "chatter": "MEDIUM",
+      "trajectory": "RISING",
+      "capital_committed": "Being named as a distinct investment theme in Asian markets; hardware startup funding concentrating on edge compute and robotics infrastructure.",
+      "vehicle_quality": "UNSCREENED",
+      "time_to_pnl": "Unclear - the main open question.",
+      "status": "WATCHING",
+      "vehicles": {
+        "_todo": "No credible screen run yet. Neuromorphic pure-plays like BrainChip trade OTC and are excluded by IPS 8 liquidity and venue rules."
+      },
+      "sources": [
+        "Seoul Economic Daily",
+        "edge AI funding analyses"
+      ]
+    },
+    {
+      "id": "ai-capex-financing",
+      "name": "How the AI buildout is actually being financed",
+      "thesis": "Hyperscaler 2026 capex expectations ran to roughly $840B, up from $487B in early February. Capex is now growing faster than the revenue it supports. That gap has to be financed somewhere - vendor financing, private credit, SPVs, debt. Follow the money and you find both a risk indicator for the whole desk and possibly a beneficiary.",
+      "chatter": "LOW",
+      "trajectory": "RISING",
+      "capital_committed": "NVIDIA advancing a reported $500B AI infrastructure financing initiative with financial partners. AMD completed a record $5B bond sale.",
+      "vehicle_quality": "UNSCREENED",
+      "time_to_pnl": "n/a - primarily a risk indicator.",
+      "status": "WATCHING",
+      "note": "This is the theme most likely to matter to the desk as a WARNING rather than an opportunity. If AI capex is increasingly debt-financed, the buildout becomes rate-sensitive and the whole AI book inherits that sensitivity. Highest-priority monitoring item.",
+      "sources": [
+        "Axios on hyperscaler capex",
+        "Forbes on the capex-to-revenue gap"
+      ]
+    }
+  ],
+  "_open_questions": [
+    "PRIMARY for 2026-08-28: which public companies hold disclosed stakes in private space / AI-infra leaders? NVDA/SpaceX is the template. This converts private exposure into a liquid, gate-checkable position.",
+    "Listed SUPPLIERS to private space-compute leaders \u2014 client-directed priority for the 2026-08-28 cycle.",
+    "Is there a liquid US-listed pure-play on power transformers? Highest-value unanswered question on this list.",
+    "What is the actual debt share of 2026 hyperscaler capex? Determines how rate-sensitive the AI book really is.",
+    "Which OFC 2026 suppliers are NOT yet in consensus models? The laser-supply tier has been called mispriced.",
+    "Does anything in physical AI clear IPS 8 on liquidity and venue?"
+  ],
+  "_lesson_log": [
+    {
+      "date": "2026-08-14",
+      "lesson": "Applied the verification standard asymmetrically: demanded primary sources before BUYING, accepted a Medium post before flagging a RISK. Bear claims need the same evidence bar as bull claims. A comfortable-sounding caution is still a claim.",
+      "cost": "None \u2014 caught before it changed any position.",
+      "fix": "IPS 4 now applies explicitly to risk claims as well as thesis claims."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "key": "ai",
+  "name": "AI Trade",
+  "inception": "2026-08-14",
+  "starting_cash": 100000.0,
+  "cash": 100000.0,
+  "positions": {},
+  "closed": [],
+  "trades": [],
+  "high_water": 100000.0,
+  "status": "active",
+  "status_note": "",
+  "last_marked": null,
+  "marks": {}
+}

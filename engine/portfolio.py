@@ -177,6 +177,16 @@ class Portfolio:
             }
 
         self.d["cash"] = round(self.cash - cost, 2)
+              # Mark the new position immediately at the market price we just traded
+        # against. Without this, a freshly bought position has no mark, counts
+        # as zero in equity(), and the book value used by every percentage rule
+        # collapses toward cash-only -- which silently inflates the computed
+        # weight of each subsequent order in the same batch.
+        self.d["marks"][ticker] = {
+            "price": round(float(price), 4),
+            "asof": _today(),
+            "source": source or "fill",
+        }
         return self._log("BUY", ticker, shares, fill, reason, thesis_id, tags, source)
 
     def sell(self, ticker: str, shares: float, price: float, *,

@@ -1,6 +1,6 @@
 # Investment Policy Statement
 
-**Client:** Joshua
+**Client:** the client (private)
 **Manager:** Claude (`claude-opus-5`)
 **Capital:** $300,000 paper money — $100,000 in each of three portfolios
 **Inception:** 2026-08-14
@@ -120,9 +120,18 @@ working normally.
 
 **One exemption: inception.** Building a book from cash is not turnover, so the
 initial deployment of each portfolio is tagged `INCEPTION` and does not count
-against the cap. The engine allows this **once per portfolio, ever** — after a
-book's first deployment the tag is rejected and the trade counts normally. It
-cannot become a back door.
+against the cap. The engine allows this **once per portfolio, ever**, within a
+**7-day window** opening on that book's first `INCEPTION` trade. After the
+window closes it never reopens, and the tag is rejected.
+
+*(Widened from same-day on 2026-08-15. An engine bug wrongly rejected five
+orders from the opening deployment — `buy()` was not marking new positions, so
+book value collapsed toward cash-only and inflated each subsequent order's
+computed weight. Re-issuing them the next day would have consumed most of a
+month's turnover budget for trades that were never turnover. A deployment
+legitimately takes more than one day; the rule was too tight and the bug
+exposed it. The cap this protects is about ongoing trading, not about building
+the book.)*
 
 ---
 

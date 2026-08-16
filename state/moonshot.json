@@ -3,13 +3,49 @@
   "name": "Moonshot",
   "inception": "2026-08-14",
   "starting_cash": 100000.0,
-  "cash": 100000.0,
-  "positions": {},
+  "cash": 91999.99,
+  "positions": {
+    "CBRS": {
+      "ticker": "CBRS",
+      "shares": 36.5148,
+      "cost_basis": 8000.01,
+      "avg_cost": 219.0895,
+      "opened": "2026-08-16",
+      "thesis_id": "cbrs",
+      "house_money_taken": false,
+      "realized": 0.0,
+      "initial_cost": 8000.01
+    }
+  },
   "closed": [],
-  "trades": [],
+  "trades": [
+    {
+      "id": "moonshot-0001",
+      "ts": "2026-08-16T02:57:30+00:00",
+      "date": "2026-08-16",
+      "portfolio": "moonshot",
+      "action": "BUY",
+      "ticker": "CBRS",
+      "shares": 36.5148,
+      "price": 219.0895,
+      "value": 8000.01,
+      "reason": "Q1 2026 verified at IR: revenue $193.4M +94%, cloud/services +178%, FY26 guided $855-865M, near break-even. Held to 8% because the company discloses OpenAI/G42 concentration, has 3 months of public history, and guides FY26 gross margin DOWN to 38-41%.",
+      "thesis_id": "cbrs",
+      "tags": [
+        "INCEPTION"
+      ],
+      "price_source": "yfinance"
+    }
+  ],
   "high_water": 100000.0,
   "status": "active",
   "status_note": "",
-  "last_marked": null,
-  "marks": {}
+  "last_marked": "2026-08-16T02:57:30+00:00",
+  "marks": {
+    "CBRS": {
+      "price": 218.98,
+      "asof": "2026-08-14",
+      "source": "yfinance"
+    }
+  }
 }

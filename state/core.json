@@ -3,13 +3,115 @@
   "name": "Core",
   "inception": "2026-08-14",
   "starting_cash": 100000.0,
-  "cash": 100000.0,
-  "positions": {},
+  "cash": 80200.03,
+  "positions": {
+    "META": {
+      "ticker": "META",
+      "shares": 13.3865,
+      "cost_basis": 7899.98,
+      "avg_cost": 590.1449,
+      "opened": "2026-08-16",
+      "thesis_id": "meta",
+      "house_money_taken": false,
+      "realized": 0.0,
+      "initial_cost": 7899.98
+    },
+    "UNH": {
+      "ticker": "UNH",
+      "shares": 16.1719,
+      "cost_basis": 6499.99,
+      "avg_cost": 401.9309,
+      "opened": "2026-08-16",
+      "thesis_id": "unh",
+      "house_money_taken": false,
+      "realized": 0.0,
+      "initial_cost": 6499.99
+    },
+    "XLV": {
+      "ticker": "XLV",
+      "shares": 32.2477,
+      "cost_basis": 5400.0,
+      "avg_cost": 167.4537,
+      "opened": "2026-08-16",
+      "thesis_id": "xlv",
+      "house_money_taken": false,
+      "realized": 0.0,
+      "initial_cost": 5400.0
+    }
+  },
   "closed": [],
-  "trades": [],
+  "trades": [
+    {
+      "id": "core-0001",
+      "ts": "2026-08-16T02:57:30+00:00",
+      "date": "2026-08-16",
+      "portfolio": "core",
+      "action": "BUY",
+      "ticker": "META",
+      "shares": 13.3865,
+      "price": 590.1449,
+      "value": 7899.98,
+      "reason": "Strongest valuation pass in the Core book: 18.58x forward with the forward multiple BELOW trailing (earnings expected to rise), 27.7% revenue growth, and 27.9% upside to a 62-analyst target. Cheap, growing, and with room left.",
+      "thesis_id": "meta",
+      "tags": [
+        "INCEPTION"
+      ],
+      "price_source": "yfinance"
+    },
+    {
+      "id": "core-0002",
+      "ts": "2026-08-16T02:57:30+00:00",
+      "date": "2026-08-16",
+      "portfolio": "core",
+      "action": "BUY",
+      "ticker": "UNH",
+      "shares": 16.1719,
+      "price": 401.9309,
+      "value": 6499.99,
+      "reason": "The non-tech ballast. 18.88x forward vs 25.86x trailing implies ~37% earnings recovery, and the company just beat and raised. 18.3% upside. A turnaround with the multiple already de-rated.",
+      "thesis_id": "unh",
+      "tags": [
+        "INCEPTION"
+      ],
+      "price_source": "yfinance"
+    },
+    {
+      "id": "core-0003",
+      "ts": "2026-08-16T02:57:30+00:00",
+      "date": "2026-08-16",
+      "portfolio": "core",
+      "action": "BUY",
+      "ticker": "XLV",
+      "shares": 32.2477,
+      "price": 167.4537,
+      "value": 5400.0,
+      "reason": "Healthcare is where I have the least edge \u2014 one FDA decision can halve a single name. Buying the sector rather than pretending I can pick within it.",
+      "thesis_id": "xlv",
+      "tags": [
+        "INCEPTION"
+      ],
+      "price_source": "yfinance"
+    }
+  ],
   "high_water": 100000.0,
   "status": "active",
   "status_note": "",
-  "last_marked": null,
-  "marks": {}
+  "last_marked": "2026-08-16T02:57:30+00:00",
+  "marks": {
+    "META": {
+      "price": 589.85,
+      "asof": "2026-08-14",
+      "source": "yfinance"
+    },
+    "UNH": {
+      "price": 401.73,
+      "asof": "2026-08-14",
+      "source": "yfinance"
+    },
+    "XLV": {
+      "price": 167.37,
+      "asof": "2026-08-14",
+      "source": "yfinance"
+    }
+  }
 }

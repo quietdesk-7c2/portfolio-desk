@@ -40,12 +40,16 @@
   "high_water": 100000.0,
   "status": "active",
   "status_note": "",
-  "last_marked": "2026-08-16T03:35:28+00:00",
+  "last_marked": "2026-08-16T19:54:15+00:00",
   "marks": {
     "CBRS": {
       "price": 218.98,
       "asof": "2026-08-14",
-      "source": "yfinance"
+      "source": "yfinance",
+      "prev": {
+        "price": 231.01,
+        "asof": "2026-08-13"
+      }
     }
   }
 }

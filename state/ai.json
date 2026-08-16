@@ -264,52 +264,88 @@
   "high_water": 100000.0,
   "status": "active",
   "status_note": "",
-  "last_marked": "2026-08-16T03:35:28+00:00",
+  "last_marked": "2026-08-16T19:54:15+00:00",
   "marks": {
     "NVDA": {
       "price": 225.16,
       "asof": "2026-08-14",
-      "source": "yfinance"
+      "source": "yfinance",
+      "prev": {
+        "price": 225.3,
+        "asof": "2026-08-13"
+      }
     },
     "MU": {
       "price": 971.66,
       "asof": "2026-08-14",
-      "source": "yfinance"
+      "source": "yfinance",
+      "prev": {
+        "price": 949.83,
+        "asof": "2026-08-13"
+      }
     },
     "AMD": {
       "price": 514.39,
       "asof": "2026-08-14",
-      "source": "yfinance"
+      "source": "yfinance",
+      "prev": {
+        "price": 483.01,
+        "asof": "2026-08-13"
+      }
     },
     "CEG": {
       "price": 282.5,
       "asof": "2026-08-14",
-      "source": "yfinance"
+      "source": "yfinance",
+      "prev": {
+        "price": 278.64,
+        "asof": "2026-08-13"
+      }
     },
     "VRT": {
       "price": 293.84,
       "asof": "2026-08-14",
-      "source": "yfinance"
+      "source": "yfinance",
+      "prev": {
+        "price": 287.07,
+        "asof": "2026-08-13"
+      }
     },
     "COHR": {
       "price": 325.83,
       "asof": "2026-08-14",
-      "source": "yfinance"
+      "source": "yfinance",
+      "prev": {
+        "price": 327.23,
+        "asof": "2026-08-13"
+      }
     },
     "ALAB": {
       "price": 321.61,
       "asof": "2026-08-14",
-      "source": "yfinance"
+      "source": "yfinance",
+      "prev": {
+        "price": 322.78,
+        "asof": "2026-08-13"
+      }
     },
     "TSM": {
       "price": 426.35,
       "asof": "2026-08-14",
-      "source": "yfinance"
+      "source": "yfinance",
+      "prev": {
+        "price": 430.49,
+        "asof": "2026-08-13"
+      }
     },
     "AVGO": {
       "price": 392.99,
       "asof": "2026-08-14",
-      "source": "yfinance"
+      "source": "yfinance",
+      "prev": {
+        "price": 417.82,
+        "asof": "2026-08-13"
+      }
     }
   }
 }

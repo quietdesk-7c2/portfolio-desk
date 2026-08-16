@@ -230,21 +230,30 @@ def _is_turnover(trade: dict) -> bool:
     return not any(tag in trade.get("tags", []) for tag in NON_TURNOVER_TAGS)
 
 
+INCEPTION_WINDOW_DAYS = 7
+
+
 def inception_used(pf: Portfolio) -> bool:
     """
-    True once this book has already spent its one INCEPTION deployment.
+    True once this book has spent its one INCEPTION deployment.
 
-    A deployment is a single DAY, not a single trade -- building a book takes
-    a dozen orders and they all land together. So the exemption stays open for
-    every order dated the same day as the first one, and closes permanently
-    the moment a later date shows up.
+    A deployment is a WINDOW, not a single trade or a single day. Building a
+    book takes a dozen orders, a data source can be down, an order can be
+    rejected and need re-issuing, and staging capital deliberately takes time.
+    So the exemption opens on a book's first INCEPTION trade and closes
+    permanently INCEPTION_WINDOW_DAYS later -- once, ever, per book.
     """
-    dates = {t.get("date") for t in pf.d["trades"] if "INCEPTION" in t.get("tags", [])}
-    dates.discard(None)
+    dates = sorted(d for d in
+                   {t.get("date") for t in pf.d["trades"] if "INCEPTION" in t.get("tags", [])}
+                   if d)
     if not dates:
         return False
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    return any(d != today for d in dates)
+    try:
+        first = datetime.strptime(dates[0], "%Y-%m-%d").replace(tzinfo=timezone.utc)
+    except ValueError:
+        return True
+    age_days = (datetime.now(timezone.utc) - first).days
+    return age_days > INCEPTION_WINDOW_DAYS
 
 
 def trades_this_month(portfolios: dict[str, Portfolio]) -> int:

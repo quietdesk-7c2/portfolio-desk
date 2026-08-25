@@ -19,6 +19,18 @@ from .data import get_history
 
 BENCH_CACHE = os.path.join(STATE_DIR, "benchmarks.json")
 
+# Optional browser-side live quotes.
+#
+# If LIVE_QUOTE_KEY is set at build time, it is written into the page so the
+# browser can re-quote every holding on load. That is a deliberate, visible
+# publication of the key -- it is passed as a repo *variable*, never a secret,
+# so nobody is fooled into thinking it is protected. Use a free Finnhub key
+# and nothing else: it is read-only, rate-limited, and carries no account.
+#
+# Left unset, the page is a plain static file marked at the last build. Every
+# number still renders; it is just as fresh as the last workflow run.
+LIVE_QUOTE_KEY = os.environ.get("LIVE_QUOTE_KEY", "").strip()
+
 
 def _read_nav_history(key: str) -> list[dict]:
     path = os.path.join(HISTORY_DIR, f"{key}.csv")
@@ -139,7 +151,9 @@ def build(portfolios: dict, quotes: dict) -> str:
 
     os.makedirs(DOCS_DIR, exist_ok=True)
     data_json = json.dumps(payload, separators=(",", ":"))
-    html = TEMPLATE.replace("/*__DATA__*/null", data_json)
+    html = (TEMPLATE
+            .replace("/*__DATA__*/null", data_json)
+            .replace('"__LIVEKEY__"', json.dumps(LIVE_QUOTE_KEY)))
     out_path = os.path.join(DOCS_DIR, "index.html")
     with open(out_path, "w") as fh:
         fh.write(html)
@@ -188,10 +202,20 @@ body{margin:0;background:var(--bg);color:var(--ink);
 
 header{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}
 .brand{display:flex;align-items:center;gap:9px}
-.dotpulse{width:7px;height:7px;border-radius:50%;background:var(--good);
-  box-shadow:0 0 0 3px rgba(34,197,94,.16)}
+/* The header dot is a status light, not decoration. Grey by default: the page
+   is static and honest about it. It only goes green, and only pulses, when
+   live quotes actually came back. A light that is always green tells you
+   nothing. */
+.dotpulse{width:7px;height:7px;border-radius:50%;background:var(--ink-3);
+  box-shadow:0 0 0 3px rgba(120,120,130,.12);transition:background .3s,box-shadow .3s}
+.dotpulse.live{background:var(--good);box-shadow:0 0 0 3px rgba(34,197,94,.16);
+  animation:pulse 2.4s ease-in-out infinite}
+.dotpulse.partial{background:var(--warn);box-shadow:0 0 0 3px rgba(217,119,6,.16)}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
+@media (prefers-reduced-motion:reduce){.dotpulse.live{animation:none}}
 h1{font-size:14px;margin:0;letter-spacing:.02em;font-weight:650}
 .stamp{font-size:10.5px;color:var(--ink-3);margin-top:1px}
+.stamp.live{color:var(--good)}
 .tbtn{background:var(--surface-2);border:1px solid var(--border);color:var(--ink-2);
   border-radius:8px;padding:6px 10px;font-size:11px;cursor:pointer;font-weight:600}
 
@@ -355,6 +379,7 @@ footer{text-align:center;color:var(--ink-3);font-size:10.5px;margin-top:26px;lin
 
 <script>
 const DATA = /*__DATA__*/null;
+const LIVE_KEY = "__LIVEKEY__";
 let chart=null, active=(DATA&&DATA.order&&DATA.order[0])||"core", range="ALL";
 const SV={core:"--s-core",moonshot:"--s-moon",ai:"--s-ai"};
 const cv=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
@@ -519,8 +544,10 @@ function panel(){
     <td class="m dim opt">${(h.weight*100).toFixed(1)}%</td></tr>`).join("");
 
   const holdings=`<div class="card"><h2>Positions</h2>
-    <p class="note">${hold.length?"Marked at the last available price."
-      :"Nothing owned yet."}</p>
+    <p class="note">${!hold.length?"Nothing owned yet."
+      :DATA._partial?"Live prices where available; the rest are marked at the last close."
+      :DATA._live?"Live prices, refreshed in your browser."
+      :"Marked at the last available price."}</p>
     ${hold.length?`<div class="pcards">${hold.map(h=>`
       <div class="pcard">
         <div class="pc1">
@@ -614,13 +641,162 @@ function radar(){
     +(ll?`<div class="card"><h2>Lesson log</h2><p class="note">Mistakes and what changed because of them. Public on purpose.</p>${ll}</div>`:"");
 }
 
+/* ======================================================================
+   Live quotes -- runs in your browser, costs nothing.
+
+   This is the piece that makes a refresh actually mean something. It fetches
+   a current price for every holding and recomputes the book from scratch:
+   value, day change, unrealized gain, weights, cash percentage.
+
+   Three rules govern it, and they matter more than the feature does:
+
+   1. It never invents a number. A ticker that fails to quote keeps the price
+      baked in at build time. A total that mixes live and stale marks says so.
+   2. It never writes anything. State, history and the trade log are the
+      server's job. This only changes what you are looking at.
+   3. It never blocks the page. The static numbers render first, always. If
+      the network is down, or the key is missing, or Finnhub is having a bad
+      afternoon, you still get a working dashboard -- just an older one.
+
+   The drawdown figure and the NAV curve deliberately stay at their last
+   end-of-day values. The circuit breaker is enforced server-side against
+   closing marks, and showing an intraday drawdown next to a rule that does
+   not act on intraday drawdowns would be a lie of implication.
+   ====================================================================== */
+function applyQuotes(px){
+  let tEq=0, tDay=0, tPriorBase=0, anyLive=false, anyStale=false;
+
+  for(const k of DATA.order){
+    const p=DATA.portfolios[k], hold=p.holdings||[];
+    let mv=0, day=0, priorValue=0, dayCounted=false;
+
+    for(const h of hold){
+      const q=px[h.ticker];
+      if(q){
+        h.price=q.c;
+        if(q.pc) h.prev_close=q.pc;
+        h.mark_source="finnhub live";
+        h.live=true;
+        anyLive=true;
+      }else{
+        h.live=false;
+        anyStale=true;
+      }
+      if(h.price!=null){
+        h.market_value=h.shares*h.price;
+        h.unrealized=h.market_value-h.cost_basis;
+        h.unrealized_pct=h.cost_basis?h.unrealized/h.cost_basis:0;
+      }
+      if(h.price!=null&&h.prev_close){
+        h.day_change=h.shares*(h.price-h.prev_close);
+        h.day_change_pct=(h.price-h.prev_close)/h.prev_close;
+        day+=h.day_change;
+        priorValue+=h.shares*h.prev_close;
+        dayCounted=true;
+      }
+      mv+=h.market_value||0;
+    }
+
+    p.equity=p.cash+mv;
+    for(const h of hold) h.weight=p.equity?(h.market_value||0)/p.equity:0;
+    p.cash_pct=p.equity?p.cash/p.equity:0;
+    p.total_return=p.starting_cash?(p.equity-p.starting_cash)/p.starting_cash:0;
+
+    /* Percent is measured against the book as it stood at yesterday's close,
+       counting only the names we can actually compare. Same convention the
+       Python side uses, so the two never disagree. */
+    if(dayCounted){
+      const priorEquity=p.cash+priorValue;
+      p.day_change=day;
+      p.day_change_pct=priorEquity?day/priorEquity:null;
+      tDay+=day; tPriorBase+=priorEquity;
+    }
+    tEq+=p.equity;
+  }
+
+  DATA.total.equity=tEq;
+  DATA.total.return=DATA.total.starting?(tEq-DATA.total.starting)/DATA.total.starting:0;
+  if(tPriorBase){
+    DATA.total.day_change=tDay;
+    DATA.total.day_change_pct=tDay/tPriorBase;
+  }
+  DATA._live=anyLive;
+  DATA._partial=anyLive&&anyStale;
+  return anyLive;
+}
+
+async function liveQuotes(){
+  if(!LIVE_KEY||!DATA) return;
+  const tks=[...new Set(DATA.order.flatMap(k=>(DATA.portfolios[k].holdings||[])
+    .map(h=>h.ticker)))];
+  if(!tks.length) return;
+
+  /* Rebuild the "as built" text from the payload rather than reading whatever
+     is on screen -- otherwise a failed second pull appends "unavailable" to a
+     stamp that already says "Live", which reads as a contradiction. */
+  const stamp=document.getElementById("gen");
+  const built="Updated "+new Date(DATA.generated)
+    .toLocaleString("en-US",{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"});
+  if(stamp){stamp.textContent="Fetching live prices…"; stamp.classList.remove("live");}
+
+  /* Finnhub's free tier allows 60 calls a minute. Sixteen positions is well
+     inside that, but fetch in small waves anyway so a larger book later does
+     not quietly start getting throttled and showing stale names. */
+  const px={};
+  const WAVE=8;
+  for(let i=0;i<tks.length;i+=WAVE){
+    await Promise.all(tks.slice(i,i+WAVE).map(async t=>{
+      try{
+        const r=await fetch("https://finnhub.io/api/v1/quote?symbol="+
+          encodeURIComponent(t)+"&token="+encodeURIComponent(LIVE_KEY),
+          {cache:"no-store"});
+        if(!r.ok) return;
+        const j=await r.json();
+        if(j&&typeof j.c==="number"&&j.c>0)
+          px[t]={c:j.c, pc:(typeof j.pc==="number"&&j.pc>0)?j.pc:null};
+      }catch(e){ /* one bad ticker must never take down the page */ }
+    }));
+  }
+
+  const got=Object.keys(px).length;
+  if(!got||!applyQuotes(px)){
+    if(stamp) stamp.textContent=built+" · live prices unavailable";
+    const d=document.querySelector(".dotpulse");
+    if(d) d.classList.remove("live","partial");
+    return;
+  }
+
+  head(); panel();
+  const s=document.getElementById("gen");
+  if(s){
+    const now=new Date().toLocaleTimeString("en-US",{hour:"numeric",minute:"2-digit"});
+    s.textContent="Live · "+now+(got<tks.length?"  · "+got+"/"+tks.length+" quoted":"");
+    s.classList.toggle("live",!DATA._partial);
+  }
+  const dot=document.querySelector(".dotpulse");
+  if(dot){dot.classList.toggle("live",!DATA._partial);
+          dot.classList.toggle("partial",!!DATA._partial);}
+}
+
 document.getElementById("tbtn").onclick=()=>{
   const cur=document.documentElement.getAttribute("data-theme")==="light"?"dark":"light";
   document.documentElement.setAttribute("data-theme",cur);
   if(DATA)panel();
 };
 
-if(DATA){head();tabs();panel()}
+if(DATA){
+  head(); tabs(); panel();
+  liveQuotes();
+  /* Coming back to an already-open tab should not show yesterday's prices.
+     Throttled to a minute so leaving it open on a second monitor does not
+     hammer the free tier. */
+  let lastPull=Date.now();
+  document.addEventListener("visibilitychange",()=>{
+    if(document.visibilityState==="visible"&&Date.now()-lastPull>60000){
+      lastPull=Date.now(); liveQuotes();
+    }
+  });
+}
 else document.getElementById("panel").innerHTML=
   '<div class="card"><div class="empty">No data yet. Run <code>python -m engine.run daily</code>.</div></div>';
 </script>

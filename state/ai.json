@@ -264,87 +264,87 @@
   "high_water": 100683.01223600001,
   "status": "active",
   "status_note": "",
-  "last_marked": "2026-08-25T03:13:46+00:00",
+  "last_marked": "2026-08-25T21:43:06+00:00",
   "marks": {
     "NVDA": {
-      "price": 208.48,
-      "asof": "2026-08-24",
+      "price": 213.05,
+      "asof": "2026-08-25",
       "source": "yfinance",
       "prev": {
-        "price": 214.72,
-        "asof": "2026-08-21"
+        "price": 208.48,
+        "asof": "2026-08-24"
       }
     },
     "MU": {
-      "price": 910.43,
-      "asof": "2026-08-24",
+      "price": 932.97,
+      "asof": "2026-08-25",
       "source": "yfinance",
       "prev": {
-        "price": 966.78,
-        "asof": "2026-08-21"
+        "price": 910.43,
+        "asof": "2026-08-24"
       }
     },
     "AMD": {
-      "price": 456.745,
-      "asof": "2026-08-24",
+      "price": 479.18,
+      "asof": "2026-08-25",
       "source": "yfinance",
       "prev": {
-        "price": 473.25,
-        "asof": "2026-08-21"
+        "price": 456.745,
+        "asof": "2026-08-24"
       }
     },
     "CEG": {
-      "price": 273.43,
-      "asof": "2026-08-24",
+      "price": 278.42,
+      "asof": "2026-08-25",
       "source": "yfinance",
       "prev": {
-        "price": 272.88,
-        "asof": "2026-08-21"
+        "price": 273.43,
+        "asof": "2026-08-24"
       }
     },
     "VRT": {
-      "price": 254.97,
-      "asof": "2026-08-24",
+      "price": 255.75,
+      "asof": "2026-08-25",
       "source": "yfinance",
       "prev": {
-        "price": 261.95,
-        "asof": "2026-08-21"
+        "price": 254.97,
+        "asof": "2026-08-24"
       }
     },
     "COHR": {
-      "price": 275.49,
-      "asof": "2026-08-24",
+      "price": 288.14,
+      "asof": "2026-08-25",
       "source": "yfinance",
       "prev": {
-        "price": 289.52,
-        "asof": "2026-08-21"
+        "price": 275.49,
+        "asof": "2026-08-24"
       }
     },
     "ALAB": {
-      "price": 277.53,
-      "asof": "2026-08-24",
+      "price": 282.65,
+      "asof": "2026-08-25",
       "source": "yfinance",
       "prev": {
-        "price": 284.97,
-        "asof": "2026-08-21"
+        "price": 277.53,
+        "asof": "2026-08-24"
       }
     },
     "TSM": {
-      "price": 410.12,
-      "asof": "2026-08-24",
+      "price": 417.41,
+      "asof": "2026-08-25",
       "source": "yfinance",
       "prev": {
-        "price": 418.95,
-        "asof": "2026-08-21"
+        "price": 410.12,
+        "asof": "2026-08-24"
       }
     },
     "AVGO": {
-      "price": 358.76,
-      "asof": "2026-08-24",
+      "price": 356.74,
+      "asof": "2026-08-25",
       "source": "yfinance",
       "prev": {
-        "price": 368.45,
-        "asof": "2026-08-21"
+        "price": 358.76,
+        "asof": "2026-08-24"
       }
     }
   }

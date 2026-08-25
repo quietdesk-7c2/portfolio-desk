@@ -180,60 +180,60 @@
   "high_water": 100000.0,
   "status": "active",
   "status_note": "",
-  "last_marked": "2026-08-25T03:13:46+00:00",
+  "last_marked": "2026-08-25T21:43:06+00:00",
   "marks": {
     "META": {
-      "price": 559.02,
-      "asof": "2026-08-24",
+      "price": 570.05,
+      "asof": "2026-08-25",
       "source": "yfinance",
       "prev": {
-        "price": 549.9,
-        "asof": "2026-08-21"
+        "price": 559.02,
+        "asof": "2026-08-24"
       }
     },
     "UNH": {
-      "price": 398.76,
-      "asof": "2026-08-24",
+      "price": 396.59,
+      "asof": "2026-08-25",
       "source": "yfinance",
       "prev": {
-        "price": 390.11,
-        "asof": "2026-08-21"
+        "price": 398.76,
+        "asof": "2026-08-24"
       }
     },
     "XLV": {
-      "price": 174.7,
-      "asof": "2026-08-24",
+      "price": 175.29,
+      "asof": "2026-08-25",
       "source": "yfinance",
       "prev": {
-        "price": 174.62,
-        "asof": "2026-08-21"
+        "price": 174.7,
+        "asof": "2026-08-24"
       }
     },
     "GOOGL": {
-      "price": 348.06,
-      "asof": "2026-08-24",
+      "price": 346.96,
+      "asof": "2026-08-25",
       "source": "yfinance",
       "prev": {
-        "price": 344.82,
-        "asof": "2026-08-21"
+        "price": 348.06,
+        "asof": "2026-08-24"
       }
     },
     "MSFT": {
-      "price": 487.31,
-      "asof": "2026-08-24",
+      "price": 491.71,
+      "asof": "2026-08-25",
       "source": "yfinance",
       "prev": {
-        "price": 483.24,
-        "asof": "2026-08-21"
+        "price": 487.31,
+        "asof": "2026-08-24"
       }
     },
     "AMZN": {
-      "price": 262.07,
-      "asof": "2026-08-24",
+      "price": 261.06,
+      "asof": "2026-08-25",
       "source": "yfinance",
       "prev": {
-        "price": 258.63,
-        "asof": "2026-08-21"
+        "price": 262.07,
+        "asof": "2026-08-24"
       }
     }
   }

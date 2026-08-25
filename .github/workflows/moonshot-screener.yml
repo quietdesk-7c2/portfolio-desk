@@ -1,0 +1,56 @@
+name: Moonshot screener
+
+# Weekly SEC Form 4 insider-cluster scan for the Moonshot book. Runs Saturday,
+# off the weekday daily-mark schedule (daily.yml), since even after the
+# concurrency fix a 90-day window measures out to roughly 4-5 hours (SEC's
+# rate cap is the real bottleneck, not network latency -- see the throttle
+# comments in engine/screener.py), and the marks pipeline shouldn't wait
+# behind it. Output is CANDIDATES, not positions -- each still needs the
+# other three Moonshot legs (analyst upside, dated catalyst, sentiment
+# acceleration) before anything is bought.
+
+on:
+  schedule:
+    - cron: "0 14 * * 6"     # Saturday 14:00 UTC -- markets closed, no rush
+  workflow_dispatch:          # run by hand from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: portfolio-desk-screener
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Scan SEC Form 4 filings for insider clusters
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: python -m engine.screener 90
+
+      - name: Commit candidates
+        run: |
+          git config user.name  "portfolio-desk[bot]"
+          git config user.email "portfolio-desk@users.noreply.github.com"
+          git add research/moonshot_candidates.json
+          if git diff --staged --quiet; then
+            echo "No new candidates."
+          else
+            git commit -m "research: moonshot candidates $(date -u +%Y-%m-%d) [skip ci]"
+            for i in 1 2 3; do
+              git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && \
+              git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+              sleep 5
+            done
+            echo "::error::could not push candidates after 3 attempts"
+            exit 1
+          fi

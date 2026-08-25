@@ -30,21 +30,26 @@ the logic can be verified without hitting SEC servers.
 
 SEC ACCESS RULES (https://www.sec.gov/os/webmaster-faq#developers)
 - A User-Agent identifying you with a real contact address is REQUIRED.
-- Max 10 requests/second. This module sleeps to stay well under that.
+- Max 10 requests/second. A shared, lock-protected throttle enforces this in
+  aggregate across FETCH_WORKERS concurrent threads, staying a margin under it.
 Set SEC_USER_AGENT env var, e.g. "jane doe jane@example.com".
 """
 from __future__ import annotations
 
 import json
 import os
+import threading
 import time
 import urllib.request
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 
 SEC_UA = os.environ.get("SEC_USER_AGENT", "portfolio-desk research desk@example.com")
-REQUESTS_PER_SECOND = 5          # half the published limit, deliberately
+REQUESTS_PER_SECOND = 8          # SEC's published cap is 10/s; stay a margin under it
+FETCH_WORKERS = 8                # concurrent filings in flight, all sharing the throttle below
 _last_request = [0.0]
+_throttle_lock = threading.Lock()
 
 # Officer titles that carry the most signal, highest first.
 ROLE_WEIGHT = {
@@ -63,11 +68,14 @@ ROLE_WEIGHT = {
 # Network layer -- the ONLY part that touches SEC servers
 # ==========================================================================
 def _throttle() -> None:
+    """Global rate limit shared by every thread, so concurrent fetches never
+    exceed REQUESTS_PER_SECOND in aggregate even though SEC calls now overlap."""
     gap = 1.0 / REQUESTS_PER_SECOND
-    delta = time.time() - _last_request[0]
-    if delta < gap:
-        time.sleep(gap - delta)
-    _last_request[0] = time.time()
+    with _throttle_lock:
+        delta = time.time() - _last_request[0]
+        if delta < gap:
+            time.sleep(gap - delta)
+        _last_request[0] = time.time()
 
 
 def _get(url: str, timeout: int = 30) -> bytes:
@@ -394,6 +402,16 @@ def apply_ips_filters(clusters: list[dict], max_market_cap: float = 10e9,
     return sorted(out, key=lambda c: -c["score"])
 
 
+def _fetch_and_parse(path: str) -> dict | None:
+    """One filing's fetch+parse, run on a worker thread. Never raises -- a
+    single bad filing must not take down the rest of the pool."""
+    try:
+        xml = fetch_filing_xml(path)
+        return parse_form4(xml) if xml else None
+    except Exception:
+        return None
+
+
 # ==========================================================================
 # Orchestration
 # ==========================================================================
@@ -417,14 +435,13 @@ def run(days_back: int = 90, out_path: str | None = None,
         if not rows:
             continue
         days_scanned += 1
-        for row in rows:
-            filings_seen += 1
-            xml = fetch_filing_xml(row["path"])
-            if not xml:
-                continue
-            rec = parse_form4(xml)
-            if rec and open_market_purchases(rec):
-                records.append(rec)
+        filings_seen += len(rows)
+        with ThreadPoolExecutor(max_workers=FETCH_WORKERS) as pool:
+            futures = [pool.submit(_fetch_and_parse, row["path"]) for row in rows]
+            for future in as_completed(futures):
+                rec = future.result()
+                if rec and open_market_purchases(rec):
+                    records.append(rec)
 
     clusters = find_clusters(records)
     ranked = apply_ips_filters(clusters, market_caps=market_caps)

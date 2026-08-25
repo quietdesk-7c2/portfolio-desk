@@ -1,0 +1,68 @@
+name: Intraday refresh
+
+# Re-marks the book and republishes the dashboard during market hours.
+#
+# This costs zero Claude credits. It is plain Python fetching prices on
+# GitHub's runners -- no model is involved at any point. Public repositories
+# get unlimited Actions minutes, so it is free in dollars too.
+#
+# It deliberately does NOT run the rule engine, does not append history, and
+# does not commit anything. Stops, the house-money rule and the circuit
+# breaker are evaluated once a day against closing marks, which is what the
+# IPS specifies; firing them against an intraday wiggle would turn a one-year
+# horizon into day trading. This job only changes what the dashboard shows.
+
+on:
+  schedule:
+    # Every 15 minutes, 13:00-21:00 UTC, weekdays. That window covers the US
+    # session in both daylight (13:30-20:00) and standard (14:30-21:00) time,
+    # so it needs no seasonal adjustment. GitHub delays cron under load, so
+    # treat this as "about every 15 minutes", not a guarantee.
+    - cron: "*/15 13-21 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Newer prices always win. If a run is still going when the next one starts,
+# cancel the old one -- publishing a stale quote after a fresh one would be
+# strictly worse than skipping it.
+concurrency:
+  group: pages-publish
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install optional data fallback
+        run: pip install --quiet yfinance || true
+
+      - name: Re-mark and rebuild the dashboard
+        env:
+          ALPHAVANTAGE_KEY: ${{ secrets.ALPHAVANTAGE_KEY }}
+          FINNHUB_KEY: ${{ secrets.FINNHUB_KEY }}
+          # A repo VARIABLE, not a secret, and intentionally so: this value is
+          # written into a public web page. Naming it as a variable keeps that
+          # honest. Leave it unset and the page is simply static.
+          LIVE_QUOTE_KEY: ${{ vars.LIVE_QUOTE_KEY }}
+          DASHBOARD_URL: ${{ vars.DASHBOARD_URL }}
+        run: python -m engine.run report
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - id: deploy
+        uses: actions/deploy-pages@v4

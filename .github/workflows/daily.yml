@@ -1,12 +1,15 @@
 name: Daily mark & publish
 
-# Marks, enforces rules, publishes. Runs every weekday regardless of the
-# research cadence -- risk rules never take a week off.
+# The authoritative run. Marks at the close, enforces every rule, appends the
+# NAV history, sends trade notifications, commits state, publishes.
+#
+# Runs every weekday regardless of the research cadence -- risk rules never
+# take a week off. Costs zero Claude credits: pure Python on GitHub's runners.
 
 on:
-  # Auto-run when the engine, orders or research change, so a push from Claude
-  # applies immediately. The bot's own commits carry [skip ci] so this cannot
-  # trigger itself in a loop.
+  # Auto-run when the engine, orders or research change, so a push applies
+  # immediately. The bot's own commits carry [skip ci] so this cannot trigger
+  # itself in a loop.
   push:
     paths:
       - "engine/**"
@@ -21,6 +24,8 @@ on:
 
 permissions:
   contents: write           # needed to commit updated state back to the repo
+  pages: write              # publishes the dashboard as a Pages artifact
+  id-token: write           # required by deploy-pages
 
 concurrency:
   group: portfolio-desk
@@ -29,6 +34,9 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v5
 
@@ -44,14 +52,20 @@ jobs:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           ALPHAVANTAGE_KEY: ${{ secrets.ALPHAVANTAGE_KEY }}
           FINNHUB_KEY: ${{ secrets.FINNHUB_KEY }}
+          LIVE_QUOTE_KEY: ${{ vars.LIVE_QUOTE_KEY }}
           DASHBOARD_URL: ${{ vars.DASHBOARD_URL }}
         run: python -m engine.run daily
 
+      # State and orders are committed; docs/ is not. The dashboard is now
+      # deployed as a Pages artifact instead, which is what stops a refresh
+      # every fifteen minutes from turning into a commit every fifteen
+      # minutes. The git history stays what it should be: a record of what
+      # the portfolio did, not a log of when a web page was regenerated.
       - name: Commit the day's state
         run: |
           git config user.name  "portfolio-desk[bot]"
           git config user.email "portfolio-desk@users.noreply.github.com"
-          git add -A state docs orders
+          git add -A state orders
           if git diff --staged --quiet; then
             echo "Nothing changed today."
           else
@@ -65,3 +79,10 @@ jobs:
             echo "::error::could not push state after 3 attempts"
             exit 1
           fi
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - id: deploy
+        uses: actions/deploy-pages@v4

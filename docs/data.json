@@ -1,14 +1,14 @@
 {
-  "generated": "2026-08-25T03:12:22+00:00",
+  "generated": "2026-08-26T03:38:34+00:00",
   "inception": "2026-08-14",
   "total": {
-    "equity": 292131.28,
+    "equity": 293638.95,
     "starting": 300000.0,
-    "return": -0.0262,
+    "return": -0.0212,
     "cash": 175500.01,
     "positions": 16,
-    "day_change": -2012.02,
-    "day_change_pct": -0.00684
+    "day_change": 1507.67,
+    "day_change_pct": 0.00516
   },
   "portfolios": {
     "core": {
@@ -23,136 +23,136 @@
       "inception": "2026-08-14",
       "starting_cash": 100000.0,
       "cash": 57000.02,
-      "cash_pct": 0.5719,
-      "equity": 99659.58,
-      "invested": 42659.56,
-      "total_return": -0.0034,
-      "day_change": 500.74,
-      "day_change_pct": 0.00505,
+      "cash_pct": 0.5711,
+      "equity": 99806.47,
+      "invested": 42806.45,
+      "total_return": -0.0019,
+      "day_change": 146.89,
+      "day_change_pct": 0.00147,
       "realized_pnl": 0.0,
-      "unrealized_pnl": -340.42,
+      "unrealized_pnl": -193.53,
       "high_water": 100000.0,
-      "drawdown": -0.0034,
+      "drawdown": -0.0019,
       "holdings": [
         {
           "ticker": "GOOGL",
           "shares": 22.8276,
           "avg_cost": 346.0729,
-          "price": 348.06,
-          "prev_close": 344.82,
-          "day_change": 73.96,
-          "day_change_pct": 0.0094,
-          "market_value": 7945.37,
+          "price": 346.96,
+          "prev_close": 348.06,
+          "day_change": -25.11,
+          "day_change_pct": -0.0032,
+          "market_value": 7920.26,
           "cost_basis": 7900.01,
-          "unrealized": 45.36,
-          "unrealized_pct": 0.0057,
-          "weight": 0.0797,
+          "unrealized": 20.25,
+          "unrealized_pct": 0.0026,
+          "weight": 0.0794,
           "opened": "2026-08-16",
           "thesis_id": "googl",
           "house_money_taken": false,
           "realized": 0.0,
           "mark_source": "yfinance",
-          "mark_asof": "2026-08-24"
+          "mark_asof": "2026-08-25"
         },
         {
           "ticker": "MSFT",
           "shares": 15.737,
           "avg_cost": 495.6477,
-          "price": 487.31,
-          "prev_close": 483.24,
-          "day_change": 64.05,
-          "day_change_pct": 0.0084,
-          "market_value": 7668.8,
+          "price": 491.71,
+          "prev_close": 487.31,
+          "day_change": 69.24,
+          "day_change_pct": 0.009,
+          "market_value": 7738.04,
           "cost_basis": 7800.01,
-          "unrealized": -131.21,
-          "unrealized_pct": -0.0168,
-          "weight": 0.0769,
+          "unrealized": -61.97,
+          "unrealized_pct": -0.0079,
+          "weight": 0.0775,
           "opened": "2026-08-16",
           "thesis_id": "msft",
           "house_money_taken": false,
           "realized": 0.0,
           "mark_source": "yfinance",
-          "mark_asof": "2026-08-24"
+          "mark_asof": "2026-08-25"
         },
         {
           "ticker": "META",
           "shares": 13.3865,
           "avg_cost": 590.1449,
-          "price": 559.02,
-          "prev_close": 549.9,
-          "day_change": 122.08,
-          "day_change_pct": 0.0166,
-          "market_value": 7483.32,
+          "price": 570.05,
+          "prev_close": 559.02,
+          "day_change": 147.65,
+          "day_change_pct": 0.0197,
+          "market_value": 7630.97,
           "cost_basis": 7899.98,
-          "unrealized": -416.66,
-          "unrealized_pct": -0.0527,
-          "weight": 0.0751,
+          "unrealized": -269.01,
+          "unrealized_pct": -0.0341,
+          "weight": 0.0765,
           "opened": "2026-08-16",
           "thesis_id": "meta",
           "house_money_taken": false,
           "realized": 0.0,
           "mark_source": "yfinance",
-          "mark_asof": "2026-08-24"
+          "mark_asof": "2026-08-25"
         },
         {
           "ticker": "AMZN",
           "shares": 28.5408,
           "avg_cost": 262.7813,
-          "price": 262.07,
-          "prev_close": 258.63,
-          "day_change": 98.18,
-          "day_change_pct": 0.0133,
-          "market_value": 7479.69,
+          "price": 261.06,
+          "prev_close": 262.07,
+          "day_change": -28.83,
+          "day_change_pct": -0.0039,
+          "market_value": 7450.86,
           "cost_basis": 7499.99,
-          "unrealized": -20.3,
-          "unrealized_pct": -0.0027,
-          "weight": 0.0751,
+          "unrealized": -49.13,
+          "unrealized_pct": -0.0066,
+          "weight": 0.0747,
           "opened": "2026-08-16",
           "thesis_id": "amzn",
           "house_money_taken": false,
           "realized": 0.0,
           "mark_source": "yfinance",
-          "mark_asof": "2026-08-24"
+          "mark_asof": "2026-08-25"
         },
         {
           "ticker": "UNH",
           "shares": 16.1719,
           "avg_cost": 401.9309,
-          "price": 398.76,
-          "prev_close": 390.11,
-          "day_change": 139.89,
-          "day_change_pct": 0.0222,
-          "market_value": 6448.71,
+          "price": 396.59,
+          "prev_close": 398.76,
+          "day_change": -35.09,
+          "day_change_pct": -0.0054,
+          "market_value": 6413.61,
           "cost_basis": 6499.99,
-          "unrealized": -51.28,
-          "unrealized_pct": -0.0079,
-          "weight": 0.0647,
+          "unrealized": -86.38,
+          "unrealized_pct": -0.0133,
+          "weight": 0.0643,
           "opened": "2026-08-16",
           "thesis_id": "unh",
           "house_money_taken": false,
           "realized": 0.0,
           "mark_source": "yfinance",
-          "mark_asof": "2026-08-24"
+          "mark_asof": "2026-08-25"
         },
         {
           "ticker": "XLV",
           "shares": 32.2477,
           "avg_cost": 167.4537,
-          "price": 174.7,
-          "prev_close": 174.62,
-          "day_change": 2.58,
-          "day_change_pct": 0.0005,
-          "market_value": 5633.67,
+          "price": 175.29,
+          "prev_close": 174.7,
+          "day_change": 19.03,
+          "day_change_pct": 0.0034,
+          "market_value": 5652.7,
           "cost_basis": 5400.0,
-          "unrealized": 233.67,
-          "unrealized_pct": 0.0433,
-          "weight": 0.0565,
+          "unrealized": 252.7,
+          "unrealized_pct": 0.0468,
+          "weight": 0.0566,
           "opened": "2026-08-16",
           "thesis_id": "xlv",
           "house_money_taken": false,
           "realized": 0.0,
           "mark_source": "yfinance",
-          "mark_asof": "2026-08-24"
+          "mark_asof": "2026-08-25"
         }
       ],
       "n_holdings": 6,
@@ -261,7 +261,7 @@
           "price_source": "yfinance"
         }
       ],
-      "last_marked": "2026-08-25T03:12:20+00:00",
+      "last_marked": "2026-08-26T03:38:34+00:00",
       "nav_history": [
         {
           "date": "2026-08-16",
@@ -293,7 +293,11 @@
         },
         {
           "date": "2026-08-25",
-          "equity": 99659.58
+          "equity": 99806.47
+        },
+        {
+          "date": "2026-08-26",
+          "equity": 99806.47
         }
       ]
     },
@@ -309,36 +313,36 @@
       "inception": "2026-08-14",
       "starting_cash": 100000.0,
       "cash": 91999.99,
-      "cash_pct": 0.9314,
-      "equity": 98770.93,
-      "invested": 6770.94,
-      "total_return": -0.0123,
-      "day_change": -390.71,
-      "day_change_pct": -0.00394,
+      "cash_pct": 0.932,
+      "equity": 98715.61,
+      "invested": 6715.62,
+      "total_return": -0.0128,
+      "day_change": -55.32,
+      "day_change_pct": -0.00056,
       "realized_pnl": 0.0,
-      "unrealized_pnl": -1229.07,
+      "unrealized_pnl": -1284.39,
       "high_water": 101200.99,
-      "drawdown": -0.024,
+      "drawdown": -0.0246,
       "holdings": [
         {
           "ticker": "CBRS",
           "shares": 36.5148,
           "avg_cost": 219.0895,
-          "price": 185.43,
-          "prev_close": 196.13,
-          "day_change": -390.71,
-          "day_change_pct": -0.0546,
-          "market_value": 6770.94,
+          "price": 183.915,
+          "prev_close": 185.43,
+          "day_change": -55.32,
+          "day_change_pct": -0.0082,
+          "market_value": 6715.62,
           "cost_basis": 8000.01,
-          "unrealized": -1229.07,
-          "unrealized_pct": -0.1536,
-          "weight": 0.0686,
+          "unrealized": -1284.39,
+          "unrealized_pct": -0.1605,
+          "weight": 0.068,
           "opened": "2026-08-16",
           "thesis_id": "cbrs",
           "house_money_taken": false,
           "realized": 0.0,
           "mark_source": "yfinance",
-          "mark_asof": "2026-08-24"
+          "mark_asof": "2026-08-25"
         }
       ],
       "n_holdings": 1,
@@ -362,7 +366,7 @@
           "price_source": "yfinance"
         }
       ],
-      "last_marked": "2026-08-25T03:12:20+00:00",
+      "last_marked": "2026-08-26T03:38:34+00:00",
       "nav_history": [
         {
           "date": "2026-08-16",
@@ -394,7 +398,11 @@
         },
         {
           "date": "2026-08-25",
-          "equity": 98770.93
+          "equity": 98715.61
+        },
+        {
+          "date": "2026-08-26",
+          "equity": 98715.61
         }
       ]
     },
@@ -410,196 +418,196 @@
       "inception": "2026-08-14",
       "starting_cash": 100000.0,
       "cash": 26500.0,
-      "cash_pct": 0.2828,
-      "equity": 93700.77,
-      "invested": 67200.77,
-      "total_return": -0.063,
-      "day_change": -2122.05,
-      "day_change_pct": -0.02215,
+      "cash_pct": 0.2786,
+      "equity": 95116.87,
+      "invested": 68616.87,
+      "total_return": -0.0488,
+      "day_change": 1416.1,
+      "day_change_pct": 0.01511,
       "realized_pnl": 0.0,
-      "unrealized_pnl": -6299.23,
+      "unrealized_pnl": -4883.13,
       "high_water": 100683.01,
-      "drawdown": -0.0693,
+      "drawdown": -0.0553,
       "holdings": [
         {
           "ticker": "NVDA",
           "shares": 53.2688,
           "avg_cost": 225.2726,
-          "price": 208.48,
-          "prev_close": 214.72,
-          "day_change": -332.4,
-          "day_change_pct": -0.0291,
-          "market_value": 11105.48,
+          "price": 213.05,
+          "prev_close": 208.48,
+          "day_change": 243.44,
+          "day_change_pct": 0.0219,
+          "market_value": 11348.92,
           "cost_basis": 12000.0,
-          "unrealized": -894.52,
-          "unrealized_pct": -0.0745,
-          "weight": 0.1185,
+          "unrealized": -651.08,
+          "unrealized_pct": -0.0543,
+          "weight": 0.1193,
           "opened": "2026-08-16",
           "thesis_id": "nvda",
           "house_money_taken": false,
           "realized": 0.0,
           "mark_source": "yfinance",
-          "mark_asof": "2026-08-24"
+          "mark_asof": "2026-08-25"
         },
         {
           "ticker": "TSM",
           "shares": 23.4432,
           "avg_cost": 426.5632,
-          "price": 410.12,
-          "prev_close": 418.95,
-          "day_change": -207.0,
-          "day_change_pct": -0.0211,
-          "market_value": 9614.53,
+          "price": 417.41,
+          "prev_close": 410.12,
+          "day_change": 170.9,
+          "day_change_pct": 0.0178,
+          "market_value": 9785.43,
           "cost_basis": 10000.01,
-          "unrealized": -385.48,
-          "unrealized_pct": -0.0385,
-          "weight": 0.1026,
+          "unrealized": -214.58,
+          "unrealized_pct": -0.0215,
+          "weight": 0.1029,
           "opened": "2026-08-16",
           "thesis_id": "tsm",
           "house_money_taken": false,
           "realized": 0.0,
           "mark_source": "yfinance",
-          "mark_asof": "2026-08-24"
+          "mark_asof": "2026-08-25"
         },
         {
           "ticker": "MU",
           "shares": 10.2865,
           "avg_cost": 972.1458,
-          "price": 910.43,
-          "prev_close": 966.78,
-          "day_change": -579.64,
-          "day_change_pct": -0.0583,
-          "market_value": 9365.14,
+          "price": 932.97,
+          "prev_close": 910.43,
+          "day_change": 231.86,
+          "day_change_pct": 0.0248,
+          "market_value": 9597.0,
           "cost_basis": 9999.98,
-          "unrealized": -634.84,
-          "unrealized_pct": -0.0635,
-          "weight": 0.0999,
+          "unrealized": -402.98,
+          "unrealized_pct": -0.0403,
+          "weight": 0.1009,
           "opened": "2026-08-16",
           "thesis_id": "mu",
           "house_money_taken": false,
           "realized": 0.0,
           "mark_source": "yfinance",
-          "mark_asof": "2026-08-24"
+          "mark_asof": "2026-08-25"
         },
         {
           "ticker": "AVGO",
           "shares": 24.1616,
           "avg_cost": 393.1865,
-          "price": 358.76,
-          "prev_close": 368.45,
-          "day_change": -234.13,
-          "day_change_pct": -0.0263,
-          "market_value": 8668.22,
+          "price": 356.74,
+          "prev_close": 358.76,
+          "day_change": -48.81,
+          "day_change_pct": -0.0056,
+          "market_value": 8619.41,
           "cost_basis": 9500.01,
-          "unrealized": -831.79,
-          "unrealized_pct": -0.0876,
-          "weight": 0.0925,
+          "unrealized": -880.6,
+          "unrealized_pct": -0.0927,
+          "weight": 0.0906,
           "opened": "2026-08-16",
           "thesis_id": "avgo",
           "house_money_taken": false,
           "realized": 0.0,
           "mark_source": "yfinance",
-          "mark_asof": "2026-08-24"
+          "mark_asof": "2026-08-25"
         },
         {
           "ticker": "AMD",
           "shares": 15.5446,
           "avg_cost": 514.6472,
-          "price": 456.745,
-          "prev_close": 473.25,
-          "day_change": -256.56,
-          "day_change_pct": -0.0349,
-          "market_value": 7099.92,
+          "price": 479.18,
+          "prev_close": 456.745,
+          "day_change": 348.74,
+          "day_change_pct": 0.0491,
+          "market_value": 7448.66,
           "cost_basis": 7999.98,
-          "unrealized": -900.06,
-          "unrealized_pct": -0.1125,
-          "weight": 0.0758,
+          "unrealized": -551.32,
+          "unrealized_pct": -0.0689,
+          "weight": 0.0783,
           "opened": "2026-08-16",
           "thesis_id": "amd",
           "house_money_taken": false,
           "realized": 0.0,
           "mark_source": "yfinance",
-          "mark_asof": "2026-08-24"
+          "mark_asof": "2026-08-25"
         },
         {
           "ticker": "CEG",
           "shares": 24.7664,
           "avg_cost": 282.6412,
-          "price": 273.43,
-          "prev_close": 272.88,
-          "day_change": 13.62,
-          "day_change_pct": 0.002,
-          "market_value": 6771.88,
+          "price": 278.42,
+          "prev_close": 273.43,
+          "day_change": 123.58,
+          "day_change_pct": 0.0182,
+          "market_value": 6895.46,
           "cost_basis": 7000.01,
-          "unrealized": -228.13,
-          "unrealized_pct": -0.0326,
-          "weight": 0.0723,
+          "unrealized": -104.55,
+          "unrealized_pct": -0.0149,
+          "weight": 0.0725,
           "opened": "2026-08-16",
           "thesis_id": "ceg",
           "house_money_taken": false,
           "realized": 0.0,
           "mark_source": "yfinance",
-          "mark_asof": "2026-08-24"
+          "mark_asof": "2026-08-25"
         },
         {
           "ticker": "COHR",
           "shares": 19.9391,
           "avg_cost": 325.9929,
-          "price": 275.49,
-          "prev_close": 289.52,
-          "day_change": -279.75,
-          "day_change_pct": -0.0485,
-          "market_value": 5493.02,
+          "price": 288.14,
+          "prev_close": 275.49,
+          "day_change": 252.23,
+          "day_change_pct": 0.0459,
+          "market_value": 5745.25,
           "cost_basis": 6500.01,
-          "unrealized": -1006.99,
-          "unrealized_pct": -0.1549,
-          "weight": 0.0586,
+          "unrealized": -754.76,
+          "unrealized_pct": -0.1161,
+          "weight": 0.0604,
           "opened": "2026-08-16",
           "thesis_id": "cohr",
           "house_money_taken": false,
           "realized": 0.0,
           "mark_source": "yfinance",
-          "mark_asof": "2026-08-24"
+          "mark_asof": "2026-08-25"
         },
         {
           "ticker": "VRT",
           "shares": 18.7083,
           "avg_cost": 293.9869,
-          "price": 254.97,
-          "prev_close": 261.95,
-          "day_change": -130.58,
-          "day_change_pct": -0.0266,
-          "market_value": 4770.06,
+          "price": 255.75,
+          "prev_close": 254.97,
+          "day_change": 14.59,
+          "day_change_pct": 0.0031,
+          "market_value": 4784.65,
           "cost_basis": 5500.0,
-          "unrealized": -729.94,
-          "unrealized_pct": -0.1327,
-          "weight": 0.0509,
+          "unrealized": -715.35,
+          "unrealized_pct": -0.1301,
+          "weight": 0.0503,
           "opened": "2026-08-16",
           "thesis_id": "vrt",
           "house_money_taken": false,
           "realized": 0.0,
           "mark_source": "yfinance",
-          "mark_asof": "2026-08-24"
+          "mark_asof": "2026-08-25"
         },
         {
           "ticker": "ALAB",
           "shares": 15.539,
           "avg_cost": 321.7708,
-          "price": 277.53,
-          "prev_close": 284.97,
-          "day_change": -115.61,
-          "day_change_pct": -0.0261,
-          "market_value": 4312.54,
+          "price": 282.65,
+          "prev_close": 277.53,
+          "day_change": 79.56,
+          "day_change_pct": 0.0184,
+          "market_value": 4392.1,
           "cost_basis": 5000.0,
-          "unrealized": -687.46,
-          "unrealized_pct": -0.1375,
-          "weight": 0.046,
+          "unrealized": -607.9,
+          "unrealized_pct": -0.1216,
+          "weight": 0.0462,
           "opened": "2026-08-16",
           "thesis_id": "alab",
           "house_money_taken": false,
           "realized": 0.0,
           "mark_source": "yfinance",
-          "mark_asof": "2026-08-24"
+          "mark_asof": "2026-08-25"
         }
       ],
       "n_holdings": 9,
@@ -759,7 +767,7 @@
           "price_source": "yfinance"
         }
       ],
-      "last_marked": "2026-08-25T03:12:20+00:00",
+      "last_marked": "2026-08-26T03:38:34+00:00",
       "nav_history": [
         {
           "date": "2026-08-16",
@@ -791,7 +799,11 @@
         },
         {
           "date": "2026-08-25",
-          "equity": 93700.77
+          "equity": 95116.87
+        },
+        {
+          "date": "2026-08-26",
+          "equity": 95116.87
         }
       ]
     }
@@ -804,7 +816,8 @@
       "2026-08-19": 83.30999755859375,
       "2026-08-20": 83.2699966430664,
       "2026-08-21": 86.20999908447266,
-      "2026-08-24": 83.91999816894531
+      "2026-08-24": 83.91999816894531,
+      "2026-08-25": 86.37000274658203
     },
     "IWO": {
       "2026-08-14": 395.6499938964844,
@@ -813,7 +826,8 @@
       "2026-08-19": 390.2799987792969,
       "2026-08-20": 382.6300048828125,
       "2026-08-21": 387.3699951171875,
-      "2026-08-24": 383.1600036621094
+      "2026-08-24": 383.1600036621094,
+      "2026-08-25": 385.6000061035156
     },
     "QQQ": {
       "2026-08-14": 731.0700073242188,
@@ -822,7 +836,8 @@
       "2026-08-19": 716.0800170898438,
       "2026-08-20": 710.9299926757812,
       "2026-08-21": 713.4400024414062,
-      "2026-08-24": 706.3200073242188
+      "2026-08-24": 706.3200073242188,
+      "2026-08-25": 710.719970703125
     },
     "SOXX": {
       "2026-08-14": 550.4199829101562,
@@ -831,7 +846,8 @@
       "2026-08-19": 519.6699829101562,
       "2026-08-20": 522.3499755859375,
       "2026-08-21": 520.0499877929688,
-      "2026-08-24": 506.17999267578125
+      "2026-08-24": 506.17999267578125,
+      "2026-08-25": 514.0599975585938
     },
     "SPY": {
       "2026-08-14": 776.3400268554688,
@@ -840,7 +856,8 @@
       "2026-08-19": 769.0599975585938,
       "2026-08-20": 762.5999755859375,
       "2026-08-21": 765.719970703125,
-      "2026-08-24": 763.469970703125
+      "2026-08-24": 763.469970703125,
+      "2026-08-25": 765.9099731445312
     }
   },
   "theses": {
@@ -1001,6 +1018,250 @@
         "fix": "IPS 4 now applies explicitly to risk claims as well as thesis claims."
       }
     ]
+  },
+  "moonshot_candidates": {
+    "generated": "2026-08-26T03:38:34+00:00",
+    "days_back": 2,
+    "days_scanned": 1,
+    "filings_seen": 1047,
+    "purchase_filings": 102,
+    "clusters_found": 4,
+    "candidates": [
+      {
+        "ticker": "AMR",
+        "issuer": "Alpha Metallurgical Resources, Inc.",
+        "cik": "0001704715",
+        "n_insiders": 2,
+        "total_spend": 16789512.0,
+        "weighted_spend": 25184268.0,
+        "window_days": 90,
+        "latest_buy": "2026-08-25",
+        "buys": [
+          {
+            "insider": "Gorzynski Michael",
+            "roles": [
+              "director",
+              "10% owner",
+              "other"
+            ],
+            "spend": 2089169.0,
+            "dates": [
+              "2026-08-21"
+            ]
+          },
+          {
+            "insider": "Gorzynski Michael",
+            "roles": [
+              "director",
+              "10% owner",
+              "other"
+            ],
+            "spend": 2089169.0,
+            "dates": [
+              "2026-08-21"
+            ]
+          },
+          {
+            "insider": "Gorzynski Michael",
+            "roles": [
+              "director",
+              "10% owner",
+              "other"
+            ],
+            "spend": 2089169.0,
+            "dates": [
+              "2026-08-21"
+            ]
+          },
+          {
+            "insider": "Gorzynski Michael",
+            "roles": [
+              "director",
+              "10% owner",
+              "other"
+            ],
+            "spend": 2089169.0,
+            "dates": [
+              "2026-08-21"
+            ]
+          },
+          {
+            "insider": "Gorzynski Michael",
+            "roles": [
+              "director",
+              "10% owner",
+              "other"
+            ],
+            "spend": 2089169.0,
+            "dates": [
+              "2026-08-21"
+            ]
+          },
+          {
+            "insider": "Gorzynski Michael",
+            "roles": [
+              "director",
+              "10% owner",
+              "other"
+            ],
+            "spend": 2089169.0,
+            "dates": [
+              "2026-08-21"
+            ]
+          },
+          {
+            "insider": "Gorzynski Michael",
+            "roles": [
+              "director",
+              "10% owner",
+              "other"
+            ],
+            "spend": 2089169.0,
+            "dates": [
+              "2026-08-21"
+            ]
+          },
+          {
+            "insider": "Courtis Kenneth S.",
+            "roles": [
+              "director"
+            ],
+            "spend": 1082664.5,
+            "dates": [
+              "2026-08-25"
+            ]
+          },
+          {
+            "insider": "Courtis Kenneth S.",
+            "roles": [
+              "director"
+            ],
+            "spend": 1082664.5,
+            "dates": [
+              "2026-08-25"
+            ]
+          }
+        ],
+        "market_cap": null,
+        "cap_unknown": true,
+        "score": 0.6
+      },
+      {
+        "ticker": "TISI",
+        "issuer": "TEAM INC",
+        "cik": "0000318833",
+        "n_insiders": 2,
+        "total_spend": 596280.0,
+        "weighted_spend": 1306500.0,
+        "window_days": 90,
+        "latest_buy": "2026-08-24",
+        "buys": [
+          {
+            "insider": "Roeder Clinton William",
+            "roles": [
+              "officer",
+              "Chief Financial Officer"
+            ],
+            "spend": 206040.0,
+            "dates": [
+              "2026-08-21"
+            ]
+          },
+          {
+            "insider": "Roeder Clinton William",
+            "roles": [
+              "officer",
+              "Chief Financial Officer"
+            ],
+            "spend": 206040.0,
+            "dates": [
+              "2026-08-21"
+            ]
+          },
+          {
+            "insider": "Horton Anthony R",
+            "roles": [
+              "director"
+            ],
+            "spend": 92100.0,
+            "dates": [
+              "2026-08-21",
+              "2026-08-24"
+            ]
+          },
+          {
+            "insider": "Horton Anthony R",
+            "roles": [
+              "director"
+            ],
+            "spend": 92100.0,
+            "dates": [
+              "2026-08-21",
+              "2026-08-24"
+            ]
+          }
+        ],
+        "market_cap": null,
+        "cap_unknown": true,
+        "score": 0.5495
+      },
+      {
+        "ticker": "HKHC",
+        "issuer": "Horizon Kinetics Holding Corp",
+        "cik": "0000088000",
+        "n_insiders": 2,
+        "total_spend": 118748.0,
+        "weighted_spend": 178122.0,
+        "window_days": 90,
+        "latest_buy": "2026-08-24",
+        "buys": [
+          {
+            "insider": "Rosenthal Brent D",
+            "roles": [
+              "director"
+            ],
+            "spend": 54000.0,
+            "dates": [
+              "2026-08-24"
+            ]
+          },
+          {
+            "insider": "Rosenthal Brent D",
+            "roles": [
+              "director"
+            ],
+            "spend": 54000.0,
+            "dates": [
+              "2026-08-24"
+            ]
+          },
+          {
+            "insider": "Brennan Alice C",
+            "roles": [
+              "director"
+            ],
+            "spend": 5374.0,
+            "dates": [
+              "2026-08-24"
+            ]
+          },
+          {
+            "insider": "Brennan Alice C",
+            "roles": [
+              "director"
+            ],
+            "spend": 5374.0,
+            "dates": [
+              "2026-08-24"
+            ]
+          }
+        ],
+        "market_cap": null,
+        "cap_unknown": true,
+        "score": 0.5
+      }
+    ],
+    "_note": "Candidates, not positions. Each still needs >35% analyst upside, a dated catalyst inside 18 months, and sentiment acceleration (IPS 1) plus the valuation gate (IPS 3a) before purchase. Insider filings are conviction confirmation on a one-year thesis, never an entry trigger (IPS 3)."
   },
   "order": [
     "core",

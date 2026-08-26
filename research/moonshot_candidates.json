@@ -1,0 +1,244 @@
+{
+  "generated": "2026-08-26T03:38:34+00:00",
+  "days_back": 2,
+  "days_scanned": 1,
+  "filings_seen": 1047,
+  "purchase_filings": 102,
+  "clusters_found": 4,
+  "candidates": [
+    {
+      "ticker": "AMR",
+      "issuer": "Alpha Metallurgical Resources, Inc.",
+      "cik": "0001704715",
+      "n_insiders": 2,
+      "total_spend": 16789512.0,
+      "weighted_spend": 25184268.0,
+      "window_days": 90,
+      "latest_buy": "2026-08-25",
+      "buys": [
+        {
+          "insider": "Gorzynski Michael",
+          "roles": [
+            "director",
+            "10% owner",
+            "other"
+          ],
+          "spend": 2089169.0,
+          "dates": [
+            "2026-08-21"
+          ]
+        },
+        {
+          "insider": "Gorzynski Michael",
+          "roles": [
+            "director",
+            "10% owner",
+            "other"
+          ],
+          "spend": 2089169.0,
+          "dates": [
+            "2026-08-21"
+          ]
+        },
+        {
+          "insider": "Gorzynski Michael",
+          "roles": [
+            "director",
+            "10% owner",
+            "other"
+          ],
+          "spend": 2089169.0,
+          "dates": [
+            "2026-08-21"
+          ]
+        },
+        {
+          "insider": "Gorzynski Michael",
+          "roles": [
+            "director",
+            "10% owner",
+            "other"
+          ],
+          "spend": 2089169.0,
+          "dates": [
+            "2026-08-21"
+          ]
+        },
+        {
+          "insider": "Gorzynski Michael",
+          "roles": [
+            "director",
+            "10% owner",
+            "other"
+          ],
+          "spend": 2089169.0,
+          "dates": [
+            "2026-08-21"
+          ]
+        },
+        {
+          "insider": "Gorzynski Michael",
+          "roles": [
+            "director",
+            "10% owner",
+            "other"
+          ],
+          "spend": 2089169.0,
+          "dates": [
+            "2026-08-21"
+          ]
+        },
+        {
+          "insider": "Gorzynski Michael",
+          "roles": [
+            "director",
+            "10% owner",
+            "other"
+          ],
+          "spend": 2089169.0,
+          "dates": [
+            "2026-08-21"
+          ]
+        },
+        {
+          "insider": "Courtis Kenneth S.",
+          "roles": [
+            "director"
+          ],
+          "spend": 1082664.5,
+          "dates": [
+            "2026-08-25"
+          ]
+        },
+        {
+          "insider": "Courtis Kenneth S.",
+          "roles": [
+            "director"
+          ],
+          "spend": 1082664.5,
+          "dates": [
+            "2026-08-25"
+          ]
+        }
+      ],
+      "market_cap": null,
+      "cap_unknown": true,
+      "score": 0.6
+    },
+    {
+      "ticker": "TISI",
+      "issuer": "TEAM INC",
+      "cik": "0000318833",
+      "n_insiders": 2,
+      "total_spend": 596280.0,
+      "weighted_spend": 1306500.0,
+      "window_days": 90,
+      "latest_buy": "2026-08-24",
+      "buys": [
+        {
+          "insider": "Roeder Clinton William",
+          "roles": [
+            "officer",
+            "Chief Financial Officer"
+          ],
+          "spend": 206040.0,
+          "dates": [
+            "2026-08-21"
+          ]
+        },
+        {
+          "insider": "Roeder Clinton William",
+          "roles": [
+            "officer",
+            "Chief Financial Officer"
+          ],
+          "spend": 206040.0,
+          "dates": [
+            "2026-08-21"
+          ]
+        },
+        {
+          "insider": "Horton Anthony R",
+          "roles": [
+            "director"
+          ],
+          "spend": 92100.0,
+          "dates": [
+            "2026-08-21",
+            "2026-08-24"
+          ]
+        },
+        {
+          "insider": "Horton Anthony R",
+          "roles": [
+            "director"
+          ],
+          "spend": 92100.0,
+          "dates": [
+            "2026-08-21",
+            "2026-08-24"
+          ]
+        }
+      ],
+      "market_cap": null,
+      "cap_unknown": true,
+      "score": 0.5495
+    },
+    {
+      "ticker": "HKHC",
+      "issuer": "Horizon Kinetics Holding Corp",
+      "cik": "0000088000",
+      "n_insiders": 2,
+      "total_spend": 118748.0,
+      "weighted_spend": 178122.0,
+      "window_days": 90,
+      "latest_buy": "2026-08-24",
+      "buys": [
+        {
+          "insider": "Rosenthal Brent D",
+          "roles": [
+            "director"
+          ],
+          "spend": 54000.0,
+          "dates": [
+            "2026-08-24"
+          ]
+        },
+        {
+          "insider": "Rosenthal Brent D",
+          "roles": [
+            "director"
+          ],
+          "spend": 54000.0,
+          "dates": [
+            "2026-08-24"
+          ]
+        },
+        {
+          "insider": "Brennan Alice C",
+          "roles": [
+            "director"
+          ],
+          "spend": 5374.0,
+          "dates": [
+            "2026-08-24"
+          ]
+        },
+        {
+          "insider": "Brennan Alice C",
+          "roles": [
+            "director"
+          ],
+          "spend": 5374.0,
+          "dates": [
+            "2026-08-24"
+          ]
+        }
+      ],
+      "market_cap": null,
+      "cap_unknown": true,
+      "score": 0.5
+    }
+  ],
+  "_note": "Candidates, not positions. Each still needs >35% analyst upside, a dated catalyst inside 18 months, and sentiment acceleration (IPS 1) plus the valuation gate (IPS 3a) before purchase. Insider filings are conviction confirmation on a one-year thesis, never an entry trigger (IPS 3)."
+}

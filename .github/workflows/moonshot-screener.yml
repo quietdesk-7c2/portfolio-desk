@@ -21,6 +21,11 @@ on:
   schedule:
     - cron: "0 14 * * 6"     # Saturday 14:00 UTC -- markets closed, no rush
   workflow_dispatch:          # run by hand from the Actions tab
+    inputs:
+      days_back:
+        description: "Days to scan back (small number = quick manual test)"
+        required: false
+        default: "90"
 
 permissions:
   contents: write
@@ -50,7 +55,7 @@ jobs:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           DASHBOARD_URL: ${{ vars.DASHBOARD_URL }}
-        run: python -m engine.screener 90
+        run: python -m engine.screener ${{ (github.event_name == 'workflow_dispatch' && inputs.days_back) || 90 }}
 
       - name: Rebuild dashboard with the new candidates
         env:

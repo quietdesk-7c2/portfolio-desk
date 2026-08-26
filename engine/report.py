@@ -86,6 +86,17 @@ def _load_watchlist() -> dict:
         return {}
 
 
+def _load_moonshot_candidates() -> dict:
+    """research/moonshot_candidates.json (engine/screener.py) becomes the
+    Candidates tab. Sourcing only -- these still need analyst upside, a dated
+    catalyst and sentiment acceleration before anything is bought (IPS 1)."""
+    try:
+        with open(os.path.join(RESEARCH_DIR, "moonshot_candidates.json")) as fh:
+            return json.load(fh)
+    except Exception:
+        return {}
+
+
 def _load_theses() -> dict:
     """research/<thesis_id>.md files become the 'why do we own this' panel."""
     out = {}
@@ -146,6 +157,7 @@ def build(portfolios: dict, quotes: dict) -> str:
         "benchmarks": benches,
         "theses": _load_theses(),
         "watchlist": _load_watchlist(),
+        "moonshot_candidates": _load_moonshot_candidates(),
         "order": ["core", "moonshot", "ai"],
     }
 
@@ -380,7 +392,12 @@ footer{text-align:center;color:var(--ink-3);font-size:10.5px;margin-top:26px;lin
 <script>
 const DATA = /*__DATA__*/null;
 const LIVE_KEY = "__LIVEKEY__";
-let chart=null, active=(DATA&&DATA.order&&DATA.order[0])||"core", range="ALL";
+function initialTab(){
+  const h=(location.hash||"").slice(1);
+  const valid=h&&(h==="radar"||h==="candidates"||(DATA&&DATA.order&&DATA.order.includes(h)));
+  return valid?h:((DATA&&DATA.order&&DATA.order[0])||"core");
+}
+let chart=null, active=initialTab(), range="ALL";
 const SV={core:"--s-core",moonshot:"--s-moon",ai:"--s-ai"};
 const cv=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
 const money=v=>(v<0?"-":"")+"$"+Math.abs(v).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
@@ -414,12 +431,15 @@ function head(){
 function tabs(){
   const el=document.getElementById("tabs");
   const wl=(DATA.watchlist&&DATA.watchlist.themes)||[];
+  const cand=(DATA.moonshot_candidates&&DATA.moonshot_candidates.candidates)||[];
   el.innerHTML=DATA.order.map(k=>{const p=DATA.portfolios[k];
     return `<button class="tab" role="tab" data-k="${k}" aria-selected="${k===active}">
       <span class="dot" style="background:var(${SV[k]})"></span>${esc(p.name)}</button>`}).join("")
+    +(cand.length?`<button class="tab" role="tab" data-k="candidates" aria-selected="${active==="candidates"}">
+      <span class="dot" style="background:var(--s-moon)"></span>Candidates</button>`:"")
     +(wl.length?`<button class="tab" role="tab" data-k="radar" aria-selected="${active==="radar"}">
       <span class="dot" style="background:var(--ink-3)"></span>Radar</button>`:"");
-  el.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{active=b.dataset.k;tabs();panel()});
+  el.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{active=b.dataset.k;location.hash=active;tabs();panel()});
 }
 
 function series(p){
@@ -476,6 +496,7 @@ function drawChart(p){
 }
 
 function panel(){
+  if(active==="candidates"){candidates();return}
   if(active==="radar"){radar();return}
   const p=DATA.portfolios[active], c=`var(${SV[active]})`;
   const eq=p.equity, hold=p.holdings||[];
@@ -639,6 +660,52 @@ function radar(){
     +cards
     +(oq?`<div class="card"><h2>Open questions</h2><p class="note">Carried into the next cycle.</p><ul class="rlist">${oq}</ul></div>`:"")
     +(ll?`<div class="card"><h2>Lesson log</h2><p class="note">Mistakes and what changed because of them. Public on purpose.</p>${ll}</div>`:"");
+}
+
+function candidates(){
+  if(chart){chart.destroy();chart=null}
+  const mc=DATA.moonshot_candidates||{}, list=mc.candidates||[];
+  const money0=v=>"$"+Math.round(v||0).toLocaleString("en-US");
+  const scoreCls=s=>s>=0.7?"bought":s>=0.4?"":"rej";
+  const cards=list.map(c=>{
+    const cap=c.market_cap?money0(c.market_cap):(c.cap_unknown?"unknown":"—");
+    const merged={};
+    (c.buys||[]).forEach(b=>{
+      const k=(b.insider||"").toLowerCase();
+      const m=merged[k]||(merged[k]={insider:b.insider,roles:new Set(),spend:0,dates:new Set()});
+      (b.roles||[]).forEach(r=>m.roles.add(r));
+      m.spend+=b.spend||0;
+      (b.dates||[]).forEach(d=>m.dates.add(d));
+    });
+    const buys=Object.values(merged).map(b=>`<div class="veh"><b>${esc(b.insider||"")}</b>
+      ${esc([...b.roles].join(", "))} — ${money0(b.spend)}
+      <span class="dim">(${esc([...b.dates].join(", "))})</span></div>`).join("");
+    const edgar=c.cik?`https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=${encodeURIComponent(c.cik)}&type=4`:"";
+    return `<div class="card">
+      <div class="rhead"><h2>${esc(c.ticker)} <span class="dim" style="font-weight:500;font-size:12px">${esc(c.issuer||"")}</span></h2>
+        <span class="spill ${scoreCls(c.score)}">score ${(c.score??0).toFixed(2)}</span></div>
+      <div class="rgrid">
+        <div class="rm"><span class="lbl">Insiders</span><span class="v">${c.n_insiders??"—"}</span></div>
+        <div class="rm"><span class="lbl">Total spend</span><span class="v">${money0(c.total_spend)}</span></div>
+        <div class="rm"><span class="lbl">Market cap</span><span class="v">${esc(cap)}</span></div>
+        <div class="rm"><span class="lbl">Latest buy</span><span class="v">${esc(c.latest_buy||"—")}</span></div>
+      </div>
+      ${buys?`<div class="rsec"><span class="lbl">Buys</span>${buys}</div>`:""}
+      ${edgar?`<div class="rsec"><a href="${edgar}" target="_blank" rel="noopener" class="rtext">View Form 4 filings on EDGAR →</a></div>`:""}
+    </div>`}).join("");
+  document.getElementById("panel").innerHTML=
+    `<div class="card"><h2>Moonshot candidates</h2>
+      <p class="note">SEC Form 4 insider-cluster buys — sourcing only. Each still needs
+        analyst upside &gt;35%, a dated catalyst inside 18 months, and sentiment
+        acceleration (IPS 1) before anything is bought.</p>
+      <div class="rgrid">
+        <div class="rm"><span class="lbl">Scanned</span><span class="v">${mc.days_scanned??"—"} days</span></div>
+        <div class="rm"><span class="lbl">Clusters</span><span class="v">${mc.clusters_found??"—"}</span></div>
+        <div class="rm"><span class="lbl">Candidates</span><span class="v">${list.length}</span></div>
+        <div class="rm"><span class="lbl">As of</span><span class="v">${mc.generated?new Date(mc.generated).toLocaleDateString("en-US",{month:"short",day:"numeric"}):"—"}</span></div>
+      </div>
+    </div>`
+    +(cards||`<div class="card"><div class="empty">No candidates cleared the filters this run.</div></div>`);
 }
 
 /* ======================================================================

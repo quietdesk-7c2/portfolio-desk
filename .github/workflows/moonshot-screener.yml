@@ -8,6 +8,14 @@ name: Moonshot screener
 # behind it. Output is CANDIDATES, not positions -- each still needs the
 # other three Moonshot legs (analyst upside, dated catalyst, sentiment
 # acceleration) before anything is bought.
+#
+# Publishes to the same GitHub Pages deployment as intraday.yml (this repo's
+# Pages source is "workflow", not the docs/ branch -- committing docs/ alone
+# does not update the live site) and pushes one ntfy notification with a
+# #candidates deep link, so results show up on your phone within a minute or
+# two of the scan finishing, not whenever intraday.yml next happens to run
+# (it only runs on weekday market hours, which a Saturday scan would miss
+# until Monday).
 
 on:
   schedule:
@@ -16,6 +24,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: portfolio-desk-screener
@@ -25,6 +35,9 @@ jobs:
   scan:
     runs-on: ubuntu-latest
     timeout-minutes: 350
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v5
 
@@ -35,13 +48,30 @@ jobs:
       - name: Scan SEC Form 4 filings for insider clusters
         env:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          DASHBOARD_URL: ${{ vars.DASHBOARD_URL }}
         run: python -m engine.screener 90
 
-      - name: Commit candidates
+      - name: Rebuild dashboard with the new candidates
+        env:
+          ALPHAVANTAGE_KEY: ${{ secrets.ALPHAVANTAGE_KEY }}
+          FINNHUB_KEY: ${{ secrets.FINNHUB_KEY }}
+          LIVE_QUOTE_KEY: ${{ vars.LIVE_QUOTE_KEY }}
+          DASHBOARD_URL: ${{ vars.DASHBOARD_URL }}
+        run: python -m engine.run report
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - id: deploy
+        uses: actions/deploy-pages@v4
+
+      - name: Commit candidates and dashboard
         run: |
           git config user.name  "portfolio-desk[bot]"
           git config user.email "portfolio-desk@users.noreply.github.com"
-          git add research/moonshot_candidates.json
+          git add research/moonshot_candidates.json docs/index.html docs/data.json
           if git diff --staged --quiet; then
             echo "No new candidates."
           else

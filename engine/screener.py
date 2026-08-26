@@ -469,7 +469,9 @@ def run(days_back: int = 90, out_path: str | None = None,
 
 if __name__ == "__main__":
     import sys
+    from . import notify
     from .config import RESEARCH_DIR
+    DASHBOARD_URL = os.environ.get("DASHBOARD_URL", "")
     back = int(sys.argv[1]) if len(sys.argv) > 1 else 90
     res = run(days_back=back,
               out_path=os.path.join(RESEARCH_DIR, "moonshot_candidates.json"))
@@ -480,3 +482,16 @@ if __name__ == "__main__":
         cap = f"${c['market_cap']/1e9:.1f}B" if c.get("market_cap") else "cap?"
         print(f"  {c['score']:.3f}  {c['ticker']:<6} {c['n_insiders']} insiders  "
               f"${c['total_spend']:>12,.0f}  {cap:<8} {c['issuer'][:38]}")
+
+    if res["candidates"]:
+        top = res["candidates"][:5]
+        lines = [f"{c['ticker']}  {c['n_insiders']} insiders  ${c['total_spend']:,.0f}"
+                 for c in top]
+        click = f"{DASHBOARD_URL}#candidates" if DASHBOARD_URL else ""
+        notify.message(
+            f"🔍 Moonshot screener — {len(res['candidates'])} candidates",
+            f"Scanned {res['days_scanned']} days, {res['clusters_found']} clusters.\n\n"
+            + "\n".join(lines)
+            + "\n\n_Candidates, not positions — each still needs the other three IPS legs._",
+            dashboard_url=click,
+        )

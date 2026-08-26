@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-26T03:38:34+00:00",
+  "generated": "2026-08-26T03:46:34+00:00",
   "inception": "2026-08-14",
   "total": {
     "equity": 293638.95,
@@ -261,7 +261,7 @@
           "price_source": "yfinance"
         }
       ],
-      "last_marked": "2026-08-26T03:38:34+00:00",
+      "last_marked": "2026-08-26T03:46:34+00:00",
       "nav_history": [
         {
           "date": "2026-08-16",
@@ -366,7 +366,7 @@
           "price_source": "yfinance"
         }
       ],
-      "last_marked": "2026-08-26T03:38:34+00:00",
+      "last_marked": "2026-08-26T03:46:34+00:00",
       "nav_history": [
         {
           "date": "2026-08-16",
@@ -767,7 +767,7 @@
           "price_source": "yfinance"
         }
       ],
-      "last_marked": "2026-08-26T03:38:34+00:00",
+      "last_marked": "2026-08-26T03:46:34+00:00",
       "nav_history": [
         {
           "date": "2026-08-16",
@@ -1020,7 +1020,7 @@
     ]
   },
   "moonshot_candidates": {
-    "generated": "2026-08-26T03:38:34+00:00",
+    "generated": "2026-08-26T03:46:34+00:00",
     "days_back": 2,
     "days_scanned": 1,
     "filings_seen": 1047,

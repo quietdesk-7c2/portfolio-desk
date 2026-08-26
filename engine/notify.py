@@ -6,10 +6,25 @@ so the system still runs fine before you've set notifications up.
 """
 from __future__ import annotations
 
+import base64
 import json
 import urllib.request
 
 from .config import NTFY_SERVER, NTFY_TOPIC, PORTFOLIOS
+
+
+def _header_safe(s: str) -> str:
+    """HTTP headers are ASCII/Latin-1 only, so a title with an em-dash or emoji
+    (both outside that range) crashes urllib before the request is even sent.
+    ntfy's own spec requires RFC 2047 word-encoding for non-ASCII headers --
+    see https://docs.ntfy.sh/publish/#limitations -- not just any UTF-8-safe
+    workaround, so that the server decodes it correctly on the other end."""
+    try:
+        s.encode("ascii")
+        return s
+    except UnicodeEncodeError:
+        b64 = base64.b64encode(s.encode("utf-8")).decode("ascii")
+        return f"=?UTF-8?B?{b64}?="
 
 
 def _send(title: str, body: str, *, priority: str = "default",
@@ -18,7 +33,7 @@ def _send(title: str, body: str, *, priority: str = "default",
         print(f"[ntfy disabled] {title} :: {body}")
         return False
     headers = {
-        "Title": title.encode("utf-8"),
+        "Title": _header_safe(title),
         "Priority": priority,
         "Tags": tags,
         "Markdown": "yes",
@@ -28,7 +43,7 @@ def _send(title: str, body: str, *, priority: str = "default",
     req = urllib.request.Request(
         f"{NTFY_SERVER.rstrip('/')}/{NTFY_TOPIC}",
         data=body.encode("utf-8"),
-        headers={k: (v.decode() if isinstance(v, bytes) else v) for k, v in headers.items()},
+        headers=headers,
         method="POST",
     )
     try:

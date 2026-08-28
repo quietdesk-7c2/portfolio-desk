@@ -11,11 +11,12 @@ name: Moonshot screener
 #
 # Publishes to the same GitHub Pages deployment as intraday.yml (this repo's
 # Pages source is "workflow", not the docs/ branch -- committing docs/ alone
-# does not update the live site) and pushes one ntfy notification with a
-# #candidates deep link, so results show up on your phone within a minute or
-# two of the scan finishing, not whenever intraday.yml next happens to run
+# does not update the live site), so results show up within a minute or two
+# of the scan finishing rather than whenever intraday.yml next happens to run
 # (it only runs on weekday market hours, which a Saturday scan would miss
-# until Monday).
+# until Monday). Notification is the combined radar+candidates digest (see
+# engine/run.py:cmd_digest) -- one push for both, not a separate screener-only
+# alert.
 
 on:
   schedule:
@@ -53,17 +54,16 @@ jobs:
       - name: Scan SEC Form 4 filings for insider clusters
         env:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
-          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-          DASHBOARD_URL: ${{ vars.DASHBOARD_URL }}
         run: python -m engine.screener ${{ (github.event_name == 'workflow_dispatch' && inputs.days_back) || 90 }}
 
-      - name: Rebuild dashboard with the new candidates
+      - name: Rebuild dashboard and send the combined digest
         env:
           ALPHAVANTAGE_KEY: ${{ secrets.ALPHAVANTAGE_KEY }}
           FINNHUB_KEY: ${{ secrets.FINNHUB_KEY }}
           LIVE_QUOTE_KEY: ${{ vars.LIVE_QUOTE_KEY }}
           DASHBOARD_URL: ${{ vars.DASHBOARD_URL }}
-        run: python -m engine.run report
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: python -m engine.run digest
 
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -76,7 +76,8 @@ jobs:
         run: |
           git config user.name  "portfolio-desk[bot]"
           git config user.email "portfolio-desk@users.noreply.github.com"
-          git add research/moonshot_candidates.json docs/index.html docs/data.json
+          git add research/moonshot_candidates.json docs/index.html docs/data.json \
+                  state/candidates_snapshot.json state/watchlist_snapshot.json
           if git diff --staged --quiet; then
             echo "No new candidates."
           else

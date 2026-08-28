@@ -6,6 +6,7 @@ Entry points.
     python -m engine.run execute     # process orders/pending.json
     python -m engine.run daily       # mark, enforce rules, publish, notify
     python -m engine.run report      # rebuild the dashboard only
+    python -m engine.run digest      # rebuild + send the radar/candidates digest, no rules engine
 
 `daily` is what the scheduler runs. It is safe to run repeatedly -- marking and
 history are idempotent, and automatic rule actions only fire once per condition.
@@ -92,6 +93,61 @@ def _radar_changes(watchlist: dict) -> list[str]:
         with open(snap_path, "w") as fh:
             json.dump(themes, fh)
     return lines
+
+
+def _load_moonshot_candidates() -> dict:
+    try:
+        with open(os.path.join(RESEARCH_DIR, "moonshot_candidates.json")) as fh:
+            return json.load(fh)
+    except Exception:
+        return {}
+
+
+def _candidate_changes(candidates_json: dict) -> list[str]:
+    """New tickers since the last time anyone looked, so a name that has sat
+    in the 90-day window for three straight scans doesn't renotify every
+    time -- only a cluster that's actually new gets a line. The snapshot is
+    replaced wholesale each run (not unioned), so a ticker that ages out and
+    later forms a genuinely fresh cluster is correctly treated as new again."""
+    current = {c["ticker"]: c for c in candidates_json.get("candidates", []) if c.get("ticker")}
+    snap_path = os.path.join(STATE_DIR, "candidates_snapshot.json")
+    try:
+        with open(snap_path) as fh:
+            prev = set(json.load(fh))
+    except Exception:
+        prev = set()
+
+    lines = [f"{t}  {c['n_insiders']} insiders  ${c['total_spend']:,.0f}"
+             for t, c in current.items() if t not in prev]
+
+    if set(current) != prev:
+        os.makedirs(STATE_DIR, exist_ok=True)
+        with open(snap_path, "w") as fh:
+            json.dump(sorted(current), fh)
+    return lines
+
+
+def _send_digest() -> None:
+    """One combined push for the emerging-theme radar and the Moonshot
+    insider-cluster screener, instead of two separate notifications for two
+    things that are both fundamentally 'here's what's new to read about' --
+    not a trading signal in either case. Silent if nothing changed."""
+    radar_lines = _radar_changes(_load_watchlist())
+    cand_lines = _candidate_changes(_load_moonshot_candidates())
+    if not radar_lines and not cand_lines:
+        return
+    sections = []
+    if radar_lines:
+        sections.append("RADAR\n" + "\n".join(radar_lines))
+    if cand_lines:
+        sections.append("MOONSHOT CANDIDATES\n" + "\n".join(cand_lines))
+    # Deep-link to whichever tab actually has something new; radar wins a tie.
+    anchor = "#radar" if radar_lines else "#candidates"
+    notify.message(
+        "🧭 Portfolio Desk digest",
+        "\n\n".join(sections),
+        dashboard_url=f"{DASHBOARD_URL}{anchor}" if DASHBOARD_URL else "",
+    )
 
 
 def cmd_execute() -> None:
@@ -264,13 +320,7 @@ def cmd_daily(skip_execute_check: bool = False) -> None:
     from .report import build
     build(pfs, quotes)
 
-    radar_changes = _radar_changes(_load_watchlist())
-    if radar_changes:
-        notify.message(
-            "🧭 Radar updated",
-            "\n".join(radar_changes),
-            dashboard_url=f"{DASHBOARD_URL}#radar" if DASHBOARD_URL else "",
-        )
+    _send_digest()
 
     _log("\n" + "=" * 62)
     for pf in pfs.values():
@@ -294,6 +344,16 @@ def cmd_report() -> None:
     build(pfs, quotes)
 
 
+def cmd_digest() -> None:
+    """Rebuild the dashboard and send the combined radar/candidates digest,
+    without the daily mark-to-market pipeline -- for schedules that fall
+    outside market days, like the Saturday Moonshot scan. cmd_daily already
+    calls _send_digest() itself on the weekday path; this is the equivalent
+    for a workflow that has no reason to run the rules engine on a weekend."""
+    cmd_report()
+    _send_digest()
+
+
 def main() -> None:
     cmd = (sys.argv[1] if len(sys.argv) > 1 else "daily").lower()
     os.makedirs(ORDERS_DIR, exist_ok=True)
@@ -306,6 +366,8 @@ def main() -> None:
         cmd_execute()
     elif cmd == "report":
         cmd_report()
+    elif cmd == "digest":
+        cmd_digest()
     elif cmd == "daily":
         cmd_daily()
     else:

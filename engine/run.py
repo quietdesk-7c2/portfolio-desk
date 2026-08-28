@@ -19,7 +19,7 @@ import sys
 from datetime import datetime, timezone
 
 from . import notify
-from .config import ALL_BENCHMARKS, ORDERS_DIR, PORTFOLIOS, RESEARCH_DIR
+from .config import ALL_BENCHMARKS, ORDERS_DIR, PORTFOLIOS, RESEARCH_DIR, STATE_DIR
 from .data import (PriceUnavailable, get_previous_close, get_quotes,
                    selftest as data_selftest)
 from .portfolio import Portfolio, load_all
@@ -50,6 +50,48 @@ def _all_tickers(pfs: dict[str, Portfolio]) -> list[str]:
     for pf in pfs.values():
         tickers.update(pf.positions.keys())
     return sorted(tickers)
+
+
+def _load_watchlist() -> dict:
+    try:
+        with open(os.path.join(RESEARCH_DIR, "watchlist.json")) as fh:
+            return json.load(fh)
+    except Exception:
+        return {}
+
+
+def _radar_changes(watchlist: dict) -> list[str]:
+    """Compare today's research/watchlist.json against the last-seen snapshot
+    in state/. The weekly discovery-scan routine commits new/changed themes
+    silently -- this is what turns that into a push the first time it's
+    actually worth knowing about, instead of requiring a manual check of the
+    dashboard. Snapshot only tracks name+status per theme id, not a full diff
+    of the thesis prose."""
+    themes = {t["id"]: {"name": t.get("name", t["id"]), "status": t.get("status", "")}
+              for t in watchlist.get("themes", []) if t.get("id")}
+    snap_path = os.path.join(STATE_DIR, "watchlist_snapshot.json")
+    try:
+        with open(snap_path) as fh:
+            prev = json.load(fh)
+    except Exception:
+        prev = {}
+
+    lines = []
+    for tid, t in themes.items():
+        old = prev.get(tid)
+        if old is None:
+            lines.append(f"NEW: {t['name']}")
+        elif old.get("status") != t["status"]:
+            lines.append(f"{t['name']}: {old.get('status')} → {t['status']}")
+    for tid, old in prev.items():
+        if tid not in themes:
+            lines.append(f"REMOVED: {old.get('name', tid)}")
+
+    if themes != prev:
+        os.makedirs(STATE_DIR, exist_ok=True)
+        with open(snap_path, "w") as fh:
+            json.dump(themes, fh)
+    return lines
 
 
 def cmd_execute() -> None:
@@ -221,6 +263,14 @@ def cmd_daily(skip_execute_check: bool = False) -> None:
 
     from .report import build
     build(pfs, quotes)
+
+    radar_changes = _radar_changes(_load_watchlist())
+    if radar_changes:
+        notify.message(
+            "🧭 Radar updated",
+            "\n".join(radar_changes),
+            dashboard_url=f"{DASHBOARD_URL}#radar" if DASHBOARD_URL else "",
+        )
 
     _log("\n" + "=" * 62)
     for pf in pfs.values():

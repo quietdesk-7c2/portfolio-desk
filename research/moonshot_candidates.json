@@ -1,243 +1,202 @@
 {
-  "generated": "2026-08-26T03:46:34+00:00",
+  "generated": "2026-08-28T03:05:22+00:00",
   "days_back": 2,
   "days_scanned": 1,
-  "filings_seen": 1047,
-  "purchase_filings": 102,
-  "clusters_found": 4,
+  "filings_seen": 870,
+  "purchase_filings": 106,
+  "clusters_found": 3,
   "candidates": [
     {
-      "ticker": "AMR",
-      "issuer": "Alpha Metallurgical Resources, Inc.",
-      "cik": "0001704715",
-      "n_insiders": 2,
-      "total_spend": 16789512.0,
-      "weighted_spend": 25184268.0,
+      "ticker": "BMRA",
+      "issuer": "BIOMERICA INC",
+      "cik": "0000073290",
+      "n_insiders": 5,
+      "total_spend": 316000.0,
+      "weighted_spend": 624000.0,
       "window_days": 90,
-      "latest_buy": "2026-08-25",
+      "latest_buy": "2026-08-26",
       "buys": [
         {
-          "insider": "Gorzynski Michael",
+          "insider": "Irani Zackary S.",
           "roles": [
             "director",
-            "10% owner",
-            "other"
+            "officer",
+            "Chief Executive Officer"
           ],
-          "spend": 2089169.0,
+          "spend": 50000.0,
           "dates": [
-            "2026-08-21"
+            "2026-08-26"
           ]
         },
         {
-          "insider": "Gorzynski Michael",
-          "roles": [
-            "director",
-            "10% owner",
-            "other"
-          ],
-          "spend": 2089169.0,
-          "dates": [
-            "2026-08-21"
-          ]
-        },
-        {
-          "insider": "Gorzynski Michael",
-          "roles": [
-            "director",
-            "10% owner",
-            "other"
-          ],
-          "spend": 2089169.0,
-          "dates": [
-            "2026-08-21"
-          ]
-        },
-        {
-          "insider": "Gorzynski Michael",
-          "roles": [
-            "director",
-            "10% owner",
-            "other"
-          ],
-          "spend": 2089169.0,
-          "dates": [
-            "2026-08-21"
-          ]
-        },
-        {
-          "insider": "Gorzynski Michael",
-          "roles": [
-            "director",
-            "10% owner",
-            "other"
-          ],
-          "spend": 2089169.0,
-          "dates": [
-            "2026-08-21"
-          ]
-        },
-        {
-          "insider": "Gorzynski Michael",
-          "roles": [
-            "director",
-            "10% owner",
-            "other"
-          ],
-          "spend": 2089169.0,
-          "dates": [
-            "2026-08-21"
-          ]
-        },
-        {
-          "insider": "Gorzynski Michael",
-          "roles": [
-            "director",
-            "10% owner",
-            "other"
-          ],
-          "spend": 2089169.0,
-          "dates": [
-            "2026-08-21"
-          ]
-        },
-        {
-          "insider": "Courtis Kenneth S.",
+          "insider": "Gary M. Huff",
           "roles": [
             "director"
           ],
-          "spend": 1082664.5,
+          "spend": 50000.0,
           "dates": [
-            "2026-08-25"
+            "2026-08-20"
           ]
         },
         {
-          "insider": "Courtis Kenneth S.",
+          "insider": "Gary M. Huff",
           "roles": [
             "director"
           ],
-          "spend": 1082664.5,
+          "spend": 50000.0,
           "dates": [
-            "2026-08-25"
+            "2026-08-20"
+          ]
+        },
+        {
+          "insider": "Irani Zackary S.",
+          "roles": [
+            "director",
+            "officer",
+            "Chief Executive Officer"
+          ],
+          "spend": 50000.0,
+          "dates": [
+            "2026-08-26"
+          ]
+        },
+        {
+          "insider": "BARBIERI ALLEN",
+          "roles": [
+            "director",
+            "officer",
+            "Executive Vice Chairman"
+          ],
+          "spend": 32000.0,
+          "dates": [
+            "2026-08-26"
+          ]
+        },
+        {
+          "insider": "BARBIERI ALLEN",
+          "roles": [
+            "director",
+            "officer",
+            "Executive Vice Chairman"
+          ],
+          "spend": 32000.0,
+          "dates": [
+            "2026-08-26"
+          ]
+        },
+        {
+          "insider": "MOATAZEDI DAVID",
+          "roles": [
+            "director"
+          ],
+          "spend": 16000.0,
+          "dates": [
+            "2026-08-26"
+          ]
+        },
+        {
+          "insider": "MOATAZEDI DAVID",
+          "roles": [
+            "director"
+          ],
+          "spend": 16000.0,
+          "dates": [
+            "2026-08-26"
+          ]
+        },
+        {
+          "insider": "Chin Eric",
+          "roles": [
+            "director"
+          ],
+          "spend": 10000.0,
+          "dates": [
+            "2026-08-26"
+          ]
+        },
+        {
+          "insider": "Chin Eric",
+          "roles": [
+            "director"
+          ],
+          "spend": 10000.0,
+          "dates": [
+            "2026-08-26"
           ]
         }
       ],
       "market_cap": null,
       "cap_unknown": true,
-      "score": 0.6
+      "score": 0.8312
     },
     {
-      "ticker": "TISI",
-      "issuer": "TEAM INC",
-      "cik": "0000318833",
+      "ticker": "LIEN",
+      "issuer": "Chicago Atlantic BDC, Inc.",
+      "cik": "0001843162",
       "n_insiders": 2,
-      "total_spend": 596280.0,
-      "weighted_spend": 1306500.0,
+      "total_spend": 189884.14,
+      "weighted_spend": 348299.3,
       "window_days": 90,
-      "latest_buy": "2026-08-24",
+      "latest_buy": "2026-08-27",
       "buys": [
         {
-          "insider": "Roeder Clinton William",
+          "insider": "Gordon Scott",
+          "roles": [
+            "director",
+            "officer",
+            "Co-Chief Investment Officer"
+          ],
+          "spend": 78672.45,
+          "dates": [
+            "2026-08-25",
+            "2026-08-26",
+            "2026-08-27"
+          ]
+        },
+        {
+          "insider": "Gordon Scott",
+          "roles": [
+            "director",
+            "officer",
+            "Co-Chief Investment Officer"
+          ],
+          "spend": 78672.45,
+          "dates": [
+            "2026-08-25",
+            "2026-08-26",
+            "2026-08-27"
+          ]
+        },
+        {
+          "insider": "Colonna Bernardino",
           "roles": [
             "officer",
-            "Chief Financial Officer"
+            "President"
           ],
-          "spend": 206040.0,
+          "spend": 16269.62,
           "dates": [
-            "2026-08-21"
+            "2026-08-25",
+            "2026-08-26",
+            "2026-08-27"
           ]
         },
         {
-          "insider": "Roeder Clinton William",
+          "insider": "Colonna Bernardino",
           "roles": [
             "officer",
-            "Chief Financial Officer"
+            "President"
           ],
-          "spend": 206040.0,
+          "spend": 16269.62,
           "dates": [
-            "2026-08-21"
-          ]
-        },
-        {
-          "insider": "Horton Anthony R",
-          "roles": [
-            "director"
-          ],
-          "spend": 92100.0,
-          "dates": [
-            "2026-08-21",
-            "2026-08-24"
-          ]
-        },
-        {
-          "insider": "Horton Anthony R",
-          "roles": [
-            "director"
-          ],
-          "spend": 92100.0,
-          "dates": [
-            "2026-08-21",
-            "2026-08-24"
+            "2026-08-25",
+            "2026-08-26",
+            "2026-08-27"
           ]
         }
       ],
       "market_cap": null,
       "cap_unknown": true,
-      "score": 0.5495
-    },
-    {
-      "ticker": "HKHC",
-      "issuer": "Horizon Kinetics Holding Corp",
-      "cik": "0000088000",
-      "n_insiders": 2,
-      "total_spend": 118748.0,
-      "weighted_spend": 178122.0,
-      "window_days": 90,
-      "latest_buy": "2026-08-24",
-      "buys": [
-        {
-          "insider": "Rosenthal Brent D",
-          "roles": [
-            "director"
-          ],
-          "spend": 54000.0,
-          "dates": [
-            "2026-08-24"
-          ]
-        },
-        {
-          "insider": "Rosenthal Brent D",
-          "roles": [
-            "director"
-          ],
-          "spend": 54000.0,
-          "dates": [
-            "2026-08-24"
-          ]
-        },
-        {
-          "insider": "Brennan Alice C",
-          "roles": [
-            "director"
-          ],
-          "spend": 5374.0,
-          "dates": [
-            "2026-08-24"
-          ]
-        },
-        {
-          "insider": "Brennan Alice C",
-          "roles": [
-            "director"
-          ],
-          "spend": 5374.0,
-          "dates": [
-            "2026-08-24"
-          ]
-        }
-      ],
-      "market_cap": null,
-      "cap_unknown": true,
-      "score": 0.5
+      "score": 0.5167
     }
   ],
   "_note": "Candidates, not positions. Each still needs >35% analyst upside, a dated catalyst inside 18 months, and sentiment acceleration (IPS 1) plus the valuation gate (IPS 3a) before purchase. Insider filings are conviction confirmation on a one-year thesis, never an entry trigger (IPS 3)."

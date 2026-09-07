@@ -264,7 +264,7 @@
   "high_water": 100683.01223600001,
   "status": "active",
   "status_note": "",
-  "last_marked": "2026-09-04T23:02:47+00:00",
+  "last_marked": "2026-09-07T23:29:23+00:00",
   "marks": {
     "NVDA": {
       "price": 230.36,
@@ -339,7 +339,7 @@
       }
     },
     "AVGO": {
-      "price": 357.895,
+      "price": 357.9,
       "asof": "2026-09-04",
       "source": "yfinance",
       "prev": {

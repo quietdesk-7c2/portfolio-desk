@@ -1,5 +1,5 @@
 {
-  "_purpose": "Emerging theme radar. The client's instruction: space data centers was an EXAMPLE of a class - themes with low absolute chatter and rising interest, where the upside is caught early. This file tracks those themes between cycles, so the hunt is systematic rather than whatever I happened to think of that week. Reviewed every two weeks. IPS 3b.",
+  "_purpose": "Emerging theme radar. The client's instruction: space data centers was an EXAMPLE of a class - themes with low absolute chatter and rising interest, where the upside is caught early. This file tracks those themes between cycles, so the hunt is systematic rather than whatever I happened to think of that week. Reviewed every three weeks. IPS 3b.",
   "_scoring": {
     "chatter": "LOW / MEDIUM / HIGH - absolute mainstream coverage. LOW is what we want.",
     "trajectory": "RISING / FLAT / FALLING - direction of interest. RISING + LOW is the target quadrant.",
@@ -8,8 +8,10 @@
     "time_to_pnl": "When does this hit an income statement?",
     "status": "WATCHING / ACTIONABLE / BOUGHT / REJECTED"
   },
-  "_last_review": "2026-08-14",
-  "_next_review": "2026-08-28",
+  "_last_review": "2026-09-13",
+  "_next_review": "2026-10-04",
+  "_review_cadence": "Every three weeks. Scheduled task fires on the 1st and 22nd of each month.",
+  "_this_cycle": "Run manually in session on 2026-09-13. The four scheduled runs between 2026-08-31 and 2026-09-07 all reported SUCCESS but committed nothing to this repo, so this file had not changed since the 2026-08-15 upload. That is why the Radar tab appeared frozen. Cause not yet proven - the effect is certain. This cycle answered the longest-standing open question on the list.",
   "themes": [
     {
       "id": "co-packaged-optics",
@@ -22,11 +24,12 @@
       "time_to_pnl": "Revenue now, inflection at 2028 volume production for CPO integration; 2029 for full GPU-HBM package integration.",
       "status": "BOUGHT",
       "vehicles": {
-        "COHR": "BOUGHT. Passes the gate: 35.20x fwd, +26.1% upside, forward BELOW trailing. Trades 26% below its 52-week high, so not chasing a top.",
-        "ALAB": "BOUGHT. Passes: 57.31x fwd but revenue +98.5% gives 0.58 growth-adjusted. Q3 guided $540-560M vs $392.4M actual.",
+        "COHR": "BOUGHT. Passed the gate at entry: 35.20x fwd, +26.1% upside, forward BELOW trailing. Was trading 26% below its 52-week high, so not chasing a top.",
+        "ALAB": "BOUGHT. Passed: 57.31x fwd but revenue +98.5% gives 0.58 growth-adjusted. Q3 guided $540-560M vs $392.4M actual.",
         "LITE": "REJECTED - already ran. $111.20 to $926.14 across the 52-week range, market cap +888% y/y. Negative trailing earnings. The theme is real; this vehicle is late. Being right about a theme and buying it at 8x is still losing.",
         "MRVL/AVGO/NVDA": "Already held or adjacent exposure via AVGO and NVDA."
       },
+      "note": "NOT RE-VERIFIED THIS CYCLE. The 2026-09-13 pass spent its budget on the transformer vehicle question and the financing risk monitor. Nothing here is known to have changed; equally, nothing here was rechecked. Treat the entry-date valuation figures above as stale - they were true at purchase, not necessarily now. Re-verify at the next cycle.",
       "sources": [
         "OFC 2026 conference coverage (SemiWiki, EE Times)",
         "io-fund on NVIDIA's optical strategy"
@@ -35,27 +38,52 @@
     {
       "id": "transformer-goes-shortage",
       "name": "Power transformers and grain-oriented electrical steel",
-      "thesis": "A real, well-documented hard constraint on the AI buildout: power transformer lead times went from ~50 weeks in 2021 to ~120 weeks by 2024 (Wood Mackenzie), large units run 80-210 weeks, prices are up 60-80% since Jan 2020, and only ~20% of US demand can be met domestically. It slows the PACE of the buildout and favours the supply-constrained names. CORRECTION 2026-08-14: I originally carried a '30-50% of 2026 capacity cancelled' bear claim here as a risk to this desk's own AI book. On verification that framing is substantially overstated \u2014 SemiAnalysis showed the underlying denominator is off by multiples, the shortfall sits in speculative announcements that were never real 2026 projects, and their own forecast moved ~1% in six months. Meanwhile hyperscaler capex was RAISED to $725B (+77% y/y). Constraint: real. Demand threat: not supported. See the full note below.",
+      "thesis": "A real, well-documented hard constraint on the AI buildout: power transformer lead times went from ~50 weeks in 2021 to ~120 weeks by 2024 (Wood Mackenzie), large units run 80-210 weeks, prices are up 60-80% since Jan 2020, and only ~20% of US demand can be met domestically. It slows the PACE of the buildout and favours the supply-constrained names. CORRECTION 2026-08-14: I originally carried a '30-50% of 2026 capacity cancelled' bear claim here as a risk to this desk's own AI book. On verification that framing is substantially overstated - SemiAnalysis showed the underlying denominator is off by multiples, the shortfall sits in speculative announcements that were never real 2026 projects, and their own forecast moved ~1% in six months. Meanwhile hyperscaler capex was RAISED. Constraint: real. Demand threat: not supported. See the full note below.",
       "chatter": "LOW",
       "trajectory": "RISING",
-      "capital_committed": "Cleveland-Cliffs' Butler Works is the only domestic producer of grain-oriented electrical steel and the only domestic source of the high-permeability grade used in power transformers. Its $170M expansion does not arrive until 2028.",
+      "capital_committed": "Cleveland-Cliffs' Butler Works is the only domestic producer of grain-oriented electrical steel and the only domestic source of the high-permeability grade used in power transformers. Its $170M expansion does not arrive until 2028. VERIFIED 2026-09-13: Hammond Power Solutions reported Q2 2026 backlog up 96.9% year over year, which the company attributes primarily to data centre project orders.",
       "vehicle_quality": "DILUTED",
       "time_to_pnl": "Now, but buried inside larger businesses.",
-      "status": "WATCHING \u00b7 BEAR CASE DOWNGRADED",
+      "status": "WATCHING · VEHICLE QUESTION ANSWERED",
       "vehicles": {
         "CLF": "REJECTED. The perfect narrative and the wrong vehicle. Consensus target $11.80 against an $11.90 price = -0.8% DOWNSIDE, Hold rating from 13 analysts, and the company is lossmaking (-$876M net income, EPS -$1.60). The GOES monopoly is a rounding error inside $19.2B of commodity steel revenue that mostly serves autos. An under-covered theme is only investable if some vehicle's economics actually concentrate it.",
-        "_todo": "Still the highest-priority open item: find a liquid US-listed pure-play transformer or grid-equipment vehicle. Screen Hitachi Energy, Siemens Energy, Prolec, Hammond Power for a US listing or ADR clearing IPS 8 liquidity."
+        "HPS.A": "REJECTED ON VENUE, NOT ON THESIS. Hammond Power Solutions is the closest thing to a listed transformer pure-play and the numbers are strong: Q2 2026 revenue $324.8M, +44.7% y/y; year to date $589.6M, +38.5%; backlog +96.9% y/y on data centre orders. But it lists on the Toronto Stock Exchange as HPS.A and reaches US investors only as OTC ticker HMDPF. IPS 8 excludes OTC venues on liquidity grounds - the same rule that excluded BrainChip. Also worth noting even if the venue cleared: net earnings FELL to $9.4M from $13.4M and basic EPS to $0.79 from $1.12 despite revenue growing 45%. Volume is arriving faster than profit. A pure-play on a shortage is not automatically a pure-play on margin.",
+        "POWL": "NEW CANDIDATE 2026-09-13, needs the IPS 3a valuation gate before any buy. Powell Industries, NASDAQ listed, so it clears IPS 8 on venue where Hammond does not. Fiscal Q3 2026 (quarter ended 30 June 2026, company release 3 Aug 2026): new orders $934M, up 158% y/y from $362M; backlog $2.4B, up 69% y/y from $1.4B; revenue $312M, up only 9%; net income $52.2M, EPS $1.42, +8%; gross margin 30.6% versus 30.7%. Includes a single data centre order in excess of $400M. The orders-versus-revenue divergence is the point: +158% orders against +9% revenue means the commitment is already signed and the income statement has not seen it yet. That is the 'capital moves before articles do' profile this radar is built to find. CAVEAT, stated plainly: Powell makes switchgear and electrical distribution equipment, NOT transformers. It is a grid-equipment vehicle adjacent to this theme, not a pure-play on it. Do not let the convenience of a listed vehicle blur what it actually sells.",
+        "_todo": "ANSWERED 2026-09-13. The question 'is there a liquid US-listed pure-play on power transformers?' now has a real answer: no. Hammond is the pure-play and fails IPS 8 on venue. Powell is US-listed and liquid but sells switchgear, not transformers. The honest conclusion is that this theme has no clean US-listed pure-play, and pretending otherwise by stretching a definition would be the CLF mistake in a new costume. NEXT: run the IPS 3a valuation gate on POWL as a grid-equipment position on its own merits, not as a transformer proxy."
       },
-      "note": "VERIFIED AND REVISED 2026-08-14. I initially flagged '30-50% of announced data center capacity may slip' as a risk to this desk's AI book, on the strength of one Medium post and a Forbes piece. That was below the evidence standard I apply to buying a stock, so it should not have been enough to argue against one. On checking:\n\nSOURCE OF THE CLAIM: Currence, an energy intelligence firm, tracking 777 announced AI factories >50MW. ~190GW announced since 2024; 16GW scheduled for 2026 operation; ~5GW under construction.\n\nTHE REBUTTAL (SemiAnalysis, the most credible source in this niche, published specifically to correct this): (1) the 5GW denominator is 'off by multiples' \u2014 their satellite imagery shows the top TWO hyperscalers alone exceed 5GW under construction; (2) the cancellations cluster in early-stage speculative announcements lacking site control, financing or interconnection \u2014 projects never realistic for 2026 anyway; (3) SemiAnalysis's own year-end 2026 North America hyperscaler self-build forecast moved only ~1% over six months, colocation under 5% \u2014 the people modeling this most carefully barely changed their numbers; (4) the meme traces to an April 2026 Bloomberg piece about Chinese electrical parts, sharpened into clickbait downstream.\n\nALSO: 'delayed' is not 'cancelled'. Currence itself measures timeline slippage, not abandonment. Delays push revenue right; they do not destroy it.\n\nMEANWHILE THE DEMAND SIDE ACCELERATED: 2026 hyperscaler capex $725B, up 77% from $410B in 2025 \u2014 MSFT $190B, Alphabet up to $190B (+$5B), Meta $145B+ (+$10B). Guidance RAISED, not cut. And the revenue is showing up: Google Cloud +63% y/y to $20B/quarter, Meta +33% to $56.3B, Alphabet net income +81% to $62.6B. GE Vernova's Q2 call disclosed Gas Power capacity rising to 30GW by 2030, near-full utilization of 2030 slots, and >50% of 2031 capacity contracted by year-end 2026 \u2014 contracted, prepaid, multi-year commitments are the opposite of a demand air pocket.\n\nCONCLUSION: the transformer constraint is real and well documented (Wood Mackenzie: lead times 50wk in 2021 to 120wk by 2024, large units 80-210wk, prices +60-80% since Jan 2020, only ~20% of US demand met domestically). It slows the PACE of buildout. It does not undermine the demand thesis, and the '30-50% cancelled' framing is substantially overstated. I am REMOVING this as a bear case against the AI book and keeping it as a TIMING consideration that favours the supply-constrained names over those needing new capacity online fast.\n\nWHAT I GOT WRONG: I amplified a thinly-sourced bear claim without checking it, in the same session I wrote a rule requiring primary-source verification. The client asked me to explain it, which is what surfaced the error.",
+      "note": "VERIFIED AND REVISED 2026-08-14. I initially flagged '30-50% of announced data center capacity may slip' as a risk to this desk's AI book, on the strength of one Medium post and a Forbes piece. That was below the evidence standard I apply to buying a stock, so it should not have been enough to argue against one. On checking:\n\nSOURCE OF THE CLAIM: Currence, an energy intelligence firm, tracking 777 announced AI factories >50MW. ~190GW announced since 2024; 16GW scheduled for 2026 operation; ~5GW under construction.\n\nTHE REBUTTAL (SemiAnalysis, the most credible source in this niche, published specifically to correct this): (1) the 5GW denominator is 'off by multiples' - their satellite imagery shows the top TWO hyperscalers alone exceed 5GW under construction; (2) the cancellations cluster in early-stage speculative announcements lacking site control, financing or interconnection - projects never realistic for 2026 anyway; (3) SemiAnalysis's own year-end 2026 North America hyperscaler self-build forecast moved only ~1% over six months, colocation under 5%; (4) the meme traces to an April 2026 Bloomberg piece about Chinese electrical parts, sharpened into clickbait downstream.\n\nALSO: 'delayed' is not 'cancelled'. Currence itself measures timeline slippage, not abandonment. Delays push revenue right; they do not destroy it.\n\nSTILL CIRCULATING, 2026-09-13. A search of current coverage this cycle returned multiple pieces still running the '50% of 2026 AI capacity at risk' framing, now propagated through low-quality SEO content rather than any new evidence. Nothing in this cycle's search surfaced a fresh primary source supporting it. Treat renewed sightings of this claim as an echo of the April 2026 original, not as confirmation. The fact that a claim keeps reappearing is not evidence that it is true - repetition is not corroboration, and this is exactly the trap IPS 4 exists to prevent.\n\nCONCLUSION: the transformer constraint is real and well documented. It slows the PACE of buildout. It does not undermine the demand thesis.\n\nWHAT I GOT WRONG: I amplified a thinly-sourced bear claim without checking it, in the same session I wrote a rule requiring primary-source verification. The client asked me to explain it, which is what surfaced the error.",
       "sources": [
-        "The Geopolitical Economist on the transformer shortage",
-        "Forbes on transformers vs chips"
+        "Powell Industries Q3 FY2026 results release, 3 August 2026 (company issued)",
+        "Hammond Power Solutions Q2 2026 results release, 30 July 2026 (company issued)",
+        "Wood Mackenzie on transformer lead times",
+        "SemiAnalysis rebuttal of the capacity-cancellation claim"
       ],
       "tripwires": [
         "GE Vernova order growth decelerating (quarterly, public)",
-        "Any hyperscaler CUTTING capex guidance \u2014 none have; all raised",
+        "Any hyperscaler CUTTING capex guidance - none have; all raised",
         "Transformer lead times extending materially beyond ~120-128 weeks",
-        "SemiAnalysis revising its self-build forecast down by more than 5%"
+        "SemiAnalysis revising its self-build forecast down by more than 5%",
+        "Powell orders reverting toward revenue - the +158% versus +9% gap closing from the orders side rather than the revenue side would kill the thesis",
+        "Hammond's margin compression spreading to US-listed peers - volume without profit is a warning about the whole theme, not just one company"
+      ]
+    },
+    {
+      "id": "electrical-balance-of-plant",
+      "name": "Switchgear and electrical distribution equipment",
+      "thesis": "NEW 2026-09-13. Separated out from the transformer theme because the vehicle situation is materially different and better. Transformers get the coverage, but a data centre also needs switchgear, breakers and distribution gear, and those order books are inflecting harder than the revenue lines that analysts model. The distinguishing feature is that a credible US-listed vehicle exists here, which is precisely what the transformer theme lacks.",
+      "chatter": "LOW",
+      "trajectory": "RISING",
+      "capital_committed": "VERIFIED FROM COMPANY RELEASE 2026-09-13. Powell Industries fiscal Q3 2026 (quarter ended 30 June 2026): new orders $934M against $362M a year earlier, +158%. Backlog $2.4B against $1.4B, +69%. Within that, one data centre order above $400M - a single order worth more than the company's entire quarterly revenue of $312M. Management also cited LNG (~$60M) and petrochemical (~$75M) awards, so the order book is not a single-customer story.",
+      "vehicle_quality": "GOOD",
+      "time_to_pnl": "Backlog converts over roughly 4-8 quarters. Revenue grew only 9% while orders grew 158%, so the income-statement effect is ahead, not behind. That gap is the opportunity and also the risk.",
+      "status": "WATCHING · GATE NOT YET RUN",
+      "vehicles": {
+        "POWL": "Powell Industries, NASDAQ. Clears IPS 8 on venue and liquidity. Q3 FY2026: revenue $312M (+9%), net income $52.2M, EPS $1.42 (+8%), gross margin 30.6% versus 30.7% - margins held flat while volume scaled, which is the opposite of Hammond's problem. NOT YET BOUGHT. No position may be taken until IPS 3a is run and recorded in research/valuation.json: consensus upside, forward P/E, and growth-adjusted multiple. The GEV lesson applies directly here - a large verified backlog is not itself an investment case if the market has already priced it. The question is not 'is the backlog real' (it is, it is in a company filing) but 'is the backlog already in the price'.",
+        "_todo": "Run IPS 3a on POWL. If consensus upside is under 15% or the growth-adjusted multiple exceeds 2.0, this is a WATCHING theme with a known vehicle and no trade - which is a perfectly good outcome and should be logged as such rather than rationalised around."
+      },
+      "note": "Honest statement of what is NOT established. I have verified the order book from the company's own release. I have NOT run the valuation gate, checked where the stock trades against its 52-week range, or confirmed that the data-centre order mix is durable rather than a one-off lumpy award. Powell is a project-based business and lumpy orders are normal in project-based businesses; a single quarter of +158% is a signal to investigate, not a conclusion. Next cycle should close those three gaps before any buy is contemplated.",
+      "sources": [
+        "Powell Industries Q3 FY2026 results release, 3 August 2026 (company issued)"
       ]
     },
     {
@@ -73,9 +101,9 @@
         "GOOGL": "HELD. Project Suncatcher.",
         "RKLB": "MOONSHOT-PENDING. 2 of 4 Moonshot criteria verified. Trades 47% below its 52-week high, so not disqualified for having run.",
         "RDW / PL": "Unscreened.",
-        "_todo": "CLIENT DIRECTION 2026-08-14, priority order. PRIMARY: public companies holding disclosed stakes in private space/AI-infrastructure leaders. NVDA's $21B in SpaceX is the model and is already owned free inside a position held for other reasons \u2014 screen for others of that shape, since it converts private-market exposure into something liquid and gate-checkable. SECONDARY, pursue if research supports it: (a) radiation-hardened semiconductors \u2014 the highest-quality bottleneck in the chain, few qualified suppliers, Intel Starfire and Microchip as starting points; (b) launch capacity \u2014 Blue Origin's 51,600-satellite filing and Starcloud need lift, RKLB the main listed pure-play, and the open question is whether launch is a constraint or a commodity; (c) thermal/power/structures \u2014 cooling in vacuum is an unsolved engineering problem, Redwire and satellite component makers. The client noted these are unfamiliar to them, so any position here needs the thesis written for someone starting from zero, not for someone who already follows the sector."
+        "_todo": "CLIENT DIRECTION 2026-08-14, priority order. PRIMARY: public companies holding disclosed stakes in private space/AI-infrastructure leaders. NVDA's $21B in SpaceX is the model. SECONDARY: (a) radiation-hardened semiconductors - few qualified suppliers, Intel Starfire and Microchip as starting points; (b) launch capacity - RKLB the main listed pure-play, open question whether launch is a constraint or a commodity; (c) thermal/power/structures - cooling in vacuum is unsolved, Redwire and satellite component makers. The client noted these are unfamiliar, so any position here needs the thesis written for someone starting from zero."
       },
-      "note": "Honest economics: orbital compute currently costs ~4x terrestrial ($8.64 vs $2.37 per GPU-hour). This is 2027+ optionality, not a 2026 revenue story. Do not let a good narrative become a valuation argument.",
+      "note": "Honest economics: orbital compute currently costs ~4x terrestrial ($8.64 vs $2.37 per GPU-hour). This is 2027+ optionality, not a 2026 revenue story. Do not let a good narrative become a valuation argument.\n\nEDGE WARNING 2026-09-13. The PRIMARY open question above - find listed companies holding stakes in private AI and space leaders - was a genuinely under-covered angle when it was written in August. It is not any more. A search this cycle returned page after page of 'SpaceX / OpenAI / Anthropic 2026 IPO watchlist' content aimed at retail readers. When an angle becomes an SEO category, the informational edge in it is gone even if the underlying facts are unchanged. This does not make NVDA's SpaceX stake less real; it means finding that stake is no longer differentiated insight. Downgrade the priority of this question and stop spending cycles rediscovering what is now on the front page. The LITE lesson generalises: being right about something everyone already knows is not an edge.",
       "sources": [
         "InvestorPlace on Starmind AI1",
         "Fierce Network on space data centers",
@@ -93,7 +121,7 @@
       "time_to_pnl": "Unclear - the main open question.",
       "status": "WATCHING",
       "vehicles": {
-        "_todo": "No credible screen run yet. Neuromorphic pure-plays like BrainChip trade OTC and are excluded by IPS 8 liquidity and venue rules."
+        "_todo": "No credible screen run yet. Neuromorphic pure-plays like BrainChip trade OTC and are excluded by IPS 8 liquidity and venue rules. Still unscreened as of 2026-09-13 - carried, not progressed."
       },
       "sources": [
         "Seoul Economic Daily",
@@ -103,34 +131,53 @@
     {
       "id": "ai-capex-financing",
       "name": "How the AI buildout is actually being financed",
-      "thesis": "Hyperscaler 2026 capex expectations ran to roughly $840B, up from $487B in early February. Capex is now growing faster than the revenue it supports. That gap has to be financed somewhere - vendor financing, private credit, SPVs, debt. Follow the money and you find both a risk indicator for the whole desk and possibly a beneficiary.",
-      "chatter": "LOW",
+      "thesis": "Capex is growing faster than the revenue it supports. That gap has to be financed somewhere - vendor financing, private credit, SPVs, debt. Follow the money and you find both a risk indicator for the whole desk and possibly a beneficiary. This is the theme most likely to matter to this desk as a WARNING rather than an opportunity.",
+      "chatter": "MEDIUM",
       "trajectory": "RISING",
-      "capital_committed": "NVIDIA advancing a reported $500B AI infrastructure financing initiative with financial partners. AMD completed a record $5B bond sale.",
-      "vehicle_quality": "UNSCREENED",
-      "time_to_pnl": "n/a - primarily a risk indicator.",
-      "status": "WATCHING",
-      "note": "This is the theme most likely to matter to the desk as a WARNING rather than an opportunity. If AI capex is increasingly debt-financed, the buildout becomes rate-sensitive and the whole AI book inherits that sensitivity. Highest-priority monitoring item.",
+      "capital_committed": "UPDATED AND VERIFIED 2026-09-13 from J.P. Morgan's published capital-markets analysis. Five largest US hyperscalers now estimated at $697B of 2026 capex, raised by $173B since the start of this year. Project Stargate: up to $500B over four years, with $9.6B already drawn across two J.P. Morgan construction loans for the Abilene, Texas campus alone. Individual deals show the leverage directly: Hut 8's Beacon Point financing in June 2026 raised $4.25B of senior secured notes at a 95% loan-to-cost ratio; CoreWeave in April 2026 raised $5.25B, split $1.75B senior unsecured and $3.5B convertible.",
+      "vehicle_quality": "NONE - this is a risk monitor, not a position",
+      "time_to_pnl": "n/a - rate sensitivity, not revenue.",
+      "status": "WATCHING · HIGHEST-PRIORITY RISK MONITOR",
+      "note": "WHY THIS MATTERS TO THIS DESK SPECIFICALLY. The AI Trade book is roughly nine names deep in the buildout. If the buildout is increasingly debt-financed, then every position in that book quietly inherits interest-rate sensitivity that none of their individual theses mention. That is a correlated risk hiding inside what looks like a diversified book.\n\nThe single most informative number found this cycle is Hut 8's 95% loan-to-cost. Financing a data centre with 95 cents of debt per dollar of cost leaves almost no equity cushion; it only works while the asset's contracted cash flows hold and refinancing stays available. It is not evidence of a bubble on its own - project finance often runs high leverage against contracted revenue - but it is the kind of structure that transmits a rate move or a single anchor-tenant default straight through to the builder.\n\nWHAT IS NOT ESTABLISHED: J.P. Morgan's published piece does not give an explicit debt-versus-cash-flow percentage for hyperscaler capex overall, and I did not find one this cycle. So the central question - what share of the $697B is debt - remains genuinely unanswered rather than estimated. I am not going to infer a percentage from three deal headlines; three large debt deals do not establish a system-wide ratio, and pretending they do would be the same error as the capacity-cancellation claim.\n\nNOTE ON CAPEX FIGURES: this file previously carried $840B and $725B for 2026 hyperscaler capex from earlier sources. J.P. Morgan's $697B covers the five largest US hyperscalers specifically. Different baskets, so these are not necessarily contradictory - but do not stack or average them, and do not quote a single 'the' capex number as though the definition were settled.",
       "sources": [
-        "Axios on hyperscaler capex",
-        "Forbes on the capex-to-revenue gap"
+        "J.P. Morgan, Financing AI infrastructure and U.S. data centers (capital markets insights)"
+      ],
+      "tripwires": [
+        "Loan-to-cost ratios on new data centre financings rising above the mid-90s",
+        "A major anchor tenant failing to take contracted capacity",
+        "Spreads widening materially on AI-infrastructure paper",
+        "Any hyperscaler funding capex from debt that previously funded it from operating cash flow"
       ]
     }
   ],
   "_open_questions": [
-    "PRIMARY for 2026-08-28: which public companies hold disclosed stakes in private space / AI-infra leaders? NVDA/SpaceX is the template. This converts private exposure into a liquid, gate-checkable position.",
-    "Listed SUPPLIERS to private space-compute leaders \u2014 client-directed priority for the 2026-08-28 cycle.",
-    "Is there a liquid US-listed pure-play on power transformers? Highest-value unanswered question on this list.",
-    "What is the actual debt share of 2026 hyperscaler capex? Determines how rate-sensitive the AI book really is.",
-    "Which OFC 2026 suppliers are NOT yet in consensus models? The laser-supply tier has been called mispriced.",
-    "Does anything in physical AI clear IPS 8 on liquidity and venue?"
+    "RESOLVED 2026-09-13: is there a liquid US-listed pure-play on power transformers? No. Hammond Power Solutions is the pure-play and is TSX/OTC, which IPS 8 excludes. Powell Industries is US-listed and liquid but sells switchgear, not transformers. Recorded rather than deleted, because a closed question is a result.",
+    "NEW, highest value: does POWL clear IPS 3a? Consensus upside, forward P/E, growth-adjusted multiple. A verified backlog that is already in the price is the GEV situation over again.",
+    "NEW: is Powell's data-centre order mix durable or a single lumpy award? One quarter at +158% orders is a reason to look, not a conclusion.",
+    "NEW: is Hammond's margin compression - revenue +45% but EPS down - specific to Hammond, or is it what happens to everyone selling into this shortage? If the latter, the whole transformer theme is a revenue story and not a profit story.",
+    "STILL OPEN: what is the actual debt share of 2026 hyperscaler capex? J.P. Morgan's published work does not state one. Determines how rate-sensitive the AI book really is.",
+    "DOWNGRADED: which public companies hold disclosed stakes in private space/AI-infra leaders? Now a mainstream retail-facing SEO category. The facts are unchanged; the edge is gone.",
+    "Which OFC 2026 suppliers are NOT yet in consensus models? The laser-supply tier has been called mispriced. Not progressed this cycle.",
+    "Does anything in physical AI clear IPS 8 on liquidity and venue? Not progressed this cycle."
   ],
   "_lesson_log": [
     {
       "date": "2026-08-14",
       "lesson": "Applied the verification standard asymmetrically: demanded primary sources before BUYING, accepted a Medium post before flagging a RISK. Bear claims need the same evidence bar as bull claims. A comfortable-sounding caution is still a claim.",
-      "cost": "None \u2014 caught before it changed any position.",
+      "cost": "None - caught before it changed any position.",
       "fix": "IPS 4 now applies explicitly to risk claims as well as thesis claims."
+    },
+    {
+      "date": "2026-09-13",
+      "lesson": "Four scheduled research runs between 2026-08-31 and 2026-09-07 reported SUCCESS and committed nothing. Roughly four hours of model time produced no durable output, and nobody noticed for two weeks because the only signal of a working system was a push notification that only fires on trades. A job that cannot write is indistinguishable from a job that found nothing, and 'no news' was read as 'nothing happening' when it actually meant 'nothing is reaching you'.",
+      "cost": "Two weeks of a stale radar and four wasted runs. No position was harmed - the daily marking and risk rules run in GitHub Actions and never stopped.",
+      "fix": "Scheduled runs must verify their own commit landed rather than trusting a clean exit, and must report the failure loudly if it did not. A silent success is the most dangerous possible outcome, because it looks exactly like a quiet market."
+    },
+    {
+      "date": "2026-09-13",
+      "lesson": "The '50% of 2026 AI capacity at risk' claim, debunked here on 2026-08-14, resurfaced repeatedly in this cycle's search results - now carried by low-quality SEO content rather than any new evidence. The temptation to treat its reappearance as corroboration is real.",
+      "cost": "None - recognised on sight because the August correction was written down in this file.",
+      "fix": "Repetition is not corroboration. Before treating a re-encountered claim as confirmed, check whether it traces to a NEW primary source or to the same original. This is the practical argument for keeping the lesson log: it is what made the claim recognisable the second time."
     }
   ]
 }

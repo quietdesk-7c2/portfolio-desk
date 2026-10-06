@@ -177,63 +177,63 @@
       "price_source": "yfinance"
     }
   ],
-  "high_water": 101756.591819,
+  "high_water": 101800.11315300001,
   "status": "active",
   "status_note": "",
-  "last_marked": "2026-10-03T00:28:02+00:00",
+  "last_marked": "2026-10-06T01:45:31+00:00",
   "marks": {
     "META": {
-      "price": 751.66,
-      "asof": "2026-09-25",
-      "source": "yfinance-STALE",
+      "price": 741.9,
+      "asof": "2026-10-05",
+      "source": "yfinance",
       "prev": {
-        "price": 777.59,
-        "asof": "2026-09-24"
+        "price": 751.66,
+        "asof": "2026-09-25"
       }
     },
     "UNH": {
-      "price": 376.59,
-      "asof": "2026-09-25",
-      "source": "yfinance-STALE",
+      "price": 378.58,
+      "asof": "2026-10-05",
+      "source": "yfinance",
       "prev": {
-        "price": 375.01,
-        "asof": "2026-09-24"
+        "price": 376.59,
+        "asof": "2026-09-25"
       }
     },
     "XLV": {
-      "price": 170.7,
-      "asof": "2026-09-25",
-      "source": "yfinance-STALE",
+      "price": 167.37,
+      "asof": "2026-10-05",
+      "source": "yfinance",
       "prev": {
-        "price": 169.87,
-        "asof": "2026-09-24"
+        "price": 170.7,
+        "asof": "2026-09-25"
       }
     },
     "GOOGL": {
-      "price": 343.92,
-      "asof": "2026-09-25",
-      "source": "yfinance-STALE",
+      "price": 346.47,
+      "asof": "2026-10-05",
+      "source": "yfinance",
       "prev": {
-        "price": 342.36,
-        "asof": "2026-09-24"
+        "price": 343.92,
+        "asof": "2026-09-25"
       }
     },
     "MSFT": {
-      "price": 516.17,
-      "asof": "2026-09-25",
-      "source": "yfinance-STALE",
+      "price": 525.18,
+      "asof": "2026-10-05",
+      "source": "yfinance",
       "prev": {
-        "price": 497.93,
-        "asof": "2026-09-24"
+        "price": 516.17,
+        "asof": "2026-09-25"
       }
     },
     "AMZN": {
-      "price": 249.67,
-      "asof": "2026-09-25",
-      "source": "yfinance-STALE",
+      "price": 251.4,
+      "asof": "2026-10-05",
+      "source": "yfinance",
       "prev": {
-        "price": 249.38,
-        "asof": "2026-09-24"
+        "price": 249.67,
+        "asof": "2026-09-25"
       }
     }
   }

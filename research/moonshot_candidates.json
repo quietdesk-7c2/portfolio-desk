@@ -1,20 +1,20 @@
 {
-  "generated": "2026-10-03T22:33:42+00:00",
+  "generated": "2026-10-10T22:58:06+00:00",
   "days_back": 90,
   "days_scanned": 64,
-  "filings_seen": 67927,
-  "purchase_filings": 6678,
-  "clusters_found": 357,
+  "filings_seen": 67524,
+  "purchase_filings": 6664,
+  "clusters_found": 354,
   "candidates": [
     {
       "ticker": "NONE",
-      "issuer": "BBR ALO Fund, LLC",
-      "cik": "0001811114",
-      "n_insiders": 71,
-      "total_spend": 1437597272.97,
-      "weighted_spend": 1584933296.84,
+      "issuer": "Fundrise Real Estate Interval Fund, LLC",
+      "cik": "0001777677",
+      "n_insiders": 74,
+      "total_spend": 1607149272.99,
+      "weighted_spend": 1754495296.86,
       "window_days": 90,
-      "latest_buy": "2026-10-01",
+      "latest_buy": "2026-10-07",
       "buys": [
         {
           "insider": "Waxman Alan",
@@ -39,6 +39,46 @@
           ]
         },
         {
+          "insider": "GOLDENTREE ASSET MANAGEMENT LP",
+          "roles": [
+            "10% owner"
+          ],
+          "spend": 42133000.0,
+          "dates": [
+            "2026-09-24"
+          ]
+        },
+        {
+          "insider": "GOLDENTREE ASSET MANAGEMENT LP",
+          "roles": [
+            "10% owner"
+          ],
+          "spend": 42133000.0,
+          "dates": [
+            "2026-09-24"
+          ]
+        },
+        {
+          "insider": "GOLDENTREE ASSET MANAGEMENT LP",
+          "roles": [
+            "10% owner"
+          ],
+          "spend": 42133000.0,
+          "dates": [
+            "2026-09-24"
+          ]
+        },
+        {
+          "insider": "GOLDENTREE ASSET MANAGEMENT LP",
+          "roles": [
+            "10% owner"
+          ],
+          "spend": 42133000.0,
+          "dates": [
+            "2026-09-24"
+          ]
+        },
+        {
           "insider": "MSD CAPITAL, L.P.",
           "roles": [
             "10% owner"
@@ -693,7 +733,7 @@
           ]
         },
         {
-          "insider": "Blackstone Holdings IV L.P.",
+          "insider": "Blackstone Private Multi-Asset Credit & Income Fund",
           "roles": [
             "10% owner"
           ],
@@ -703,7 +743,7 @@
           ]
         },
         {
-          "insider": "Blackstone Private Multi-Asset Credit & Income Fund",
+          "insider": "Blackstone Holdings IV L.P.",
           "roles": [
             "10% owner"
           ],
@@ -943,7 +983,7 @@
           ]
         },
         {
-          "insider": "Blackstone Holdings IV L.P.",
+          "insider": "Blackstone Private Multi-Asset Credit & Income Fund",
           "roles": [
             "10% owner"
           ],
@@ -953,7 +993,7 @@
           ]
         },
         {
-          "insider": "Blackstone Private Multi-Asset Credit & Income Fund",
+          "insider": "Blackstone Holdings IV L.P.",
           "roles": [
             "10% owner"
           ],
@@ -1372,6 +1412,26 @@
           "spend": 681194.1,
           "dates": [
             "2026-07-27"
+          ]
+        },
+        {
+          "insider": "SELTER ERIC JAY",
+          "roles": [
+            "other"
+          ],
+          "spend": 500000.01,
+          "dates": [
+            "2026-10-01"
+          ]
+        },
+        {
+          "insider": "SELTER ERIC JAY",
+          "roles": [
+            "other"
+          ],
+          "spend": 500000.01,
+          "dates": [
+            "2026-10-01"
           ]
         },
         {
@@ -2165,6 +2225,26 @@
           ]
         },
         {
+          "insider": "STOLLER LAWRENCE B",
+          "roles": [
+            "director"
+          ],
+          "spend": 10000.0,
+          "dates": [
+            "2026-10-05"
+          ]
+        },
+        {
+          "insider": "STOLLER LAWRENCE B",
+          "roles": [
+            "director"
+          ],
+          "spend": 10000.0,
+          "dates": [
+            "2026-10-05"
+          ]
+        },
+        {
           "insider": "Huskinson W. Todd",
           "roles": [
             "officer",
@@ -2256,6 +2336,28 @@
           ],
           "spend": 1000.0,
           "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Hall Bjorn",
+          "roles": [
+            "officer",
+            "Secretary and CCO"
+          ],
+          "spend": 1000.0,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Hall Bjorn",
+          "roles": [
+            "officer",
+            "Secretary and CCO"
+          ],
+          "spend": 1000.0,
+          "dates": [
             "2026-09-08"
           ]
         },
@@ -2290,28 +2392,6 @@
           "spend": 1000.0,
           "dates": [
             "2026-08-07"
-          ]
-        },
-        {
-          "insider": "Hall Bjorn",
-          "roles": [
-            "officer",
-            "Secretary and CCO"
-          ],
-          "spend": 1000.0,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Hall Bjorn",
-          "roles": [
-            "officer",
-            "Secretary and CCO"
-          ],
-          "spend": 1000.0,
-          "dates": [
-            "2026-07-07"
           ]
         },
         {
@@ -2392,6 +2472,26 @@
           "spend": 536.48,
           "dates": [
             "2026-07-10"
+          ]
+        },
+        {
+          "insider": "Booth Richard Whitaker",
+          "roles": [
+            "other"
+          ],
+          "spend": 500.0,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Booth Richard Whitaker",
+          "roles": [
+            "other"
+          ],
+          "spend": 500.0,
+          "dates": [
+            "2026-10-07"
           ]
         },
         {
@@ -2558,26 +2658,6 @@
           "spend": 500.0,
           "dates": [
             "2026-07-21"
-          ]
-        },
-        {
-          "insider": "Booth Richard Whitaker",
-          "roles": [
-            "other"
-          ],
-          "spend": 500.0,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Booth Richard Whitaker",
-          "roles": [
-            "other"
-          ],
-          "spend": 500.0,
-          "dates": [
-            "2026-07-07"
           ]
         },
         {
@@ -2873,11 +2953,11 @@
     },
     {
       "ticker": "N/A",
-      "issuer": "Fortress Net Lease REIT",
-      "cik": "0001966394",
-      "n_insiders": 24,
-      "total_spend": 1040129579.54,
-      "weighted_spend": 1044382046.84,
+      "issuer": "Calamos Aksia Hedged Strategies Fund",
+      "cik": "0002063706",
+      "n_insiders": 25,
+      "total_spend": 1041806212.34,
+      "weighted_spend": 1046043679.64,
       "window_days": 90,
       "latest_buy": "2026-10-01",
       "buys": [
@@ -3492,6 +3572,26 @@
           ]
         },
         {
+          "insider": "Zook Christopher",
+          "roles": [
+            "other"
+          ],
+          "spend": 511989.8,
+          "dates": [
+            "2026-10-01"
+          ]
+        },
+        {
+          "insider": "Zook Christopher",
+          "roles": [
+            "other"
+          ],
+          "spend": 511989.8,
+          "dates": [
+            "2026-10-01"
+          ]
+        },
+        {
           "insider": "DIEHL BOWEN S",
           "roles": [
             "director"
@@ -3533,6 +3633,26 @@
           "spend": 500114.65,
           "dates": [
             "2026-07-24"
+          ]
+        },
+        {
+          "insider": "Lindholm Matthew",
+          "roles": [
+            "other"
+          ],
+          "spend": 341326.6,
+          "dates": [
+            "2026-10-01"
+          ]
+        },
+        {
+          "insider": "Lindholm Matthew",
+          "roles": [
+            "other"
+          ],
+          "spend": 341326.6,
+          "dates": [
+            "2026-10-01"
           ]
         },
         {
@@ -3789,26 +3909,6 @@
           "spend": 34243.02,
           "dates": [
             "2026-09-10"
-          ]
-        },
-        {
-          "insider": "Simmons John W",
-          "roles": [
-            "director"
-          ],
-          "spend": 15000.0,
-          "dates": [
-            "2026-07-06"
-          ]
-        },
-        {
-          "insider": "Simmons John W",
-          "roles": [
-            "director"
-          ],
-          "spend": 15000.0,
-          "dates": [
-            "2026-07-06"
           ]
         },
         {
@@ -4284,16 +4384,6 @@
           ]
         },
         {
-          "insider": "GORDON CARL L",
-          "roles": [
-            "director"
-          ],
-          "spend": 15000000.0,
-          "dates": [
-            "2026-07-27"
-          ]
-        },
-        {
           "insider": "ORBIMED ADVISORS LLC",
           "roles": [
             "director"
@@ -4304,6 +4394,16 @@
           ]
         },
         {
+          "insider": "GORDON CARL L",
+          "roles": [
+            "director"
+          ],
+          "spend": 15000000.0,
+          "dates": [
+            "2026-07-27"
+          ]
+        },
+        {
           "insider": "AH Bio Fund II, L.P.",
           "roles": [
             "10% owner"
@@ -4415,6 +4515,555 @@
           "spend": 39990.0,
           "dates": [
             "2026-07-23"
+          ]
+        }
+      ],
+      "market_cap": null,
+      "cap_unknown": true,
+      "score": 1.0
+    },
+    {
+      "ticker": "BBD",
+      "issuer": "BANK BRADESCO",
+      "cik": "0001160330",
+      "n_insiders": 22,
+      "total_spend": 198686260.82,
+      "weighted_spend": 284852645.27,
+      "window_days": 90,
+      "latest_buy": "2026-09-29",
+      "buys": [
+        {
+          "insider": "Alvarez Denise Aguiar",
+          "roles": [
+            "director"
+          ],
+          "spend": 33581299.08,
+          "dates": [
+            "2026-08-31"
+          ]
+        },
+        {
+          "insider": "Alvarez Denise Aguiar",
+          "roles": [
+            "director"
+          ],
+          "spend": 33581299.08,
+          "dates": [
+            "2026-08-31"
+          ]
+        },
+        {
+          "insider": "Alvarez Rubens Aguiar",
+          "roles": [
+            "director"
+          ],
+          "spend": 32042484.0,
+          "dates": [
+            "2026-09-01"
+          ]
+        },
+        {
+          "insider": "Alvarez Rubens Aguiar",
+          "roles": [
+            "director"
+          ],
+          "spend": 32042484.0,
+          "dates": [
+            "2026-09-01"
+          ]
+        },
+        {
+          "insider": "Alvarez Denise Aguiar",
+          "roles": [
+            "director"
+          ],
+          "spend": 5757279.07,
+          "dates": [
+            "2026-08-25"
+          ]
+        },
+        {
+          "insider": "Alvarez Denise Aguiar",
+          "roles": [
+            "director"
+          ],
+          "spend": 5757279.07,
+          "dates": [
+            "2026-08-25"
+          ]
+        },
+        {
+          "insider": "de Oliveira Andre Luis Duarte",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 5557815.78,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "de Oliveira Andre Luis Duarte",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 5557815.78,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Alvarez Denise Aguiar",
+          "roles": [
+            "director"
+          ],
+          "spend": 2348116.08,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Alvarez Denise Aguiar",
+          "roles": [
+            "director"
+          ],
+          "spend": 2348116.08,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Paris Roberto de Jesus",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 1738701.96,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Paris Roberto de Jesus",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 1738701.96,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Fernandes Oswaldo Tadeu",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 1434480.36,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Fernandes Oswaldo Tadeu",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 1434480.36,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Ramalho Miranda Jose Augusto",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 1145667.62,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Ramalho Miranda Jose Augusto",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 1145667.62,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Machado Silvana Rosa",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 1115623.04,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Machado Silvana Rosa",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 1115623.04,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Marcilio Juliano Ribeiro",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 1092806.42,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Marcilio Juliano Ribeiro",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 1092806.42,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Favarao Vinicius Urias",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 1087646.16,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Favarao Vinicius Urias",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 1087646.16,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "de Souza Cintia Scovine Barcelos",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 1080472.14,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "de Souza Cintia Scovine Barcelos",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 1080472.14,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Tescarolo Marcos Valerio",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 1025075.76,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Tescarolo Marcos Valerio",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 1025075.76,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Bueno Julio Cesar",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 1013262.9,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Bueno Julio Cesar",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 1013262.9,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Di Marcello Francesco",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 1008843.6,
+          "dates": [
+            "2026-09-28",
+            "2026-09-29"
+          ]
+        },
+        {
+          "insider": "Di Marcello Francesco",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 1008843.6,
+          "dates": [
+            "2026-09-28",
+            "2026-09-29"
+          ]
+        },
+        {
+          "insider": "Pedras Carlos Henrique Villela",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 1004183.0,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Pedras Carlos Henrique Villela",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 1004183.0,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "de Oliveira Tulio Xavier",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 996883.12,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "de Oliveira Tulio Xavier",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 996883.12,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Mantarro Renata Geiser",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 984584.8,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Mantarro Renata Geiser",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 984584.8,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Freiberger Fernando",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 890909.0,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Freiberger Fernando",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 890909.0,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Alvarez Rubens Aguiar",
+          "roles": [
+            "director"
+          ],
+          "spend": 842794.52,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Pavarina Denise Pauli",
+          "roles": [
+            "director"
+          ],
+          "spend": 842794.52,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Alvarez Rubens Aguiar",
+          "roles": [
+            "director"
+          ],
+          "spend": 842794.52,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Pavarina Denise Pauli",
+          "roles": [
+            "director"
+          ],
+          "spend": 842794.52,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "da Cunha Paulo Roberto Simoes",
+          "roles": [
+            "director"
+          ],
+          "spend": 842794.52,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "da Cunha Paulo Roberto Simoes",
+          "roles": [
+            "director"
+          ],
+          "spend": 842794.52,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Panico Alexandre",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 784287.6,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Panico Alexandre",
+          "roles": [
+            "officer",
+            "Executive Officer"
+          ],
+          "spend": 784287.6,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Nunes Regina Helena Jorge",
+          "roles": [
+            "director"
+          ],
+          "spend": 562162.68,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Caffarelli Paulo Rogerio",
+          "roles": [
+            "director"
+          ],
+          "spend": 562162.68,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Caffarelli Paulo Rogerio",
+          "roles": [
+            "director"
+          ],
+          "spend": 562162.68,
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "insider": "Nunes Regina Helena Jorge",
+          "roles": [
+            "director"
+          ],
+          "spend": 562162.68,
+          "dates": [
+            "2026-09-18"
           ]
         }
       ],
@@ -5022,495 +5671,6 @@
           "spend": 11200.0,
           "dates": [
             "2026-08-10"
-          ]
-        }
-      ],
-      "market_cap": null,
-      "cap_unknown": true,
-      "score": 1.0
-    },
-    {
-      "ticker": "BBD",
-      "issuer": "BANK BRADESCO",
-      "cik": "0001160330",
-      "n_insiders": 22,
-      "total_spend": 55924136.52,
-      "weighted_spend": 70709458.82,
-      "window_days": 90,
-      "latest_buy": "2026-09-29",
-      "buys": [
-        {
-          "insider": "de Oliveira Andre Luis Duarte",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 5557815.78,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "de Oliveira Andre Luis Duarte",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 5557815.78,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Alvarez Denise Aguiar",
-          "roles": [
-            "director"
-          ],
-          "spend": 2348116.08,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Alvarez Denise Aguiar",
-          "roles": [
-            "director"
-          ],
-          "spend": 2348116.08,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Paris Roberto de Jesus",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 1738701.96,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Paris Roberto de Jesus",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 1738701.96,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Fernandes Oswaldo Tadeu",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 1434480.36,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Fernandes Oswaldo Tadeu",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 1434480.36,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Ramalho Miranda Jose Augusto",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 1145667.62,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Ramalho Miranda Jose Augusto",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 1145667.62,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Machado Silvana Rosa",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 1115623.04,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Machado Silvana Rosa",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 1115623.04,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Marcilio Juliano Ribeiro",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 1092806.42,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Marcilio Juliano Ribeiro",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 1092806.42,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Favarao Vinicius Urias",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 1087646.16,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Favarao Vinicius Urias",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 1087646.16,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "de Souza Cintia Scovine Barcelos",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 1080472.14,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "de Souza Cintia Scovine Barcelos",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 1080472.14,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Tescarolo Marcos Valerio",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 1025075.76,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Tescarolo Marcos Valerio",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 1025075.76,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Bueno Julio Cesar",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 1013262.9,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Bueno Julio Cesar",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 1013262.9,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Di Marcello Francesco",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 1008843.6,
-          "dates": [
-            "2026-09-28",
-            "2026-09-29"
-          ]
-        },
-        {
-          "insider": "Di Marcello Francesco",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 1008843.6,
-          "dates": [
-            "2026-09-28",
-            "2026-09-29"
-          ]
-        },
-        {
-          "insider": "Pedras Carlos Henrique Villela",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 1004183.0,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Pedras Carlos Henrique Villela",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 1004183.0,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "de Oliveira Tulio Xavier",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 996883.12,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "de Oliveira Tulio Xavier",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 996883.12,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Mantarro Renata Geiser",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 984584.8,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Mantarro Renata Geiser",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 984584.8,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Freiberger Fernando",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 890909.0,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Freiberger Fernando",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 890909.0,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Alvarez Rubens Aguiar",
-          "roles": [
-            "director"
-          ],
-          "spend": 842794.52,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Pavarina Denise Pauli",
-          "roles": [
-            "director"
-          ],
-          "spend": 842794.52,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Alvarez Rubens Aguiar",
-          "roles": [
-            "director"
-          ],
-          "spend": 842794.52,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Pavarina Denise Pauli",
-          "roles": [
-            "director"
-          ],
-          "spend": 842794.52,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "da Cunha Paulo Roberto Simoes",
-          "roles": [
-            "director"
-          ],
-          "spend": 842794.52,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "da Cunha Paulo Roberto Simoes",
-          "roles": [
-            "director"
-          ],
-          "spend": 842794.52,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Panico Alexandre",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 784287.6,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Panico Alexandre",
-          "roles": [
-            "officer",
-            "Executive Officer"
-          ],
-          "spend": 784287.6,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Nunes Regina Helena Jorge",
-          "roles": [
-            "director"
-          ],
-          "spend": 562162.68,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Caffarelli Paulo Rogerio",
-          "roles": [
-            "director"
-          ],
-          "spend": 562162.68,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Caffarelli Paulo Rogerio",
-          "roles": [
-            "director"
-          ],
-          "spend": 562162.68,
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "insider": "Nunes Regina Helena Jorge",
-          "roles": [
-            "director"
-          ],
-          "spend": 562162.68,
-          "dates": [
-            "2026-09-18"
           ]
         }
       ],
@@ -7446,11 +7606,11 @@
       "ticker": "TSM",
       "issuer": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
       "cik": "0001046179",
-      "n_insiders": 31,
-      "total_spend": 3011295.24,
-      "weighted_spend": 3847471.91,
+      "n_insiders": 30,
+      "total_spend": 2700684.64,
+      "weighted_spend": 3476337.92,
       "window_days": 90,
-      "latest_buy": "2026-09-07",
+      "latest_buy": "2026-10-07",
       "buys": [
         {
           "insider": "Tien Bor-Zen",
@@ -7523,28 +7683,6 @@
           ]
         },
         {
-          "insider": "Fang Shu-Hua",
-          "roles": [
-            "officer",
-            "SVP and GC"
-          ],
-          "spend": 154180.0,
-          "dates": [
-            "2026-07-02"
-          ]
-        },
-        {
-          "insider": "Fang Shu-Hua",
-          "roles": [
-            "officer",
-            "SVP and GC"
-          ],
-          "spend": 154180.0,
-          "dates": [
-            "2026-07-02"
-          ]
-        },
-        {
           "insider": "Lin Shyue-Shyh",
           "roles": [
             "officer",
@@ -7619,9 +7757,21 @@
             "officer",
             "Chairman and CEO"
           ],
-          "spend": 11353.8,
+          "spend": 11432.16,
           "dates": [
-            "2026-09-07"
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Wei Che-Chia",
+          "roles": [
+            "director",
+            "officer",
+            "Chairman and CEO"
+          ],
+          "spend": 11432.16,
+          "dates": [
+            "2026-10-07"
           ]
         },
         {
@@ -7643,21 +7793,9 @@
             "officer",
             "Chairman and CEO"
           ],
-          "spend": 11186.52,
+          "spend": 11353.8,
           "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Wei Che-Chia",
-          "roles": [
-            "director",
-            "officer",
-            "Chairman and CEO"
-          ],
-          "spend": 11186.52,
-          "dates": [
-            "2026-07-07"
+            "2026-09-07"
           ]
         },
         {
@@ -7729,14 +7867,25 @@
           ]
         },
         {
-          "insider": "Chin Yung-Pei",
+          "insider": "Mii Yuh-Jier",
           "roles": [
             "officer",
             "EVP and Co-COO"
           ],
-          "spend": 5286.78,
+          "spend": 5398.52,
           "dates": [
-            "2026-07-07"
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Mii Yuh-Jier",
+          "roles": [
+            "officer",
+            "EVP and Co-COO"
+          ],
+          "spend": 5398.52,
+          "dates": [
+            "2026-10-07"
           ]
         },
         {
@@ -7745,9 +7894,20 @@
             "officer",
             "EVP and Co-COO"
           ],
-          "spend": 5286.78,
+          "spend": 5319.13,
           "dates": [
-            "2026-07-07"
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Chin Yung-Pei",
+          "roles": [
+            "officer",
+            "EVP and Co-COO"
+          ],
+          "spend": 5319.13,
+          "dates": [
+            "2026-10-07"
           ]
         },
         {
@@ -7792,28 +7952,6 @@
           "spend": 5278.32,
           "dates": [
             "2026-08-07"
-          ]
-        },
-        {
-          "insider": "Mii Yuh-Jier",
-          "roles": [
-            "officer",
-            "EVP and Co-COO"
-          ],
-          "spend": 5210.16,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Mii Yuh-Jier",
-          "roles": [
-            "officer",
-            "EVP and Co-COO"
-          ],
-          "spend": 5210.16,
-          "dates": [
-            "2026-07-07"
           ]
         },
         {
@@ -7822,20 +7960,9 @@
             "officer",
             "SVP and Deputy Co-COO"
           ],
-          "spend": 4673.82,
+          "spend": 4763.4,
           "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Zhang Kevin Xiaoqiang",
-          "roles": [
-            "officer",
-            "SVP and Deputy Co-COO"
-          ],
-          "spend": 4673.82,
-          "dates": [
-            "2026-07-07"
+            "2026-10-07"
           ]
         },
         {
@@ -7844,9 +7971,9 @@
             "officer",
             "SVP and Deputy Co-COO"
           ],
-          "spend": 4673.82,
+          "spend": 4763.4,
           "dates": [
-            "2026-07-07"
+            "2026-10-07"
           ]
         },
         {
@@ -7855,9 +7982,20 @@
             "officer",
             "SVP and Deputy Co-COO"
           ],
-          "spend": 4673.82,
+          "spend": 4684.01,
           "dates": [
-            "2026-07-07"
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Zhang Kevin Xiaoqiang",
+          "roles": [
+            "officer",
+            "SVP and Deputy Co-COO"
+          ],
+          "spend": 4684.01,
+          "dates": [
+            "2026-10-07"
           ]
         },
         {
@@ -8015,6 +8153,50 @@
           ]
         },
         {
+          "insider": "Fang Shu-Hua",
+          "roles": [
+            "officer",
+            "SVP and GC"
+          ],
+          "spend": 4207.67,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Fang Shu-Hua",
+          "roles": [
+            "officer",
+            "SVP and GC"
+          ],
+          "spend": 4207.67,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Wu Shien-Yang",
+          "roles": [
+            "officer",
+            "SVP"
+          ],
+          "spend": 4207.67,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Wu Shien-Yang",
+          "roles": [
+            "officer",
+            "SVP"
+          ],
+          "spend": 4207.67,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
           "insider": "Hsu Kuo-Chin",
           "roles": [
             "officer",
@@ -8103,25 +8285,157 @@
           ]
         },
         {
+          "insider": "Hsu Kuo-Chin",
+          "roles": [
+            "officer",
+            "VP"
+          ],
+          "spend": 4128.28,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Hsu Kuo-Chin",
+          "roles": [
+            "officer",
+            "VP"
+          ],
+          "spend": 4128.28,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Wang Ying-Lang",
+          "roles": [
+            "officer",
+            "SVP"
+          ],
+          "spend": 4128.28,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Yeap Choh Fei",
+          "roles": [
+            "officer",
+            "SVP"
+          ],
+          "spend": 4128.28,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Wang Ying-Lang",
+          "roles": [
+            "officer",
+            "SVP"
+          ],
+          "spend": 4128.28,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Yeap Choh Fei",
+          "roles": [
+            "officer",
+            "SVP"
+          ],
+          "spend": 4128.28,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Wang Ying-Lang",
+          "roles": [
+            "officer",
+            "SVP"
+          ],
+          "spend": 4114.8,
+          "dates": [
+            "2026-09-07"
+          ]
+        },
+        {
+          "insider": "Yeap Choh Fei",
+          "roles": [
+            "officer",
+            "SVP"
+          ],
+          "spend": 4114.8,
+          "dates": [
+            "2026-09-07"
+          ]
+        },
+        {
+          "insider": "Wang Ying-Lang",
+          "roles": [
+            "officer",
+            "SVP"
+          ],
+          "spend": 4114.8,
+          "dates": [
+            "2026-09-07"
+          ]
+        },
+        {
+          "insider": "Yeap Choh Fei",
+          "roles": [
+            "officer",
+            "SVP"
+          ],
+          "spend": 4114.8,
+          "dates": [
+            "2026-09-07"
+          ]
+        },
+        {
           "insider": "Cao Min",
           "roles": [
             "officer",
             "VP"
           ],
-          "spend": 4137.48,
+          "spend": 4048.89,
           "dates": [
-            "2026-07-07"
+            "2026-10-07"
           ]
         },
         {
-          "insider": "Fang Shu-Hua",
+          "insider": "Chang Tzonz-Sheng",
           "roles": [
             "officer",
-            "SVP and GC"
+            "SVP"
           ],
-          "spend": 4137.48,
+          "spend": 4048.89,
           "dates": [
-            "2026-07-07"
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Lee Chun-Hsien",
+          "roles": [
+            "officer",
+            "SVP"
+          ],
+          "spend": 4048.89,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Chang Tzonz-Sheng",
+          "roles": [
+            "officer",
+            "SVP"
+          ],
+          "spend": 4048.89,
+          "dates": [
+            "2026-10-07"
           ]
         },
         {
@@ -8130,130 +8444,20 @@
             "officer",
             "VP"
           ],
-          "spend": 4137.48,
+          "spend": 4048.89,
           "dates": [
-            "2026-07-07"
+            "2026-10-07"
           ]
         },
         {
-          "insider": "Fang Shu-Hua",
-          "roles": [
-            "officer",
-            "SVP and GC"
-          ],
-          "spend": 4137.48,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Wu Shien-Yang",
+          "insider": "Lee Chun-Hsien",
           "roles": [
             "officer",
             "SVP"
           ],
-          "spend": 4137.48,
+          "spend": 4048.89,
           "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Wu Shien-Yang",
-          "roles": [
-            "officer",
-            "SVP"
-          ],
-          "spend": 4137.48,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Wang Ying-Lang",
-          "roles": [
-            "officer",
-            "SVP"
-          ],
-          "spend": 4114.8,
-          "dates": [
-            "2026-09-07"
-          ]
-        },
-        {
-          "insider": "Yeap Choh Fei",
-          "roles": [
-            "officer",
-            "SVP"
-          ],
-          "spend": 4114.8,
-          "dates": [
-            "2026-09-07"
-          ]
-        },
-        {
-          "insider": "Wang Ying-Lang",
-          "roles": [
-            "officer",
-            "SVP"
-          ],
-          "spend": 4114.8,
-          "dates": [
-            "2026-09-07"
-          ]
-        },
-        {
-          "insider": "Yeap Choh Fei",
-          "roles": [
-            "officer",
-            "SVP"
-          ],
-          "spend": 4114.8,
-          "dates": [
-            "2026-09-07"
-          ]
-        },
-        {
-          "insider": "Yeap Choh Fei",
-          "roles": [
-            "officer",
-            "SVP"
-          ],
-          "spend": 4060.86,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Wang Ying-Lang",
-          "roles": [
-            "officer",
-            "SVP"
-          ],
-          "spend": 4060.86,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Wang Ying-Lang",
-          "roles": [
-            "officer",
-            "SVP"
-          ],
-          "spend": 4060.86,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Yeap Choh Fei",
-          "roles": [
-            "officer",
-            "SVP"
-          ],
-          "spend": 4060.86,
-          "dates": [
-            "2026-07-07"
+            "2026-10-07"
           ]
         },
         {
@@ -8345,47 +8549,25 @@
           ]
         },
         {
-          "insider": "Chang Tzonz-Sheng",
-          "roles": [
-            "officer",
-            "SVP"
-          ],
-          "spend": 3984.24,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Hsu Kuo-Chin",
+          "insider": "Yoo Chue-San",
           "roles": [
             "officer",
             "VP"
           ],
-          "spend": 3984.24,
+          "spend": 3969.5,
           "dates": [
-            "2026-07-07"
+            "2026-10-07"
           ]
         },
         {
-          "insider": "Hsu Kuo-Chin",
+          "insider": "Yoo Chue-San",
           "roles": [
             "officer",
             "VP"
           ],
-          "spend": 3984.24,
+          "spend": 3969.5,
           "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Chang Tzonz-Sheng",
-          "roles": [
-            "officer",
-            "SVP"
-          ],
-          "spend": 3984.24,
-          "dates": [
-            "2026-07-07"
+            "2026-10-07"
           ]
         },
         {
@@ -8477,25 +8659,25 @@
           ]
         },
         {
-          "insider": "Yoo Chue-San",
+          "insider": "Lu Lee-Chung",
           "roles": [
             "officer",
             "VP"
           ],
-          "spend": 3907.62,
+          "spend": 3890.11,
           "dates": [
-            "2026-07-07"
+            "2026-10-07"
           ]
         },
         {
-          "insider": "Yoo Chue-San",
+          "insider": "Lu Lee-Chung",
           "roles": [
             "officer",
             "VP"
           ],
-          "spend": 3907.62,
+          "spend": 3890.11,
           "dates": [
-            "2026-07-07"
+            "2026-10-07"
           ]
         },
         {
@@ -8518,28 +8700,6 @@
           "spend": 3886.2,
           "dates": [
             "2026-09-07"
-          ]
-        },
-        {
-          "insider": "Lee Chun-Hsien",
-          "roles": [
-            "officer",
-            "SVP"
-          ],
-          "spend": 3831.0,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Lee Chun-Hsien",
-          "roles": [
-            "officer",
-            "SVP"
-          ],
-          "spend": 3831.0,
-          "dates": [
-            "2026-07-07"
           ]
         },
         {
@@ -8587,28 +8747,6 @@
           ]
         },
         {
-          "insider": "Lu Lee-Chung",
-          "roles": [
-            "officer",
-            "VP"
-          ],
-          "spend": 3754.38,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Lu Lee-Chung",
-          "roles": [
-            "officer",
-            "VP"
-          ],
-          "spend": 3754.38,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
           "insider": "Yoo Chue-San",
           "roles": [
             "officer",
@@ -8653,6 +8791,28 @@
           ]
         },
         {
+          "insider": "Tien Bor-Zen",
+          "roles": [
+            "officer",
+            "VP"
+          ],
+          "spend": 3731.33,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Tien Bor-Zen",
+          "roles": [
+            "officer",
+            "VP"
+          ],
+          "spend": 3731.33,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
           "insider": "Chen Chih-Ho",
           "roles": [
             "officer",
@@ -8672,28 +8832,6 @@
           "spend": 3730.0,
           "dates": [
             "2026-07-13"
-          ]
-        },
-        {
-          "insider": "Liaw Yung-Haw",
-          "roles": [
-            "officer",
-            "VP"
-          ],
-          "spend": 3677.76,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Liaw Yung-Haw",
-          "roles": [
-            "officer",
-            "VP"
-          ],
-          "spend": 3677.76,
-          "dates": [
-            "2026-07-07"
           ]
         },
         {
@@ -8746,9 +8884,20 @@
             "officer",
             "VP"
           ],
-          "spend": 3601.14,
+          "spend": 3651.94,
           "dates": [
-            "2026-07-07"
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Chuang Tzu-Sou",
+          "roles": [
+            "officer",
+            "VP"
+          ],
+          "spend": 3651.94,
+          "dates": [
+            "2026-10-07"
           ]
         },
         {
@@ -8757,9 +8906,20 @@
             "officer",
             "VP"
           ],
-          "spend": 3601.14,
+          "spend": 3651.94,
           "dates": [
-            "2026-07-07"
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Ku Yao-Ching",
+          "roles": [
+            "officer",
+            "VP"
+          ],
+          "spend": 3651.94,
+          "dates": [
+            "2026-10-07"
           ]
         },
         {
@@ -8768,9 +8928,20 @@
             "officer",
             "VP"
           ],
-          "spend": 3601.14,
+          "spend": 3651.94,
           "dates": [
-            "2026-07-07"
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Chuang Tzu-Sou",
+          "roles": [
+            "officer",
+            "VP"
+          ],
+          "spend": 3651.94,
+          "dates": [
+            "2026-10-07"
           ]
         },
         {
@@ -8779,9 +8950,20 @@
             "officer",
             "VP"
           ],
-          "spend": 3601.14,
+          "spend": 3651.94,
           "dates": [
-            "2026-07-07"
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Ku Yao-Ching",
+          "roles": [
+            "officer",
+            "VP"
+          ],
+          "spend": 3651.94,
+          "dates": [
+            "2026-10-07"
           ]
         },
         {
@@ -8917,14 +9099,47 @@
           ]
         },
         {
-          "insider": "Ku Yao-Ching",
+          "insider": "Chen Pei-Hung",
           "roles": [
             "officer",
             "VP"
           ],
-          "spend": 3524.52,
+          "spend": 3505.2,
           "dates": [
-            "2026-07-07"
+            "2026-09-07"
+          ]
+        },
+        {
+          "insider": "He Jun",
+          "roles": [
+            "officer",
+            "VP"
+          ],
+          "spend": 3505.2,
+          "dates": [
+            "2026-09-07"
+          ]
+        },
+        {
+          "insider": "Chen Pei-Hung",
+          "roles": [
+            "officer",
+            "VP"
+          ],
+          "spend": 3505.2,
+          "dates": [
+            "2026-09-07"
+          ]
+        },
+        {
+          "insider": "He Jun",
+          "roles": [
+            "officer",
+            "VP"
+          ],
+          "spend": 3505.2,
+          "dates": [
+            "2026-09-07"
           ]
         },
         {
@@ -8933,20 +9148,20 @@
             "officer",
             "VP and CIO"
           ],
-          "spend": 3524.52,
+          "spend": 3493.16,
           "dates": [
-            "2026-07-07"
+            "2026-10-07"
           ]
         },
         {
-          "insider": "Tien Bor-Zen",
+          "insider": "Lin Shyue-Shyh",
           "roles": [
             "officer",
             "VP"
           ],
-          "spend": 3524.52,
+          "spend": 3493.16,
           "dates": [
-            "2026-07-07"
+            "2026-10-07"
           ]
         },
         {
@@ -8955,119 +9170,20 @@
             "officer",
             "VP and CIO"
           ],
-          "spend": 3524.52,
+          "spend": 3493.16,
           "dates": [
-            "2026-07-07"
+            "2026-10-07"
           ]
         },
         {
-          "insider": "Ku Yao-Ching",
+          "insider": "Lin Shyue-Shyh",
           "roles": [
             "officer",
             "VP"
           ],
-          "spend": 3524.52,
+          "spend": 3493.16,
           "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Tien Bor-Zen",
-          "roles": [
-            "officer",
-            "VP"
-          ],
-          "spend": 3524.52,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Chen Pei-Hung",
-          "roles": [
-            "officer",
-            "VP"
-          ],
-          "spend": 3505.2,
-          "dates": [
-            "2026-09-07"
-          ]
-        },
-        {
-          "insider": "He Jun",
-          "roles": [
-            "officer",
-            "VP"
-          ],
-          "spend": 3505.2,
-          "dates": [
-            "2026-09-07"
-          ]
-        },
-        {
-          "insider": "Chen Pei-Hung",
-          "roles": [
-            "officer",
-            "VP"
-          ],
-          "spend": 3505.2,
-          "dates": [
-            "2026-09-07"
-          ]
-        },
-        {
-          "insider": "He Jun",
-          "roles": [
-            "officer",
-            "VP"
-          ],
-          "spend": 3505.2,
-          "dates": [
-            "2026-09-07"
-          ]
-        },
-        {
-          "insider": "Chuang Tzu-Sou",
-          "roles": [
-            "officer",
-            "VP"
-          ],
-          "spend": 3447.9,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "He Jun",
-          "roles": [
-            "officer",
-            "VP"
-          ],
-          "spend": 3447.9,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Chuang Tzu-Sou",
-          "roles": [
-            "officer",
-            "VP"
-          ],
-          "spend": 3447.9,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "He Jun",
-          "roles": [
-            "officer",
-            "VP"
-          ],
-          "spend": 3447.9,
-          "dates": [
-            "2026-07-07"
+            "2026-10-07"
           ]
         },
         {
@@ -9142,6 +9258,50 @@
             "officer",
             "VP"
           ],
+          "spend": 3413.77,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "He Jun",
+          "roles": [
+            "officer",
+            "VP"
+          ],
+          "spend": 3413.77,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Chen Pei-Hung",
+          "roles": [
+            "officer",
+            "VP"
+          ],
+          "spend": 3413.77,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "He Jun",
+          "roles": [
+            "officer",
+            "VP"
+          ],
+          "spend": 3413.77,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Chen Pei-Hung",
+          "roles": [
+            "officer",
+            "VP"
+          ],
           "spend": 3372.26,
           "dates": [
             "2026-08-07"
@@ -9178,50 +9338,6 @@
           "spend": 3372.26,
           "dates": [
             "2026-08-07"
-          ]
-        },
-        {
-          "insider": "Chen Pei-Hung",
-          "roles": [
-            "officer",
-            "VP"
-          ],
-          "spend": 3371.28,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Lin Shyue-Shyh",
-          "roles": [
-            "officer",
-            "VP"
-          ],
-          "spend": 3371.28,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Lin Shyue-Shyh",
-          "roles": [
-            "officer",
-            "VP"
-          ],
-          "spend": 3371.28,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Chen Pei-Hung",
-          "roles": [
-            "officer",
-            "VP"
-          ],
-          "spend": 3371.28,
-          "dates": [
-            "2026-07-07"
           ]
         },
         {
@@ -9252,6 +9368,28 @@
             "officer",
             "VP"
           ],
+          "spend": 3175.6,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Yuan Lipen",
+          "roles": [
+            "officer",
+            "VP"
+          ],
+          "spend": 3175.6,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Yuan Lipen",
+          "roles": [
+            "officer",
+            "VP"
+          ],
           "spend": 3124.2,
           "dates": [
             "2026-09-07"
@@ -9266,6 +9404,50 @@
           "spend": 3124.2,
           "dates": [
             "2026-09-07"
+          ]
+        },
+        {
+          "insider": "Hwang Yuan-Ko",
+          "roles": [
+            "officer",
+            "VP"
+          ],
+          "spend": 3096.21,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Hwang Yuan-Ko",
+          "roles": [
+            "officer",
+            "VP"
+          ],
+          "spend": 3096.21,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Wu Yi-Huang",
+          "roles": [
+            "officer",
+            "VP"
+          ],
+          "spend": 3096.21,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Wu Yi-Huang",
+          "roles": [
+            "officer",
+            "VP"
+          ],
+          "spend": 3096.21,
+          "dates": [
+            "2026-10-07"
           ]
         },
         {
@@ -9288,50 +9470,6 @@
           "spend": 3079.02,
           "dates": [
             "2026-08-07"
-          ]
-        },
-        {
-          "insider": "Hwang Yuan-Ko",
-          "roles": [
-            "officer",
-            "VP"
-          ],
-          "spend": 3064.8,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Hwang Yuan-Ko",
-          "roles": [
-            "officer",
-            "VP"
-          ],
-          "spend": 3064.8,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Yuan Lipen",
-          "roles": [
-            "officer",
-            "VP"
-          ],
-          "spend": 3064.8,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Yuan Lipen",
-          "roles": [
-            "officer",
-            "VP"
-          ],
-          "spend": 3064.8,
-          "dates": [
-            "2026-07-07"
           ]
         },
         {
@@ -9398,28 +9536,6 @@
           "spend": 3005.71,
           "dates": [
             "2026-08-07"
-          ]
-        },
-        {
-          "insider": "Wu Yi-Huang",
-          "roles": [
-            "officer",
-            "VP"
-          ],
-          "spend": 2988.18,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Wu Yi-Huang",
-          "roles": [
-            "officer",
-            "VP"
-          ],
-          "spend": 2988.18,
-          "dates": [
-            "2026-07-07"
           ]
         },
         {
@@ -9494,9 +9610,9 @@
             "officer",
             "VP"
           ],
-          "spend": 2834.94,
+          "spend": 2858.04,
           "dates": [
-            "2026-07-07"
+            "2026-10-07"
           ]
         },
         {
@@ -9505,9 +9621,31 @@
             "officer",
             "VP"
           ],
-          "spend": 2834.94,
+          "spend": 2858.04,
           "dates": [
-            "2026-07-07"
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Chen Chih-Ho",
+          "roles": [
+            "officer",
+            "Controller"
+          ],
+          "spend": 2461.09,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "Chen Chih-Ho",
+          "roles": [
+            "officer",
+            "Controller"
+          ],
+          "spend": 2461.09,
+          "dates": [
+            "2026-10-07"
           ]
         },
         {
@@ -9555,28 +9693,6 @@
           ]
         },
         {
-          "insider": "Chen Chih-Ho",
-          "roles": [
-            "officer",
-            "Controller"
-          ],
-          "spend": 2375.22,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
-          "insider": "Chen Chih-Ho",
-          "roles": [
-            "officer",
-            "Controller"
-          ],
-          "spend": 2375.22,
-          "dates": [
-            "2026-07-07"
-          ]
-        },
-        {
           "insider": "Huang Jen-Chau",
           "roles": [
             "officer",
@@ -9604,9 +9720,9 @@
             "officer",
             "SVP and CFO"
           ],
-          "spend": 2145.36,
+          "spend": 2222.92,
           "dates": [
-            "2026-07-07"
+            "2026-10-07"
           ]
         },
         {
@@ -9615,9 +9731,9 @@
             "officer",
             "SVP and CFO"
           ],
-          "spend": 2145.36,
+          "spend": 2222.92,
           "dates": [
-            "2026-07-07"
+            "2026-10-07"
           ]
         },
         {
@@ -9645,7 +9761,184 @@
       ],
       "market_cap": null,
       "cap_unknown": true,
-      "score": 0.9763
+      "score": 0.9738
+    },
+    {
+      "ticker": "FUL",
+      "issuer": "FULLER H B CO",
+      "cik": "0000039368",
+      "n_insiders": 8,
+      "total_spend": 2242631.22,
+      "weighted_spend": 3363946.83,
+      "window_days": 90,
+      "latest_buy": "2026-10-07",
+      "buys": [
+        {
+          "insider": "BAILLY R JEFFREY",
+          "roles": [
+            "director"
+          ],
+          "spend": 500000.0,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "BAILLY R JEFFREY",
+          "roles": [
+            "director"
+          ],
+          "spend": 500000.0,
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "insider": "FLORNESS DANIEL L",
+          "roles": [
+            "director"
+          ],
+          "spend": 100160.2,
+          "dates": [
+            "2026-09-28"
+          ]
+        },
+        {
+          "insider": "FLORNESS DANIEL L",
+          "roles": [
+            "director"
+          ],
+          "spend": 100160.2,
+          "dates": [
+            "2026-09-28"
+          ]
+        },
+        {
+          "insider": "Zaheer Srilata",
+          "roles": [
+            "director"
+          ],
+          "spend": 100118.9,
+          "dates": [
+            "2026-09-28",
+            "2026-09-29"
+          ]
+        },
+        {
+          "insider": "Zaheer Srilata",
+          "roles": [
+            "director"
+          ],
+          "spend": 100118.9,
+          "dates": [
+            "2026-09-28",
+            "2026-09-29"
+          ]
+        },
+        {
+          "insider": "Lauber Charles T",
+          "roles": [
+            "director"
+          ],
+          "spend": 99984.54,
+          "dates": [
+            "2026-09-29"
+          ]
+        },
+        {
+          "insider": "Lauber Charles T",
+          "roles": [
+            "director"
+          ],
+          "spend": 99984.54,
+          "dates": [
+            "2026-09-29"
+          ]
+        },
+        {
+          "insider": "Rasmussen Trangsrud Teresa J",
+          "roles": [
+            "director"
+          ],
+          "spend": 99984.32,
+          "dates": [
+            "2026-09-28"
+          ]
+        },
+        {
+          "insider": "Rasmussen Trangsrud Teresa J",
+          "roles": [
+            "director"
+          ],
+          "spend": 99984.32,
+          "dates": [
+            "2026-09-28"
+          ]
+        },
+        {
+          "insider": "Happe Michael J",
+          "roles": [
+            "director"
+          ],
+          "spend": 99250.0,
+          "dates": [
+            "2026-09-29"
+          ]
+        },
+        {
+          "insider": "Happe Michael J",
+          "roles": [
+            "director"
+          ],
+          "spend": 99250.0,
+          "dates": [
+            "2026-09-29"
+          ]
+        },
+        {
+          "insider": "HANDLEY THOMAS W",
+          "roles": [
+            "director"
+          ],
+          "spend": 98820.0,
+          "dates": [
+            "2026-09-28"
+          ]
+        },
+        {
+          "insider": "HANDLEY THOMAS W",
+          "roles": [
+            "director"
+          ],
+          "spend": 98820.0,
+          "dates": [
+            "2026-09-28"
+          ]
+        },
+        {
+          "insider": "Martin Celine Christine",
+          "roles": [
+            "director"
+          ],
+          "spend": 22997.65,
+          "dates": [
+            "2026-09-30"
+          ]
+        },
+        {
+          "insider": "Martin Celine Christine",
+          "roles": [
+            "director"
+          ],
+          "spend": 22997.65,
+          "dates": [
+            "2026-09-30"
+          ]
+        }
+      ],
+      "market_cap": null,
+      "cap_unknown": true,
+      "score": 0.973
     },
     {
       "ticker": "HEPA",
@@ -9793,163 +10086,6 @@
       "market_cap": null,
       "cap_unknown": true,
       "score": 0.9693
-    },
-    {
-      "ticker": "FUL",
-      "issuer": "FULLER H B CO",
-      "cik": "0000039368",
-      "n_insiders": 7,
-      "total_spend": 1242631.22,
-      "weighted_spend": 1863946.83,
-      "window_days": 90,
-      "latest_buy": "2026-09-30",
-      "buys": [
-        {
-          "insider": "FLORNESS DANIEL L",
-          "roles": [
-            "director"
-          ],
-          "spend": 100160.2,
-          "dates": [
-            "2026-09-28"
-          ]
-        },
-        {
-          "insider": "FLORNESS DANIEL L",
-          "roles": [
-            "director"
-          ],
-          "spend": 100160.2,
-          "dates": [
-            "2026-09-28"
-          ]
-        },
-        {
-          "insider": "Zaheer Srilata",
-          "roles": [
-            "director"
-          ],
-          "spend": 100118.9,
-          "dates": [
-            "2026-09-28",
-            "2026-09-29"
-          ]
-        },
-        {
-          "insider": "Zaheer Srilata",
-          "roles": [
-            "director"
-          ],
-          "spend": 100118.9,
-          "dates": [
-            "2026-09-28",
-            "2026-09-29"
-          ]
-        },
-        {
-          "insider": "Lauber Charles T",
-          "roles": [
-            "director"
-          ],
-          "spend": 99984.54,
-          "dates": [
-            "2026-09-29"
-          ]
-        },
-        {
-          "insider": "Lauber Charles T",
-          "roles": [
-            "director"
-          ],
-          "spend": 99984.54,
-          "dates": [
-            "2026-09-29"
-          ]
-        },
-        {
-          "insider": "Rasmussen Trangsrud Teresa J",
-          "roles": [
-            "director"
-          ],
-          "spend": 99984.32,
-          "dates": [
-            "2026-09-28"
-          ]
-        },
-        {
-          "insider": "Rasmussen Trangsrud Teresa J",
-          "roles": [
-            "director"
-          ],
-          "spend": 99984.32,
-          "dates": [
-            "2026-09-28"
-          ]
-        },
-        {
-          "insider": "Happe Michael J",
-          "roles": [
-            "director"
-          ],
-          "spend": 99250.0,
-          "dates": [
-            "2026-09-29"
-          ]
-        },
-        {
-          "insider": "Happe Michael J",
-          "roles": [
-            "director"
-          ],
-          "spend": 99250.0,
-          "dates": [
-            "2026-09-29"
-          ]
-        },
-        {
-          "insider": "HANDLEY THOMAS W",
-          "roles": [
-            "director"
-          ],
-          "spend": 98820.0,
-          "dates": [
-            "2026-09-28"
-          ]
-        },
-        {
-          "insider": "HANDLEY THOMAS W",
-          "roles": [
-            "director"
-          ],
-          "spend": 98820.0,
-          "dates": [
-            "2026-09-28"
-          ]
-        },
-        {
-          "insider": "Martin Celine Christine",
-          "roles": [
-            "director"
-          ],
-          "spend": 22997.65,
-          "dates": [
-            "2026-09-30"
-          ]
-        },
-        {
-          "insider": "Martin Celine Christine",
-          "roles": [
-            "director"
-          ],
-          "spend": 22997.65,
-          "dates": [
-            "2026-09-30"
-          ]
-        }
-      ],
-      "market_cap": null,
-      "cap_unknown": true,
-      "score": 0.9583
     },
     {
       "ticker": "CC",
@@ -11563,6 +11699,127 @@
       "score": 0.9
     },
     {
+      "ticker": "ACCV",
+      "issuer": "Accelevation Holdings Corp.",
+      "cik": "0002141406",
+      "n_insiders": 5,
+      "total_spend": 8197200.0,
+      "weighted_spend": 23313600.0,
+      "window_days": 90,
+      "latest_buy": "2026-10-01",
+      "buys": [
+        {
+          "insider": "Rubiera Michael",
+          "roles": [
+            "director",
+            "officer",
+            "Chief Executive Officer"
+          ],
+          "spend": 3657600.0,
+          "dates": [
+            "2026-10-01"
+          ]
+        },
+        {
+          "insider": "Rubiera Michael",
+          "roles": [
+            "director",
+            "officer",
+            "Chief Executive Officer"
+          ],
+          "spend": 3657600.0,
+          "dates": [
+            "2026-10-01"
+          ]
+        },
+        {
+          "insider": "JONES GINGER M",
+          "roles": [
+            "director"
+          ],
+          "spend": 180000.0,
+          "dates": [
+            "2026-10-01"
+          ]
+        },
+        {
+          "insider": "JONES GINGER M",
+          "roles": [
+            "director"
+          ],
+          "spend": 180000.0,
+          "dates": [
+            "2026-10-01"
+          ]
+        },
+        {
+          "insider": "Donahue Paul D",
+          "roles": [
+            "director"
+          ],
+          "spend": 126000.0,
+          "dates": [
+            "2026-10-01"
+          ]
+        },
+        {
+          "insider": "Donahue Paul D",
+          "roles": [
+            "director"
+          ],
+          "spend": 126000.0,
+          "dates": [
+            "2026-10-01"
+          ]
+        },
+        {
+          "insider": "HECKES HOWARD C",
+          "roles": [
+            "director"
+          ],
+          "spend": 90000.0,
+          "dates": [
+            "2026-10-01"
+          ]
+        },
+        {
+          "insider": "HECKES HOWARD C",
+          "roles": [
+            "director"
+          ],
+          "spend": 90000.0,
+          "dates": [
+            "2026-10-01"
+          ]
+        },
+        {
+          "insider": "Jewell Brent C",
+          "roles": [
+            "officer",
+            "Chief Operating Officer"
+          ],
+          "spend": 45000.0,
+          "dates": [
+            "2026-10-01"
+          ]
+        },
+        {
+          "insider": "Jewell Brent C",
+          "roles": [
+            "officer",
+            "Chief Operating Officer"
+          ],
+          "spend": 45000.0,
+          "dates": [
+            "2026-10-01"
+          ]
+        }
+      ],
+      "market_cap": null,
+      "cap_unknown": true,
+      "score": 0.9
+    },
+    {
       "ticker": "XBP",
       "issuer": "XBP Global Holdings, Inc.",
       "cik": "0001839530",
@@ -12980,125 +13237,6 @@
       "market_cap": null,
       "cap_unknown": true,
       "score": 0.8508
-    },
-    {
-      "ticker": "PRHI",
-      "issuer": "Presurance Holdings, Inc.",
-      "cik": "0001502292",
-      "n_insiders": 5,
-      "total_spend": 497755.18,
-      "weighted_spend": 950776.02,
-      "window_days": 90,
-      "latest_buy": "2026-09-30",
-      "buys": [
-        {
-          "insider": "SARAFA JOSEPH D",
-          "roles": [
-            "director"
-          ],
-          "spend": 74246.7,
-          "dates": [
-            "2026-09-30"
-          ]
-        },
-        {
-          "insider": "SARAFA JOSEPH D",
-          "roles": [
-            "director"
-          ],
-          "spend": 74246.7,
-          "dates": [
-            "2026-09-30"
-          ]
-        },
-        {
-          "insider": "RONEY BRIAN J",
-          "roles": [
-            "officer",
-            "Chief Executive Officer"
-          ],
-          "spend": 50622.75,
-          "dates": [
-            "2026-09-30"
-          ]
-        },
-        {
-          "insider": "RONEY BRIAN J",
-          "roles": [
-            "officer",
-            "Chief Executive Officer"
-          ],
-          "spend": 50622.75,
-          "dates": [
-            "2026-09-30"
-          ]
-        },
-        {
-          "insider": "O'Hanlon Isolde",
-          "roles": [
-            "director"
-          ],
-          "spend": 48935.32,
-          "dates": [
-            "2026-09-30"
-          ]
-        },
-        {
-          "insider": "Smith James Grant",
-          "roles": [
-            "director"
-          ],
-          "spend": 48935.32,
-          "dates": [
-            "2026-09-30"
-          ]
-        },
-        {
-          "insider": "O'Hanlon Isolde",
-          "roles": [
-            "director"
-          ],
-          "spend": 48935.32,
-          "dates": [
-            "2026-09-30"
-          ]
-        },
-        {
-          "insider": "Smith James Grant",
-          "roles": [
-            "director"
-          ],
-          "spend": 48935.32,
-          "dates": [
-            "2026-09-30"
-          ]
-        },
-        {
-          "insider": "MELOCHE HAROLD J",
-          "roles": [
-            "officer",
-            "CFO, Treasurer"
-          ],
-          "spend": 26137.5,
-          "dates": [
-            "2026-09-30"
-          ]
-        },
-        {
-          "insider": "MELOCHE HAROLD J",
-          "roles": [
-            "officer",
-            "CFO, Treasurer"
-          ],
-          "spend": 26137.5,
-          "dates": [
-            "2026-09-30"
-          ]
-        }
-      ],
-      "market_cap": null,
-      "cap_unknown": true,
-      "score": 0.8416
     }
   ],
   "_note": "Candidates, not positions. Each still needs >35% analyst upside, a dated catalyst inside 18 months, and sentiment acceleration (IPS 1) plus the valuation gate (IPS 3a) before purchase. Insider filings are conviction confirmation on a one-year thesis, never an entry trigger (IPS 3)."

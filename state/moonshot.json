@@ -3,21 +3,23 @@
   "name": "Moonshot",
   "inception": "2026-08-14",
   "starting_cash": 100000.0,
-  "cash": 91999.99,
-  "positions": {
-    "CBRS": {
+  "cash": 97351.11,
+  "positions": {},
+  "closed": [
+    {
       "ticker": "CBRS",
-      "shares": 36.5148,
-      "cost_basis": 8000.01,
+      "shares": 0.0,
+      "cost_basis": 0.0,
       "avg_cost": 219.0895,
       "opened": "2026-08-16",
       "thesis_id": "cbrs",
       "house_money_taken": false,
-      "realized": 0.0,
-      "initial_cost": 8000.01
+      "realized": -2648.89,
+      "initial_cost": 8000.01,
+      "closed": "2026-10-13",
+      "close_reason": "STOP-LOSS: CBRS at -33.1% vs cost $219.09, breaching the -25% limit for Moonshot. Automatic, not discretionary."
     }
-  },
-  "closed": [],
+  ],
   "trades": [
     {
       "id": "moonshot-0001",
@@ -35,21 +37,29 @@
         "INCEPTION"
       ],
       "price_source": "yfinance"
+    },
+    {
+      "id": "moonshot-0002",
+      "ts": "2026-10-13T02:34:07+00:00",
+      "date": "2026-10-13",
+      "portfolio": "moonshot",
+      "action": "SELL",
+      "ticker": "CBRS",
+      "shares": 36.5148,
+      "price": 146.5467,
+      "value": 5351.12,
+      "reason": "STOP-LOSS: CBRS at -33.1% vs cost $219.09, breaching the -25% limit for Moonshot. Automatic, not discretionary.",
+      "thesis_id": "",
+      "tags": [
+        "AUTO",
+        "STOP"
+      ],
+      "price_source": "yfinance"
     }
   ],
   "high_water": 101200.989304,
   "status": "active",
   "status_note": "",
-  "last_marked": "2026-10-10T00:47:49+00:00",
-  "marks": {
-    "CBRS": {
-      "price": 181.55,
-      "asof": "2026-10-05",
-      "source": "yfinance-STALE",
-      "prev": {
-        "price": 206.75,
-        "asof": "2026-09-25"
-      }
-    }
-  }
+  "last_marked": "2026-10-13T02:34:07+00:00",
+  "marks": {}
 }

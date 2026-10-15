@@ -177,63 +177,63 @@
       "price_source": "yfinance"
     }
   ],
-  "high_water": 102588.345997,
+  "high_water": 102884.794776,
   "status": "active",
   "status_note": "",
-  "last_marked": "2026-10-14T23:54:27+00:00",
+  "last_marked": "2026-10-15T23:41:01+00:00",
   "marks": {
     "META": {
-      "price": 737.54,
-      "asof": "2026-10-14",
+      "price": 736.72,
+      "asof": "2026-10-15",
       "source": "yfinance",
       "prev": {
-        "price": 742.96,
-        "asof": "2026-10-12"
+        "price": 737.54,
+        "asof": "2026-10-14"
       }
     },
     "UNH": {
-      "price": 395.62,
-      "asof": "2026-10-14",
+      "price": 406.67,
+      "asof": "2026-10-15",
       "source": "yfinance",
       "prev": {
-        "price": 378.52,
-        "asof": "2026-10-12"
+        "price": 395.62,
+        "asof": "2026-10-14"
       }
     },
     "XLV": {
-      "price": 173.96,
-      "asof": "2026-10-14",
+      "price": 177.19,
+      "asof": "2026-10-15",
       "source": "yfinance",
       "prev": {
-        "price": 171.99,
-        "asof": "2026-10-12"
+        "price": 173.96,
+        "asof": "2026-10-14"
       }
     },
     "GOOGL": {
-      "price": 347.64,
-      "asof": "2026-10-14",
+      "price": 349.22,
+      "asof": "2026-10-15",
       "source": "yfinance",
       "prev": {
-        "price": 352.72,
-        "asof": "2026-10-12"
+        "price": 347.64,
+        "asof": "2026-10-14"
       }
     },
     "MSFT": {
-      "price": 533.69,
-      "asof": "2026-10-14",
+      "price": 539.44,
+      "asof": "2026-10-15",
       "source": "yfinance",
       "prev": {
-        "price": 541.15,
-        "asof": "2026-10-12"
+        "price": 533.69,
+        "asof": "2026-10-14"
       }
     },
     "AMZN": {
-      "price": 254.08,
-      "asof": "2026-10-14",
+      "price": 254.76,
+      "asof": "2026-10-15",
       "source": "yfinance",
       "prev": {
-        "price": 259.53,
-        "asof": "2026-10-12"
+        "price": 254.08,
+        "asof": "2026-10-14"
       }
     }
   }

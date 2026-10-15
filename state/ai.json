@@ -3,7 +3,7 @@
   "name": "AI Trade",
   "inception": "2026-08-14",
   "starting_cash": 100000.0,
-  "cash": 34879.11,
+  "cash": 39873.35,
   "positions": {
     "NVDA": {
       "ticker": "NVDA",
@@ -48,17 +48,6 @@
       "house_money_taken": false,
       "realized": 0.0,
       "initial_cost": 7000.01
-    },
-    "COHR": {
-      "ticker": "COHR",
-      "shares": 19.9391,
-      "cost_basis": 6500.01,
-      "avg_cost": 325.9929,
-      "opened": "2026-08-16",
-      "thesis_id": "cohr",
-      "house_money_taken": false,
-      "realized": 0.0,
-      "initial_cost": 6500.01
     },
     "TSM": {
       "ticker": "TSM",
@@ -109,6 +98,19 @@
       "initial_cost": 5500.0,
       "closed": "2026-09-15",
       "close_reason": "STOP-LOSS: VRT at -20.2% vs cost $293.99, breaching the -20% limit for AI Trade. Automatic, not discretionary."
+    },
+    {
+      "ticker": "COHR",
+      "shares": 0.0,
+      "cost_basis": 0.0,
+      "avg_cost": 325.9929,
+      "opened": "2026-08-16",
+      "thesis_id": "cohr",
+      "house_money_taken": false,
+      "realized": -1505.76,
+      "initial_cost": 6500.01,
+      "closed": "2026-10-15",
+      "close_reason": "STOP-LOSS: COHR at -23.1% vs cost $325.99, breaching the -20% limit for AI Trade. Automatic, not discretionary."
     }
   ],
   "trades": [
@@ -300,74 +302,83 @@
         "STOP"
       ],
       "price_source": "yfinance"
+    },
+    {
+      "id": "ai-0012",
+      "ts": "2026-10-15T23:41:01+00:00",
+      "date": "2026-10-15",
+      "portfolio": "ai",
+      "action": "SELL",
+      "ticker": "COHR",
+      "shares": 19.9391,
+      "price": 250.4747,
+      "value": 4994.24,
+      "reason": "STOP-LOSS: COHR at -23.1% vs cost $325.99, breaching the -20% limit for AI Trade. Automatic, not discretionary.",
+      "thesis_id": "",
+      "tags": [
+        "AUTO",
+        "STOP"
+      ],
+      "price_source": "yfinance"
     }
   ],
   "high_water": 102234.66991265,
   "status": "active",
   "status_note": "",
-  "last_marked": "2026-10-14T23:54:27+00:00",
+  "last_marked": "2026-10-15T23:41:01+00:00",
   "marks": {
     "NVDA": {
-      "price": 221.3,
-      "asof": "2026-10-14",
+      "price": 217.23,
+      "asof": "2026-10-15",
       "source": "yfinance",
       "prev": {
-        "price": 226.32,
-        "asof": "2026-10-12"
+        "price": 221.3,
+        "asof": "2026-10-14"
       }
     },
     "MU": {
-      "price": 914.13,
-      "asof": "2026-10-14",
+      "price": 931.24,
+      "asof": "2026-10-15",
       "source": "yfinance",
       "prev": {
-        "price": 989.04,
-        "asof": "2026-10-12"
+        "price": 914.13,
+        "asof": "2026-10-14"
       }
     },
     "AMD": {
-      "price": 570.82,
-      "asof": "2026-10-14",
+      "price": 562.23,
+      "asof": "2026-10-15",
       "source": "yfinance",
       "prev": {
-        "price": 594.24,
-        "asof": "2026-10-12"
+        "price": 570.82,
+        "asof": "2026-10-14"
       }
     },
     "CEG": {
-      "price": 279.54,
-      "asof": "2026-10-14",
+      "price": 275.0,
+      "asof": "2026-10-15",
       "source": "yfinance",
       "prev": {
-        "price": 293.89,
-        "asof": "2026-10-12"
-      }
-    },
-    "COHR": {
-      "price": 263.32,
-      "asof": "2026-10-14",
-      "source": "yfinance",
-      "prev": {
-        "price": 288.02,
-        "asof": "2026-10-12"
+        "price": 279.54,
+        "asof": "2026-10-14"
       }
     },
     "TSM": {
-      "price": 430.0,
-      "asof": "2026-10-14",
+      "price": 422.25,
+      "asof": "2026-10-15",
       "source": "yfinance",
       "prev": {
-        "price": 444.35,
-        "asof": "2026-10-12"
+        "price": 430.0,
+        "asof": "2026-10-14"
       }
     },
     "AVGO": {
-      "price": 346.25,
-      "asof": "2026-10-14",
+      "price": 344.33,
+      "asof": "2026-10-15",
       "source": "yfinance",
       "prev": {
-        "price": 354.73,
-        "asof": "2026-10-12"
+        "price": 346.25,
+        "asof": "2026-10-14"
       }
     }
   }

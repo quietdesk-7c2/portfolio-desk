@@ -1,20 +1,20 @@
 {
-  "generated": "2026-10-10T22:58:06+00:00",
+  "generated": "2026-10-17T21:54:32+00:00",
   "days_back": 90,
-  "days_scanned": 64,
-  "filings_seen": 67524,
-  "purchase_filings": 6664,
+  "days_scanned": 63,
+  "filings_seen": 66384,
+  "purchase_filings": 6611,
   "clusters_found": 354,
   "candidates": [
     {
       "ticker": "NONE",
-      "issuer": "Fundrise Real Estate Interval Fund, LLC",
-      "cik": "0001777677",
-      "n_insiders": 74,
-      "total_spend": 1607149272.99,
-      "weighted_spend": 1754495296.86,
+      "issuer": "Keenova Therapeutics plc",
+      "cik": "0001567892",
+      "n_insiders": 69,
+      "total_spend": 1605546963.23,
+      "weighted_spend": 1702524064.15,
       "window_days": 90,
-      "latest_buy": "2026-10-07",
+      "latest_buy": "2026-10-14",
       "buys": [
         {
           "insider": "Waxman Alan",
@@ -28,17 +28,6 @@
           ]
         },
         {
-          "insider": "Waxman Alan",
-          "roles": [
-            "officer",
-            "Vice President"
-          ],
-          "spend": 47818171.46,
-          "dates": [
-            "2026-09-01"
-          ]
-        },
-        {
           "insider": "GOLDENTREE ASSET MANAGEMENT LP",
           "roles": [
             "10% owner"
@@ -513,6 +502,46 @@
           ]
         },
         {
+          "insider": "GOLDENTREE ASSET MANAGEMENT LP",
+          "roles": [
+            "10% owner"
+          ],
+          "spend": 12330000.0,
+          "dates": [
+            "2026-10-14"
+          ]
+        },
+        {
+          "insider": "GOLDENTREE ASSET MANAGEMENT LP",
+          "roles": [
+            "10% owner"
+          ],
+          "spend": 12330000.0,
+          "dates": [
+            "2026-10-14"
+          ]
+        },
+        {
+          "insider": "GOLDENTREE ASSET MANAGEMENT LP",
+          "roles": [
+            "10% owner"
+          ],
+          "spend": 12330000.0,
+          "dates": [
+            "2026-10-14"
+          ]
+        },
+        {
+          "insider": "GOLDENTREE ASSET MANAGEMENT LP",
+          "roles": [
+            "10% owner"
+          ],
+          "spend": 12330000.0,
+          "dates": [
+            "2026-10-14"
+          ]
+        },
+        {
           "insider": "French Scot",
           "roles": [
             "director"
@@ -733,7 +762,7 @@
           ]
         },
         {
-          "insider": "Blackstone Private Multi-Asset Credit & Income Fund",
+          "insider": "Blackstone Holdings IV L.P.",
           "roles": [
             "10% owner"
           ],
@@ -743,7 +772,7 @@
           ]
         },
         {
-          "insider": "Blackstone Holdings IV L.P.",
+          "insider": "Blackstone Private Multi-Asset Credit & Income Fund",
           "roles": [
             "10% owner"
           ],
@@ -983,7 +1012,7 @@
           ]
         },
         {
-          "insider": "Blackstone Private Multi-Asset Credit & Income Fund",
+          "insider": "Blackstone Holdings IV L.P.",
           "roles": [
             "10% owner"
           ],
@@ -993,7 +1022,7 @@
           ]
         },
         {
-          "insider": "Blackstone Holdings IV L.P.",
+          "insider": "Blackstone Private Multi-Asset Credit & Income Fund",
           "roles": [
             "10% owner"
           ],
@@ -1325,32 +1354,6 @@
           ]
         },
         {
-          "insider": "Goodwin Scott Kreitler",
-          "roles": [
-            "director",
-            "officer",
-            "other",
-            "Co-President"
-          ],
-          "spend": 1250000.0,
-          "dates": [
-            "2026-07-14"
-          ]
-        },
-        {
-          "insider": "Goodwin Scott Kreitler",
-          "roles": [
-            "director",
-            "officer",
-            "other",
-            "Co-President"
-          ],
-          "spend": 1250000.0,
-          "dates": [
-            "2026-07-14"
-          ]
-        },
-        {
           "insider": "HERSHEY TRUST CO TRUSTEE IN TRUST FOR MILTON HERSHEY SCHOOL",
           "roles": [
             "10% owner"
@@ -1585,26 +1588,6 @@
           ]
         },
         {
-          "insider": "THOMSEN JOEL S.",
-          "roles": [
-            "other"
-          ],
-          "spend": 150000.0,
-          "dates": [
-            "2026-07-15"
-          ]
-        },
-        {
-          "insider": "THOMSEN JOEL S.",
-          "roles": [
-            "other"
-          ],
-          "spend": 150000.0,
-          "dates": [
-            "2026-07-15"
-          ]
-        },
-        {
           "insider": "James Christopher J.",
           "roles": [
             "director",
@@ -1823,26 +1806,6 @@
           ]
         },
         {
-          "insider": "Korsmo Michelle L.",
-          "roles": [
-            "other"
-          ],
-          "spend": 75000.0,
-          "dates": [
-            "2026-07-15"
-          ]
-        },
-        {
-          "insider": "Korsmo Michelle L.",
-          "roles": [
-            "other"
-          ],
-          "spend": 75000.0,
-          "dates": [
-            "2026-07-15"
-          ]
-        },
-        {
           "insider": "Tanemura Ronald",
           "roles": [
             "director"
@@ -1860,26 +1823,6 @@
           "spend": 50624.02,
           "dates": [
             "2026-09-01"
-          ]
-        },
-        {
-          "insider": "KROPP JAMES H",
-          "roles": [
-            "director"
-          ],
-          "spend": 50000.09,
-          "dates": [
-            "2026-07-09"
-          ]
-        },
-        {
-          "insider": "KROPP JAMES H",
-          "roles": [
-            "director"
-          ],
-          "spend": 50000.09,
-          "dates": [
-            "2026-07-09"
           ]
         },
         {
@@ -2117,28 +2060,6 @@
           ]
         },
         {
-          "insider": "Wieland James",
-          "roles": [
-            "10% owner",
-            "other"
-          ],
-          "spend": 25000.0,
-          "dates": [
-            "2026-07-15"
-          ]
-        },
-        {
-          "insider": "Wieland James",
-          "roles": [
-            "10% owner",
-            "other"
-          ],
-          "spend": 25000.0,
-          "dates": [
-            "2026-07-15"
-          ]
-        },
-        {
           "insider": "Comer Wynne Richards",
           "roles": [
             "director"
@@ -2307,28 +2228,6 @@
           ]
         },
         {
-          "insider": "Carlson Michael Paul",
-          "roles": [
-            "officer",
-            "GENERAL COUNSEL & SECRETARY"
-          ],
-          "spend": 2500.0,
-          "dates": [
-            "2026-07-15"
-          ]
-        },
-        {
-          "insider": "Carlson Michael Paul",
-          "roles": [
-            "officer",
-            "GENERAL COUNSEL & SECRETARY"
-          ],
-          "spend": 2500.0,
-          "dates": [
-            "2026-07-15"
-          ]
-        },
-        {
           "insider": "Hall Bjorn",
           "roles": [
             "officer",
@@ -2415,6 +2314,26 @@
           ]
         },
         {
+          "insider": "Starr Gayle P",
+          "roles": [
+            "director"
+          ],
+          "spend": 684.19,
+          "dates": [
+            "2026-10-09"
+          ]
+        },
+        {
+          "insider": "Starr Gayle P",
+          "roles": [
+            "director"
+          ],
+          "spend": 684.19,
+          "dates": [
+            "2026-10-09"
+          ]
+        },
+        {
           "insider": "Monte Mark David",
           "roles": [
             "director"
@@ -2455,23 +2374,23 @@
           ]
         },
         {
-          "insider": "Starr Gayle P",
+          "insider": "Monte Mark David",
           "roles": [
             "director"
           ],
-          "spend": 536.48,
+          "spend": 620.59,
           "dates": [
-            "2026-07-10"
+            "2026-10-09"
           ]
         },
         {
-          "insider": "Starr Gayle P",
+          "insider": "Monte Mark David",
           "roles": [
             "director"
           ],
-          "spend": 536.48,
+          "spend": 620.59,
           "dates": [
-            "2026-07-10"
+            "2026-10-09"
           ]
         },
         {
@@ -2661,26 +2580,6 @@
           ]
         },
         {
-          "insider": "Monte Mark David",
-          "roles": [
-            "director"
-          ],
-          "spend": 478.54,
-          "dates": [
-            "2026-07-10"
-          ]
-        },
-        {
-          "insider": "Monte Mark David",
-          "roles": [
-            "director"
-          ],
-          "spend": 478.54,
-          "dates": [
-            "2026-07-10"
-          ]
-        },
-        {
           "insider": "Starr Gayle P",
           "roles": [
             "director"
@@ -2761,15 +2660,37 @@
           ]
         },
         {
+          "insider": "Hall Bjorn",
+          "roles": [
+            "officer",
+            "Secretary and CCO"
+          ],
+          "spend": 271.61,
+          "dates": [
+            "2026-10-09"
+          ]
+        },
+        {
+          "insider": "Hall Bjorn",
+          "roles": [
+            "officer",
+            "Secretary and CCO"
+          ],
+          "spend": 271.61,
+          "dates": [
+            "2026-10-09"
+          ]
+        },
+        {
           "insider": "Miller Benjamin S.",
           "roles": [
             "director",
             "officer",
             "President"
           ],
-          "spend": 249.59,
+          "spend": 261.27,
           "dates": [
-            "2026-07-10"
+            "2026-10-09"
           ]
         },
         {
@@ -2779,29 +2700,29 @@
             "officer",
             "President"
           ],
-          "spend": 249.59,
+          "spend": 261.27,
           "dates": [
-            "2026-07-10"
+            "2026-10-09"
           ]
         },
         {
-          "insider": "Starr Gayle P",
+          "insider": "Booth Richard Whitaker",
           "roles": [
-            "director"
+            "other"
           ],
-          "spend": 234.23,
+          "spend": 221.47,
           "dates": [
-            "2026-07-10"
+            "2026-10-09"
           ]
         },
         {
-          "insider": "Starr Gayle P",
+          "insider": "Booth Richard Whitaker",
           "roles": [
-            "director"
+            "other"
           ],
-          "spend": 234.23,
+          "spend": 221.47,
           "dates": [
-            "2026-07-10"
+            "2026-10-09"
           ]
         },
         {
@@ -2845,43 +2766,14 @@
           ]
         },
         {
-          "insider": "Booth Richard Whitaker",
+          "insider": "Staloch Alison",
           "roles": [
-            "other"
+            "officer",
+            "Treasurer"
           ],
-          "spend": 198.21,
+          "spend": 161.45,
           "dates": [
-            "2026-07-10"
-          ]
-        },
-        {
-          "insider": "Booth Richard Whitaker",
-          "roles": [
-            "other"
-          ],
-          "spend": 198.21,
-          "dates": [
-            "2026-07-10"
-          ]
-        },
-        {
-          "insider": "Monte Mark David",
-          "roles": [
-            "director"
-          ],
-          "spend": 152.04,
-          "dates": [
-            "2026-07-10"
-          ]
-        },
-        {
-          "insider": "Monte Mark David",
-          "roles": [
-            "director"
-          ],
-          "spend": 152.04,
-          "dates": [
-            "2026-07-10"
+            "2026-10-09"
           ]
         },
         {
@@ -2890,20 +2782,29 @@
             "officer",
             "Treasurer"
           ],
-          "spend": 148.09,
+          "spend": 161.45,
           "dates": [
-            "2026-07-10"
+            "2026-10-09"
           ]
         },
         {
-          "insider": "Staloch Alison",
+          "insider": "Starr Gayle P",
           "roles": [
-            "officer",
-            "Treasurer"
+            "director"
           ],
-          "spend": 148.09,
+          "spend": 123.1,
           "dates": [
-            "2026-07-10"
+            "2026-10-09"
+          ]
+        },
+        {
+          "insider": "Starr Gayle P",
+          "roles": [
+            "director"
+          ],
+          "spend": 123.1,
+          "dates": [
+            "2026-10-09"
           ]
         },
         {
@@ -2927,13 +2828,23 @@
           ]
         },
         {
-          "insider": "Jenkins Brandon T.",
+          "insider": "Monte Mark David",
           "roles": [
-            "other"
+            "director"
           ],
-          "spend": 22.8,
+          "spend": 84.66,
           "dates": [
-            "2026-07-10"
+            "2026-10-09"
+          ]
+        },
+        {
+          "insider": "Monte Mark David",
+          "roles": [
+            "director"
+          ],
+          "spend": 84.66,
+          "dates": [
+            "2026-10-09"
           ]
         },
         {
@@ -2941,9 +2852,19 @@
           "roles": [
             "other"
           ],
-          "spend": 22.8,
+          "spend": 22.58,
           "dates": [
-            "2026-07-10"
+            "2026-10-09"
+          ]
+        },
+        {
+          "insider": "Jenkins Brandon T.",
+          "roles": [
+            "other"
+          ],
+          "spend": 22.58,
+          "dates": [
+            "2026-10-09"
           ]
         }
       ],
@@ -2953,13 +2874,13 @@
     },
     {
       "ticker": "N/A",
-      "issuer": "Calamos Aksia Hedged Strategies Fund",
-      "cik": "0002063706",
+      "issuer": "BIP Ventures Evergreen BDC",
+      "cik": "0001950572",
       "n_insiders": 25,
-      "total_spend": 1041806212.34,
-      "weighted_spend": 1046043679.64,
+      "total_spend": 840308474.14,
+      "weighted_spend": 844473871.93,
       "window_days": 90,
-      "latest_buy": "2026-10-01",
+      "latest_buy": "2026-10-15",
       "buys": [
         {
           "insider": "TPG GP A, LLC",
@@ -3036,36 +2957,6 @@
           "roles": [
             "10% owner"
           ],
-          "spend": 43988145.02,
-          "dates": [
-            "2026-08-31"
-          ]
-        },
-        {
-          "insider": "Manufacturers Life Insurance Co (Bermuda Branch)",
-          "roles": [
-            "10% owner"
-          ],
-          "spend": 36586000.0,
-          "dates": [
-            "2026-07-15"
-          ]
-        },
-        {
-          "insider": "Manufacturers Life Insurance Co (Bermuda Branch)",
-          "roles": [
-            "10% owner"
-          ],
-          "spend": 36586000.0,
-          "dates": [
-            "2026-07-15"
-          ]
-        },
-        {
-          "insider": "Manufacturers Life Reinsurance Ltd",
-          "roles": [
-            "10% owner"
-          ],
           "spend": 30998383.65,
           "dates": [
             "2026-09-30"
@@ -3122,26 +3013,6 @@
           ]
         },
         {
-          "insider": "Manulife (International) Ltd",
-          "roles": [
-            "10% owner"
-          ],
-          "spend": 21998838.3,
-          "dates": [
-            "2026-07-15"
-          ]
-        },
-        {
-          "insider": "Manulife (International) Ltd",
-          "roles": [
-            "10% owner"
-          ],
-          "spend": 21998838.3,
-          "dates": [
-            "2026-07-15"
-          ]
-        },
-        {
           "insider": "TIEDEMANN ADVISORS, LLC",
           "roles": [
             "10% owner"
@@ -3229,26 +3100,6 @@
           "spend": 19999999.98,
           "dates": [
             "2026-10-01"
-          ]
-        },
-        {
-          "insider": "Manufacturers Life Reinsurance Ltd",
-          "roles": [
-            "10% owner"
-          ],
-          "spend": 12999313.54,
-          "dates": [
-            "2026-07-15"
-          ]
-        },
-        {
-          "insider": "Manufacturers Life Reinsurance Ltd",
-          "roles": [
-            "10% owner"
-          ],
-          "spend": 12999313.54,
-          "dates": [
-            "2026-07-15"
           ]
         },
         {
@@ -3309,26 +3160,6 @@
           "spend": 7477500.0,
           "dates": [
             "2026-09-23"
-          ]
-        },
-        {
-          "insider": "Manulife (Singapore) Pte. Ltd.",
-          "roles": [
-            "10% owner"
-          ],
-          "spend": 6999630.37,
-          "dates": [
-            "2026-07-15"
-          ]
-        },
-        {
-          "insider": "Manulife (Singapore) Pte. Ltd.",
-          "roles": [
-            "10% owner"
-          ],
-          "spend": 6999630.37,
-          "dates": [
-            "2026-07-15"
           ]
         },
         {
@@ -3718,28 +3549,6 @@
           ]
         },
         {
-          "insider": "Nagpal Ankur",
-          "roles": [
-            "officer",
-            "Portfolio Manager"
-          ],
-          "spend": 199999.98,
-          "dates": [
-            "2026-07-08"
-          ]
-        },
-        {
-          "insider": "Nagpal Ankur",
-          "roles": [
-            "officer",
-            "Portfolio Manager"
-          ],
-          "spend": 199999.98,
-          "dates": [
-            "2026-07-08"
-          ]
-        },
-        {
           "insider": "Cochran John",
           "roles": [
             "officer",
@@ -3844,15 +3653,39 @@
           ]
         },
         {
+          "insider": "Flickinger Mark",
+          "roles": [
+            "director",
+            "officer",
+            "Chief Operating Officer"
+          ],
+          "spend": 79008.09,
+          "dates": [
+            "2026-10-15"
+          ]
+        },
+        {
+          "insider": "Flickinger Mark",
+          "roles": [
+            "director",
+            "officer",
+            "Chief Operating Officer"
+          ],
+          "spend": 79008.09,
+          "dates": [
+            "2026-10-15"
+          ]
+        },
+        {
           "insider": "Buffington Mark",
           "roles": [
             "director",
             "officer",
             "Chief Executive Officer"
           ],
-          "spend": 50011.45,
+          "spend": 49993.23,
           "dates": [
-            "2026-07-15"
+            "2026-10-15"
           ]
         },
         {
@@ -3862,31 +3695,9 @@
             "officer",
             "Chief Executive Officer"
           ],
-          "spend": 50011.45,
+          "spend": 49993.23,
           "dates": [
-            "2026-07-15"
-          ]
-        },
-        {
-          "insider": "Knudsen Todd",
-          "roles": [
-            "officer",
-            "CFO, CCO"
-          ],
-          "spend": 50004.27,
-          "dates": [
-            "2026-07-16"
-          ]
-        },
-        {
-          "insider": "Knudsen Todd",
-          "roles": [
-            "officer",
-            "CFO, CCO"
-          ],
-          "spend": 50004.27,
-          "dates": [
-            "2026-07-16"
+            "2026-10-15"
           ]
         },
         {
@@ -7170,6 +6981,187 @@
       "score": 1.0
     },
     {
+      "ticker": "HEI, HEI.A",
+      "issuer": "HEICO CORP",
+      "cik": "0000046619",
+      "n_insiders": 8,
+      "total_spend": 2801189.1,
+      "weighted_spend": 4727209.41,
+      "window_days": 90,
+      "latest_buy": "2026-10-08",
+      "buys": [
+        {
+          "insider": "CHERUVATATH NANDAKUMAR",
+          "roles": [
+            "director"
+          ],
+          "spend": 175141.92,
+          "dates": [
+            "2026-10-08"
+          ]
+        },
+        {
+          "insider": "CULLIGAN THOMAS M",
+          "roles": [
+            "director"
+          ],
+          "spend": 175141.92,
+          "dates": [
+            "2026-10-08"
+          ]
+        },
+        {
+          "insider": "Fine Carol F.",
+          "roles": [
+            "director"
+          ],
+          "spend": 175141.92,
+          "dates": [
+            "2026-10-08"
+          ]
+        },
+        {
+          "insider": "MENDELSON VICTOR H",
+          "roles": [
+            "director",
+            "officer",
+            "other",
+            "Co-COB and Co-CEO"
+          ],
+          "spend": 175141.92,
+          "dates": [
+            "2026-10-08"
+          ]
+        },
+        {
+          "insider": "HENRIQUES ADOLFO",
+          "roles": [
+            "director"
+          ],
+          "spend": 175141.92,
+          "dates": [
+            "2026-10-08"
+          ]
+        },
+        {
+          "insider": "SCHRIESHEIM ALAN",
+          "roles": [
+            "director"
+          ],
+          "spend": 175141.92,
+          "dates": [
+            "2026-10-08"
+          ]
+        },
+        {
+          "insider": "CULLIGAN THOMAS M",
+          "roles": [
+            "director"
+          ],
+          "spend": 175141.92,
+          "dates": [
+            "2026-10-08"
+          ]
+        },
+        {
+          "insider": "Hildebrandt Mark H",
+          "roles": [
+            "director"
+          ],
+          "spend": 175141.92,
+          "dates": [
+            "2026-10-08"
+          ]
+        },
+        {
+          "insider": "CHERUVATATH NANDAKUMAR",
+          "roles": [
+            "director"
+          ],
+          "spend": 175141.92,
+          "dates": [
+            "2026-10-08"
+          ]
+        },
+        {
+          "insider": "Fine Carol F.",
+          "roles": [
+            "director"
+          ],
+          "spend": 175141.92,
+          "dates": [
+            "2026-10-08"
+          ]
+        },
+        {
+          "insider": "HENRIQUES ADOLFO",
+          "roles": [
+            "director"
+          ],
+          "spend": 175141.92,
+          "dates": [
+            "2026-10-08"
+          ]
+        },
+        {
+          "insider": "Hildebrandt Mark H",
+          "roles": [
+            "director"
+          ],
+          "spend": 175141.92,
+          "dates": [
+            "2026-10-08"
+          ]
+        },
+        {
+          "insider": "MENDELSON VICTOR H",
+          "roles": [
+            "director",
+            "officer",
+            "other",
+            "Co-COB and Co-CEO"
+          ],
+          "spend": 175141.92,
+          "dates": [
+            "2026-10-08"
+          ]
+        },
+        {
+          "insider": "SCHRIESHEIM ALAN",
+          "roles": [
+            "director"
+          ],
+          "spend": 175141.92,
+          "dates": [
+            "2026-10-08"
+          ]
+        },
+        {
+          "insider": "Neitzel Julie",
+          "roles": [
+            "director"
+          ],
+          "spend": 174601.11,
+          "dates": [
+            "2026-10-08"
+          ]
+        },
+        {
+          "insider": "Neitzel Julie",
+          "roles": [
+            "director"
+          ],
+          "spend": 174601.11,
+          "dates": [
+            "2026-10-08"
+          ]
+        }
+      ],
+      "market_cap": null,
+      "cap_unknown": true,
+      "score": 0.9814
+    },
+    {
       "ticker": "RWT",
       "issuer": "REDWOOD TRUST INC",
       "cik": "0000930236",
@@ -7607,8 +7599,8 @@
       "issuer": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
       "cik": "0001046179",
       "n_insiders": 30,
-      "total_spend": 2700684.64,
-      "weighted_spend": 3476337.92,
+      "total_spend": 2693224.64,
+      "weighted_spend": 3467385.92,
       "window_days": 90,
       "latest_buy": "2026-10-07",
       "buys": [
@@ -8813,28 +8805,6 @@
           ]
         },
         {
-          "insider": "Chen Chih-Ho",
-          "roles": [
-            "officer",
-            "Controller"
-          ],
-          "spend": 3730.0,
-          "dates": [
-            "2026-07-13"
-          ]
-        },
-        {
-          "insider": "Chen Chih-Ho",
-          "roles": [
-            "officer",
-            "Controller"
-          ],
-          "spend": 3730.0,
-          "dates": [
-            "2026-07-13"
-          ]
-        },
-        {
           "insider": "Jang Syun-Ming",
           "roles": [
             "officer",
@@ -9000,10 +8970,10 @@
           ]
         },
         {
-          "insider": "Lin Chris Horng-Dar",
+          "insider": "Tien Bor-Zen",
           "roles": [
             "officer",
-            "VP and CIO"
+            "VP"
           ],
           "spend": 3592.19,
           "dates": [
@@ -9011,10 +8981,10 @@
           ]
         },
         {
-          "insider": "Tien Bor-Zen",
+          "insider": "Lin Chris Horng-Dar",
           "roles": [
             "officer",
-            "VP"
+            "VP and CIO"
           ],
           "spend": 3592.19,
           "dates": [
@@ -9761,7 +9731,7 @@
       ],
       "market_cap": null,
       "cap_unknown": true,
-      "score": 0.9738
+      "score": 0.9737
     },
     {
       "ticker": "FUL",
@@ -10255,6 +10225,197 @@
       "score": 0.9555
     },
     {
+      "ticker": "BYRN",
+      "issuer": "Byrna Technologies Inc.",
+      "cik": "0001354866",
+      "n_insiders": 7,
+      "total_spend": 843262.08,
+      "weighted_spend": 1508613.16,
+      "window_days": 90,
+      "latest_buy": "2026-10-15",
+      "buys": [
+        {
+          "insider": "Kennedy TJ",
+          "roles": [
+            "director",
+            "other"
+          ],
+          "spend": 102285.9,
+          "dates": [
+            "2026-07-22"
+          ]
+        },
+        {
+          "insider": "Kennedy TJ",
+          "roles": [
+            "director",
+            "other"
+          ],
+          "spend": 102285.9,
+          "dates": [
+            "2026-07-22"
+          ]
+        },
+        {
+          "insider": "Davis Conn Q.",
+          "roles": [
+            "director",
+            "officer",
+            "Chief Executive Officer"
+          ],
+          "spend": 76686.68,
+          "dates": [
+            "2026-07-22",
+            "2026-07-23"
+          ]
+        },
+        {
+          "insider": "Davis Conn Q.",
+          "roles": [
+            "director",
+            "officer",
+            "Chief Executive Officer"
+          ],
+          "spend": 76686.68,
+          "dates": [
+            "2026-07-22",
+            "2026-07-23"
+          ]
+        },
+        {
+          "insider": "Hughes Herbert",
+          "roles": [
+            "director"
+          ],
+          "spend": 74249.1,
+          "dates": [
+            "2026-07-22",
+            "2026-07-23"
+          ]
+        },
+        {
+          "insider": "Hughes Herbert",
+          "roles": [
+            "director"
+          ],
+          "spend": 74249.1,
+          "dates": [
+            "2026-07-22",
+            "2026-07-23"
+          ]
+        },
+        {
+          "insider": "Roth Adam L.",
+          "roles": [
+            "director"
+          ],
+          "spend": 70375.0,
+          "dates": [
+            "2026-10-14",
+            "2026-10-15"
+          ]
+        },
+        {
+          "insider": "Roth Adam L.",
+          "roles": [
+            "director"
+          ],
+          "spend": 70375.0,
+          "dates": [
+            "2026-10-14",
+            "2026-10-15"
+          ]
+        },
+        {
+          "insider": "ELMORE LEONARD J",
+          "roles": [
+            "director"
+          ],
+          "spend": 46400.0,
+          "dates": [
+            "2026-08-06"
+          ]
+        },
+        {
+          "insider": "ELMORE LEONARD J",
+          "roles": [
+            "director"
+          ],
+          "spend": 46400.0,
+          "dates": [
+            "2026-08-06"
+          ]
+        },
+        {
+          "insider": "Reed Chris Lavern",
+          "roles": [
+            "director"
+          ],
+          "spend": 29584.5,
+          "dates": [
+            "2026-07-24"
+          ]
+        },
+        {
+          "insider": "Reed Chris Lavern",
+          "roles": [
+            "director"
+          ],
+          "spend": 29584.5,
+          "dates": [
+            "2026-07-24"
+          ]
+        },
+        {
+          "insider": "Hughes Herbert",
+          "roles": [
+            "director"
+          ],
+          "spend": 15219.86,
+          "dates": [
+            "2026-07-27",
+            "2026-07-28"
+          ]
+        },
+        {
+          "insider": "Hughes Herbert",
+          "roles": [
+            "director"
+          ],
+          "spend": 15219.86,
+          "dates": [
+            "2026-07-27",
+            "2026-07-28"
+          ]
+        },
+        {
+          "insider": "KEARNES LAURILEE",
+          "roles": [
+            "officer",
+            "Chief Financial Officer"
+          ],
+          "spend": 6830.0,
+          "dates": [
+            "2026-07-22"
+          ]
+        },
+        {
+          "insider": "KEARNES LAURILEE",
+          "roles": [
+            "officer",
+            "Chief Financial Officer"
+          ],
+          "spend": 6830.0,
+          "dates": [
+            "2026-07-22"
+          ]
+        }
+      ],
+      "market_cap": null,
+      "cap_unknown": true,
+      "score": 0.9531
+    },
+    {
       "ticker": "SPG",
       "issuer": "SIMON PROPERTY GROUP INC.",
       "cik": "0001063761",
@@ -10488,175 +10649,6 @@
       "market_cap": null,
       "cap_unknown": true,
       "score": 0.9509
-    },
-    {
-      "ticker": "BYRN",
-      "issuer": "Byrna Technologies Inc.",
-      "cik": "0001354866",
-      "n_insiders": 6,
-      "total_spend": 702512.08,
-      "weighted_spend": 1297488.16,
-      "window_days": 90,
-      "latest_buy": "2026-08-06",
-      "buys": [
-        {
-          "insider": "Kennedy TJ",
-          "roles": [
-            "director",
-            "other"
-          ],
-          "spend": 102285.9,
-          "dates": [
-            "2026-07-22"
-          ]
-        },
-        {
-          "insider": "Kennedy TJ",
-          "roles": [
-            "director",
-            "other"
-          ],
-          "spend": 102285.9,
-          "dates": [
-            "2026-07-22"
-          ]
-        },
-        {
-          "insider": "Davis Conn Q.",
-          "roles": [
-            "director",
-            "officer",
-            "Chief Executive Officer"
-          ],
-          "spend": 76686.68,
-          "dates": [
-            "2026-07-22",
-            "2026-07-23"
-          ]
-        },
-        {
-          "insider": "Davis Conn Q.",
-          "roles": [
-            "director",
-            "officer",
-            "Chief Executive Officer"
-          ],
-          "spend": 76686.68,
-          "dates": [
-            "2026-07-22",
-            "2026-07-23"
-          ]
-        },
-        {
-          "insider": "Hughes Herbert",
-          "roles": [
-            "director"
-          ],
-          "spend": 74249.1,
-          "dates": [
-            "2026-07-22",
-            "2026-07-23"
-          ]
-        },
-        {
-          "insider": "Hughes Herbert",
-          "roles": [
-            "director"
-          ],
-          "spend": 74249.1,
-          "dates": [
-            "2026-07-22",
-            "2026-07-23"
-          ]
-        },
-        {
-          "insider": "ELMORE LEONARD J",
-          "roles": [
-            "director"
-          ],
-          "spend": 46400.0,
-          "dates": [
-            "2026-08-06"
-          ]
-        },
-        {
-          "insider": "ELMORE LEONARD J",
-          "roles": [
-            "director"
-          ],
-          "spend": 46400.0,
-          "dates": [
-            "2026-08-06"
-          ]
-        },
-        {
-          "insider": "Reed Chris Lavern",
-          "roles": [
-            "director"
-          ],
-          "spend": 29584.5,
-          "dates": [
-            "2026-07-24"
-          ]
-        },
-        {
-          "insider": "Reed Chris Lavern",
-          "roles": [
-            "director"
-          ],
-          "spend": 29584.5,
-          "dates": [
-            "2026-07-24"
-          ]
-        },
-        {
-          "insider": "Hughes Herbert",
-          "roles": [
-            "director"
-          ],
-          "spend": 15219.86,
-          "dates": [
-            "2026-07-27",
-            "2026-07-28"
-          ]
-        },
-        {
-          "insider": "Hughes Herbert",
-          "roles": [
-            "director"
-          ],
-          "spend": 15219.86,
-          "dates": [
-            "2026-07-27",
-            "2026-07-28"
-          ]
-        },
-        {
-          "insider": "KEARNES LAURILEE",
-          "roles": [
-            "officer",
-            "Chief Financial Officer"
-          ],
-          "spend": 6830.0,
-          "dates": [
-            "2026-07-22"
-          ]
-        },
-        {
-          "insider": "KEARNES LAURILEE",
-          "roles": [
-            "officer",
-            "Chief Financial Officer"
-          ],
-          "spend": 6830.0,
-          "dates": [
-            "2026-07-22"
-          ]
-        }
-      ],
-      "market_cap": null,
-      "cap_unknown": true,
-      "score": 0.9493
     },
     {
       "ticker": "WIX",
@@ -11200,10 +11192,10 @@
       "issuer": "GameStop Corp.",
       "cik": "0001326380",
       "n_insiders": 5,
-      "total_spend": 152808436.32,
-      "weighted_spend": 452465720.28,
+      "total_spend": 198357891.32,
+      "weighted_spend": 589114085.28,
       "window_days": 90,
-      "latest_buy": "2026-10-02",
+      "latest_buy": "2026-10-13",
       "buys": [
         {
           "insider": "Cohen Ryan",
@@ -11227,6 +11219,30 @@
           "spend": 26393722.5,
           "dates": [
             "2026-09-21"
+          ]
+        },
+        {
+          "insider": "Cohen Ryan",
+          "roles": [
+            "director",
+            "officer",
+            "President, CEO and Chairman"
+          ],
+          "spend": 22774727.5,
+          "dates": [
+            "2026-10-13"
+          ]
+        },
+        {
+          "insider": "Cohen Ryan",
+          "roles": [
+            "director",
+            "officer",
+            "President, CEO and Chairman"
+          ],
+          "spend": 22774727.5,
+          "dates": [
+            "2026-10-13"
           ]
         },
         {
@@ -12578,8 +12594,8 @@
       "issuer": "Lucky Strike Entertainment Corp",
       "cik": "0001840572",
       "n_insiders": 5,
-      "total_spend": 1750175.88,
-      "weighted_spend": 3156902.74,
+      "total_spend": 1690219.0,
+      "weighted_spend": 3066967.42,
       "window_days": 90,
       "latest_buy": "2026-09-22",
       "buys": [
@@ -12644,16 +12660,6 @@
           ]
         },
         {
-          "insider": "MATHRANI SANDEEP",
-          "roles": [
-            "director"
-          ],
-          "spend": 59956.88,
-          "dates": [
-            "2026-08-28"
-          ]
-        },
-        {
           "insider": "Bass Robert J",
           "roles": [
             "director"
@@ -12698,7 +12704,7 @@
       ],
       "market_cap": null,
       "cap_unknown": true,
-      "score": 0.8714
+      "score": 0.8707
     },
     {
       "ticker": "DKL",
@@ -13116,127 +13122,6 @@
       "market_cap": null,
       "cap_unknown": true,
       "score": 0.8592
-    },
-    {
-      "ticker": "KMPR",
-      "issuer": "KEMPER Corp",
-      "cik": "0000860748",
-      "n_insiders": 5,
-      "total_spend": 735760.0,
-      "weighted_spend": 1378902.0,
-      "window_days": 90,
-      "latest_buy": "2026-08-13",
-      "buys": [
-        {
-          "insider": "Gorevic Jason N",
-          "roles": [
-            "director"
-          ],
-          "spend": 129550.0,
-          "dates": [
-            "2026-08-10"
-          ]
-        },
-        {
-          "insider": "Gorevic Jason N",
-          "roles": [
-            "director"
-          ],
-          "spend": 129550.0,
-          "dates": [
-            "2026-08-10"
-          ]
-        },
-        {
-          "insider": "LADERMAN GERALD",
-          "roles": [
-            "director"
-          ],
-          "spend": 105960.0,
-          "dates": [
-            "2026-08-11"
-          ]
-        },
-        {
-          "insider": "LADERMAN GERALD",
-          "roles": [
-            "director"
-          ],
-          "spend": 105960.0,
-          "dates": [
-            "2026-08-11"
-          ]
-        },
-        {
-          "insider": "McAnena Stephen J",
-          "roles": [
-            "officer",
-            "President and CEO"
-          ],
-          "spend": 79500.0,
-          "dates": [
-            "2026-08-13"
-          ]
-        },
-        {
-          "insider": "McAnena Stephen J",
-          "roles": [
-            "officer",
-            "President and CEO"
-          ],
-          "spend": 79500.0,
-          "dates": [
-            "2026-08-13"
-          ]
-        },
-        {
-          "insider": "Evans Carl Thomas Jr.",
-          "roles": [
-            "officer",
-            "EVP, Sec. & General Counsel"
-          ],
-          "spend": 26530.0,
-          "dates": [
-            "2026-08-11"
-          ]
-        },
-        {
-          "insider": "Evans Carl Thomas Jr.",
-          "roles": [
-            "officer",
-            "EVP, Sec. & General Counsel"
-          ],
-          "spend": 26530.0,
-          "dates": [
-            "2026-08-11"
-          ]
-        },
-        {
-          "insider": "Camden Bradley T",
-          "roles": [
-            "officer",
-            "EVP and CFO"
-          ],
-          "spend": 26340.0,
-          "dates": [
-            "2026-08-11"
-          ]
-        },
-        {
-          "insider": "Camden Bradley T",
-          "roles": [
-            "officer",
-            "EVP and CFO"
-          ],
-          "spend": 26340.0,
-          "dates": [
-            "2026-08-11"
-          ]
-        }
-      ],
-      "market_cap": null,
-      "cap_unknown": true,
-      "score": 0.8508
     }
   ],
   "_note": "Candidates, not positions. Each still needs >35% analyst upside, a dated catalyst inside 18 months, and sentiment acceleration (IPS 1) plus the valuation gate (IPS 3a) before purchase. Insider filings are conviction confirmation on a one-year thesis, never an entry trigger (IPS 3)."

@@ -325,60 +325,60 @@
   "high_water": 102234.66991265,
   "status": "active",
   "status_note": "",
-  "last_marked": "2026-10-31T00:45:03+00:00",
+  "last_marked": "2026-11-03T02:53:41+00:00",
   "marks": {
     "NVDA": {
-      "price": 210.96,
-      "asof": "2026-10-23",
-      "source": "yfinance-STALE",
+      "price": 202.06,
+      "asof": "2026-11-02",
+      "source": "yfinance",
       "prev": {
-        "price": 212.21,
-        "asof": "2026-10-22"
+        "price": 210.96,
+        "asof": "2026-10-23"
       }
     },
     "MU": {
-      "price": 877.55,
-      "asof": "2026-10-23",
-      "source": "yfinance-STALE",
+      "price": 833.59,
+      "asof": "2026-11-02",
+      "source": "yfinance",
       "prev": {
-        "price": 856.49,
-        "asof": "2026-10-22"
+        "price": 877.55,
+        "asof": "2026-10-23"
       }
     },
     "AMD": {
-      "price": 516.79,
-      "asof": "2026-10-23",
-      "source": "yfinance-STALE",
+      "price": 466.84,
+      "asof": "2026-11-02",
+      "source": "yfinance",
       "prev": {
-        "price": 507.93,
-        "asof": "2026-10-22"
+        "price": 516.79,
+        "asof": "2026-10-23"
       }
     },
     "CEG": {
-      "price": 253.45,
-      "asof": "2026-10-23",
-      "source": "yfinance-STALE",
+      "price": 257.25,
+      "asof": "2026-11-02",
+      "source": "yfinance",
       "prev": {
-        "price": 255.21,
-        "asof": "2026-10-22"
+        "price": 253.45,
+        "asof": "2026-10-23"
       }
     },
     "TSM": {
-      "price": 418.51,
-      "asof": "2026-10-23",
-      "source": "yfinance-STALE",
+      "price": 398.63,
+      "asof": "2026-11-02",
+      "source": "yfinance",
       "prev": {
-        "price": 412.35,
-        "asof": "2026-10-22"
+        "price": 418.51,
+        "asof": "2026-10-23"
       }
     },
     "AVGO": {
-      "price": 321.68,
-      "asof": "2026-10-23",
-      "source": "yfinance-STALE",
+      "price": 322.23,
+      "asof": "2026-11-02",
+      "source": "yfinance",
       "prev": {
-        "price": 323.24,
-        "asof": "2026-10-22"
+        "price": 321.68,
+        "asof": "2026-10-23"
       }
     }
   }

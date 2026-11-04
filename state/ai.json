@@ -325,12 +325,12 @@
   "high_water": 102234.66991265,
   "status": "active",
   "status_note": "",
-  "last_marked": "2026-11-03T02:53:41+00:00",
+  "last_marked": "2026-11-04T01:19:09+00:00",
   "marks": {
     "NVDA": {
       "price": 202.06,
       "asof": "2026-11-02",
-      "source": "yfinance",
+      "source": "yfinance-STALE",
       "prev": {
         "price": 210.96,
         "asof": "2026-10-23"
@@ -339,7 +339,7 @@
     "MU": {
       "price": 833.59,
       "asof": "2026-11-02",
-      "source": "yfinance",
+      "source": "yfinance-STALE",
       "prev": {
         "price": 877.55,
         "asof": "2026-10-23"
@@ -348,7 +348,7 @@
     "AMD": {
       "price": 466.84,
       "asof": "2026-11-02",
-      "source": "yfinance",
+      "source": "yfinance-STALE",
       "prev": {
         "price": 516.79,
         "asof": "2026-10-23"
@@ -357,7 +357,7 @@
     "CEG": {
       "price": 257.25,
       "asof": "2026-11-02",
-      "source": "yfinance",
+      "source": "yfinance-STALE",
       "prev": {
         "price": 253.45,
         "asof": "2026-10-23"
@@ -366,7 +366,7 @@
     "TSM": {
       "price": 398.63,
       "asof": "2026-11-02",
-      "source": "yfinance",
+      "source": "yfinance-STALE",
       "prev": {
         "price": 418.51,
         "asof": "2026-10-23"
@@ -375,7 +375,7 @@
     "AVGO": {
       "price": 322.23,
       "asof": "2026-11-02",
-      "source": "yfinance",
+      "source": "yfinance-STALE",
       "prev": {
         "price": 321.68,
         "asof": "2026-10-23"

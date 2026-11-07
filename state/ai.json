@@ -3,7 +3,7 @@
   "name": "AI Trade",
   "inception": "2026-08-14",
   "starting_cash": 100000.0,
-  "cash": 39873.35,
+  "cash": 54059.96,
   "positions": {
     "NVDA": {
       "ticker": "NVDA",
@@ -15,17 +15,6 @@
       "house_money_taken": false,
       "realized": 0.0,
       "initial_cost": 12000.0
-    },
-    "MU": {
-      "ticker": "MU",
-      "shares": 10.2865,
-      "cost_basis": 9999.98,
-      "avg_cost": 972.1458,
-      "opened": "2026-08-16",
-      "thesis_id": "mu",
-      "house_money_taken": false,
-      "realized": 0.0,
-      "initial_cost": 9999.98
     },
     "AMD": {
       "ticker": "AMD",
@@ -59,17 +48,6 @@
       "house_money_taken": false,
       "realized": 0.0,
       "initial_cost": 10000.01
-    },
-    "AVGO": {
-      "ticker": "AVGO",
-      "shares": 24.1616,
-      "cost_basis": 9500.01,
-      "avg_cost": 393.1865,
-      "opened": "2026-08-16",
-      "thesis_id": "avgo",
-      "house_money_taken": false,
-      "realized": 0.0,
-      "initial_cost": 9500.01
     }
   },
   "closed": [
@@ -111,6 +89,32 @@
       "initial_cost": 6500.01,
       "closed": "2026-10-15",
       "close_reason": "STOP-LOSS: COHR at -23.1% vs cost $325.99, breaching the -20% limit for AI Trade. Automatic, not discretionary."
+    },
+    {
+      "ticker": "MU",
+      "shares": 0.0,
+      "cost_basis": 0.0,
+      "avg_cost": 972.1458,
+      "opened": "2026-08-16",
+      "thesis_id": "mu",
+      "house_money_taken": false,
+      "realized": -2905.84,
+      "initial_cost": 9999.98,
+      "closed": "2026-11-07",
+      "close_reason": "STOP-LOSS: MU at -29.0% vs cost $972.15, breaching the -20% limit for AI Trade. Automatic, not discretionary."
+    },
+    {
+      "ticker": "AVGO",
+      "shares": 0.0,
+      "cost_basis": 0.0,
+      "avg_cost": 393.1865,
+      "opened": "2026-08-16",
+      "thesis_id": "avgo",
+      "house_money_taken": false,
+      "realized": -2407.54,
+      "initial_cost": 9500.01,
+      "closed": "2026-11-07",
+      "close_reason": "STOP-LOSS: AVGO at -25.3% vs cost $393.19, breaching the -20% limit for AI Trade. Automatic, not discretionary."
     }
   ],
   "trades": [
@@ -320,66 +324,85 @@
         "STOP"
       ],
       "price_source": "yfinance"
+    },
+    {
+      "id": "ai-0013",
+      "ts": "2026-11-07T00:54:07+00:00",
+      "date": "2026-11-07",
+      "portfolio": "ai",
+      "action": "SELL",
+      "ticker": "MU",
+      "shares": 10.2865,
+      "price": 689.655,
+      "value": 7094.14,
+      "reason": "STOP-LOSS: MU at -29.0% vs cost $972.15, breaching the -20% limit for AI Trade. Automatic, not discretionary.",
+      "thesis_id": "",
+      "tags": [
+        "AUTO",
+        "STOP"
+      ],
+      "price_source": "yfinance"
+    },
+    {
+      "id": "ai-0014",
+      "ts": "2026-11-07T00:54:07+00:00",
+      "date": "2026-11-07",
+      "portfolio": "ai",
+      "action": "SELL",
+      "ticker": "AVGO",
+      "shares": 24.1616,
+      "price": 293.5432,
+      "value": 7092.47,
+      "reason": "STOP-LOSS: AVGO at -25.3% vs cost $393.19, breaching the -20% limit for AI Trade. Automatic, not discretionary.",
+      "thesis_id": "",
+      "tags": [
+        "AUTO",
+        "STOP"
+      ],
+      "price_source": "yfinance"
     }
   ],
   "high_water": 102234.66991265,
   "status": "active",
   "status_note": "",
-  "last_marked": "2026-11-06T01:31:38+00:00",
+  "last_marked": "2026-11-07T00:54:07+00:00",
   "marks": {
     "NVDA": {
-      "price": 202.06,
-      "asof": "2026-11-02",
-      "source": "yfinance-STALE",
+      "price": 186.64,
+      "asof": "2026-11-06",
+      "source": "yfinance",
       "prev": {
-        "price": 210.96,
-        "asof": "2026-10-23"
-      }
-    },
-    "MU": {
-      "price": 833.59,
-      "asof": "2026-11-02",
-      "source": "yfinance-STALE",
-      "prev": {
-        "price": 877.55,
-        "asof": "2026-10-23"
+        "price": 202.06,
+        "asof": "2026-11-02"
       }
     },
     "AMD": {
-      "price": 466.84,
-      "asof": "2026-11-02",
-      "source": "yfinance-STALE",
+      "price": 449.04,
+      "asof": "2026-11-06",
+      "source": "yfinance",
       "prev": {
-        "price": 516.79,
-        "asof": "2026-10-23"
+        "price": 466.84,
+        "asof": "2026-11-02"
       }
     },
     "CEG": {
-      "price": 257.25,
-      "asof": "2026-11-02",
-      "source": "yfinance-STALE",
+      "price": 249.95,
+      "asof": "2026-11-06",
+      "source": "yfinance",
       "prev": {
-        "price": 253.45,
-        "asof": "2026-10-23"
+        "price": 257.25,
+        "asof": "2026-11-02"
       }
     },
     "TSM": {
-      "price": 398.63,
-      "asof": "2026-11-02",
-      "source": "yfinance-STALE",
+      "price": 375.44,
+      "asof": "2026-11-06",
+      "source": "yfinance",
       "prev": {
-        "price": 418.51,
-        "asof": "2026-10-23"
-      }
-    },
-    "AVGO": {
-      "price": 322.23,
-      "asof": "2026-11-02",
-      "source": "yfinance-STALE",
-      "prev": {
-        "price": 321.68,
-        "asof": "2026-10-23"
+        "price": 398.63,
+        "asof": "2026-11-02"
       }
     }
-  }
+  },
+  "warned_15": true
 }

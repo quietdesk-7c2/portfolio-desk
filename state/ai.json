@@ -3,19 +3,8 @@
   "name": "AI Trade",
   "inception": "2026-08-14",
   "starting_cash": 100000.0,
-  "cash": 54059.96,
+  "cash": 63572.74,
   "positions": {
-    "NVDA": {
-      "ticker": "NVDA",
-      "shares": 53.2688,
-      "cost_basis": 12000.0,
-      "avg_cost": 225.2726,
-      "opened": "2026-08-16",
-      "thesis_id": "nvda",
-      "house_money_taken": false,
-      "realized": 0.0,
-      "initial_cost": 12000.0
-    },
     "AMD": {
       "ticker": "AMD",
       "shares": 15.5446,
@@ -115,6 +104,19 @@
       "initial_cost": 9500.01,
       "closed": "2026-11-07",
       "close_reason": "STOP-LOSS: AVGO at -25.3% vs cost $393.19, breaching the -20% limit for AI Trade. Automatic, not discretionary."
+    },
+    {
+      "ticker": "NVDA",
+      "shares": 0.0,
+      "cost_basis": 0.0,
+      "avg_cost": 225.2726,
+      "opened": "2026-08-16",
+      "thesis_id": "nvda",
+      "house_money_taken": false,
+      "realized": -2487.22,
+      "initial_cost": 12000.0,
+      "closed": "2026-11-10",
+      "close_reason": "STOP-LOSS: NVDA at -20.7% vs cost $225.27, breaching the -20% limit for AI Trade. Automatic, not discretionary."
     }
   ],
   "trades": [
@@ -360,49 +362,58 @@
         "STOP"
       ],
       "price_source": "yfinance"
+    },
+    {
+      "id": "ai-0015",
+      "ts": "2026-11-10T03:32:48+00:00",
+      "date": "2026-11-10",
+      "portfolio": "ai",
+      "action": "SELL",
+      "ticker": "NVDA",
+      "shares": 53.2688,
+      "price": 178.5807,
+      "value": 9512.78,
+      "reason": "STOP-LOSS: NVDA at -20.7% vs cost $225.27, breaching the -20% limit for AI Trade. Automatic, not discretionary.",
+      "thesis_id": "",
+      "tags": [
+        "AUTO",
+        "STOP"
+      ],
+      "price_source": "yfinance"
     }
   ],
   "high_water": 102234.66991265,
   "status": "active",
   "status_note": "",
-  "last_marked": "2026-11-07T00:54:07+00:00",
+  "last_marked": "2026-11-10T03:32:48+00:00",
   "marks": {
-    "NVDA": {
-      "price": 186.64,
-      "asof": "2026-11-06",
-      "source": "yfinance",
-      "prev": {
-        "price": 202.06,
-        "asof": "2026-11-02"
-      }
-    },
     "AMD": {
-      "price": 449.04,
-      "asof": "2026-11-06",
+      "price": 508.58,
+      "asof": "2026-11-09",
       "source": "yfinance",
       "prev": {
-        "price": 466.84,
-        "asof": "2026-11-02"
+        "price": 449.04,
+        "asof": "2026-11-06"
       }
     },
     "CEG": {
-      "price": 249.95,
-      "asof": "2026-11-06",
+      "price": 276.09,
+      "asof": "2026-11-09",
       "source": "yfinance",
       "prev": {
-        "price": 257.25,
-        "asof": "2026-11-02"
+        "price": 249.95,
+        "asof": "2026-11-06"
       }
     },
     "TSM": {
-      "price": 375.44,
-      "asof": "2026-11-06",
+      "price": 388.62,
+      "asof": "2026-11-09",
       "source": "yfinance",
       "prev": {
-        "price": 398.63,
-        "asof": "2026-11-02"
+        "price": 375.44,
+        "asof": "2026-11-06"
       }
     }
   },
-  "warned_15": true
+  "warned_15": false
 }

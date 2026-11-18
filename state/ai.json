@@ -385,35 +385,35 @@
   "high_water": 102234.66991265,
   "status": "active",
   "status_note": "",
-  "last_marked": "2026-11-17T03:48:34+00:00",
+  "last_marked": "2026-11-18T02:52:52+00:00",
   "marks": {
     "AMD": {
-      "price": 504.28,
-      "asof": "2026-11-16",
+      "price": 503.41,
+      "asof": "2026-11-17",
       "source": "yfinance",
       "prev": {
-        "price": 508.58,
-        "asof": "2026-11-09"
+        "price": 504.28,
+        "asof": "2026-11-16"
       }
     },
     "CEG": {
-      "price": 277.82,
-      "asof": "2026-11-16",
+      "price": 268.07,
+      "asof": "2026-11-17",
       "source": "yfinance",
       "prev": {
-        "price": 276.09,
-        "asof": "2026-11-09"
+        "price": 277.82,
+        "asof": "2026-11-16"
       }
     },
     "TSM": {
-      "price": 373.45,
-      "asof": "2026-11-16",
+      "price": 359.69,
+      "asof": "2026-11-17",
       "source": "yfinance",
       "prev": {
-        "price": 388.62,
-        "asof": "2026-11-09"
+        "price": 373.45,
+        "asof": "2026-11-16"
       }
     }
   },
-  "warned_15": false
+  "warned_15": true
 }

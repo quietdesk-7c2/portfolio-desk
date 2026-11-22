@@ -1,0 +1,15 @@
+# Python bytecode. Generated whenever the engine is imported or the test suite
+# runs, including in GitHub Actions. Machine-specific and worthless to anyone
+# else, and IPS 9 makes this git history the desk's audit trail - it should
+# contain research, state and trades, not build artifacts.
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments, if anyone makes one locally.
+.venv/
+venv/
+
+# Editor and OS noise.
+.DS_Store
+*.swp

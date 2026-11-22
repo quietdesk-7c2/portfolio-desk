@@ -7,7 +7,7 @@
     "turnaround_method": "When trailing growth is negative or distorted, derive implied forward EPS growth from (trailing P/E / forward P/E) - 1 and use that for the growth-adjusted multiple. Documented so it cannot be applied selectively to rescue a name I like.",
     "pre_profit": "Unprofitable/pre-revenue names are exempt from the P/E gate and are governed by the Moonshot screen (IPS 1). Status MOONSHOT-CLEARED = screen satisfied and buyable; MOONSHOT-PENDING = not yet cleared and NOT buyable."
   },
-  "_asof": "2026-08-14",
+  "_asof": "2026-08-14 for the original roster; per-ticker 'asof' where a record was added or re-run later.",
   "tickers": {
     "MU": {
       "price": 971.66,
@@ -362,6 +362,56 @@
       "rating": "Hold",
       "gate": "FAIL",
       "note": "REJECTED - the perfect narrative and the wrong vehicle. Sole domestic producer of grain-oriented electrical steel for power transformers, which is a genuinely under-covered monopoly. But consensus target $11.80 is BELOW the $11.90 price (-0.8%), it is Hold-rated, and it is lossmaking. The GOES monopoly is a rounding error inside $19.2B of commodity steel revenue serving autos. A great theme needs a vehicle whose economics concentrate it."
+    },
+    "POWL": {
+      "asof": "2026-11-22",
+      "price": 148.18,
+      "price_asof": "2026-11-20 close",
+      "market_cap": "5.40B",
+      "pe": 24.53,
+      "forward_pe": 19.01,
+      "eps": 6.04,
+      "eps_growth_forecast_3y": 24.94,
+      "revenue_growth_forecast_3y": 22.28,
+      "implied_forward_growth_derived": 29.04,
+      "target": 228.75,
+      "upside": 0.5437,
+      "analysts": 4,
+      "rating": "Buy",
+      "ga_multiple": 0.76,
+      "ga_multiple_derived_method": 0.65,
+      "gate": "PASS",
+      "note": "GATE RUN 2026-11-22, closing an open question carried since 2026-09-13. All three IPS 3a tests pass. (1) Consensus upside +54.4% against the 15% floor. (2) Growth-adjusted multiple 19.01/24.94 = 0.76 against the 2.0 ceiling; cross-checked with the IPS 3a derived method, (24.53/19.01)-1 = 29.0% implied forward growth giving 0.65. (3) Forward P/E 19.01 sits BELOW trailing 24.53, so consensus expects earnings to RISE - no adverse comment required. Figures from stockanalysis.com citing S&P Global Market Intelligence, page updated 2026-11-21 against the 2026-11-20 close.\n\nFUNDAMENTALS BEHIND IT, from Powell's own release of 16 Nov 2026 (FY ended 30 Sep 2026): Q4 revenue $397M +33%, Q4 orders $710M +162% at 1.8x book-to-bill, backlog $2.7B +96%, Q4 EPS $2.23 against $1.41, Q4 gross margin 34.9% against 31.4%. FY revenue $1.256B +14%, net income $221M +22%, EPS $6.04, gross margin 31.3% against 29.4%, FY orders $2.6B +124%. Cash and short-term investments $861M with no debt line. Of the $2.7B backlog, $1.3B is scheduled to convert in FY2027.\n\nPASSING THE GATE IS NOT A BUY RECOMMENDATION AND NO TRADE WAS PLACED. IPS 3 requires two independent confirmations with at least one from Tier A; Powell has exactly one (Tier A 4, its own filed results). No insider cluster appears in this repo's Form 4 screener, no 13F accumulation is verified, and the only estimate-revision evidence available points DOWNWARD - Cantor Fitzgerald cut to $178 from $235 on 2026-11-20 at Neutral, and consensus fell from $267.50 on 2026-10-26 to $228.75. IPS 3 B5 weights revisions above headline targets, and these revisions are negative. Cantor's stated reason was near-term startup inefficiency at new capacity - a margin-timing concern, not a demand concern - but that does not manufacture a second confirmation.\n\nWHAT POWELL ACTUALLY IS, so this record cannot later be misread: switchgear and electrical distribution equipment, NOT transformers, and NOT a data-centre pure-play. The CEO calls data centres 'opportunistic' with visibility 'not as good as the other two' (LNG and electric utility). The big Q4 award was ~$250M of LNG against ~$85M of data centre. This is a grid, LNG and industrial electrification vehicle with data-centre upside."
+    },
+    "FPS": {
+      "asof": "2026-11-22",
+      "price": 25.12,
+      "price_asof": "2026-10-26 close - FOUR WEEKS STALE, NOT USABLE FOR THE GATE",
+      "market_cap": "7.65B",
+      "pe": 83.89,
+      "forward_pe": 18.61,
+      "eps": 0.3,
+      "eps_growth_forecast_3y": 65.17,
+      "revenue_growth_forecast_3y": 46.95,
+      "target": 53.75,
+      "analysts": 12,
+      "rating": "Strong Buy",
+      "gate": "PENDING",
+      "note": "NEW CANDIDATE 2026-11-22, GATE DELIBERATELY NOT RUN. Forgent Power Solutions, NYSE, IPO'd 2026-02-05 at $27. Makes dry-type and liquid-filled transformers plus switchgear, panelboards, eHouses and PDUs; FY2025 end markets were data centres 42%, grid and utility 23%, industrial 19%. Clears IPS 8 on venue and liquidity - 20-day average volume about 9.9M shares, roughly $250M a day.\n\nWHY PENDING AND NOT PASS: the price above is a 2026-10-26 close, four weeks stale, from a page that simultaneously showed a 50-day moving average of $34.08 - so the snapshot price is known to be wrong, not merely old. yfinance, the desk's own price source, is blocked from the scheduled cloud session by a 403 policy denial at the egress proxy. IPS 3a says missing data is a rejection and not a pass, and IPS 8 forbids a trade at a price I cannot source from live market data. Both point the same way. The trailing and forward P/E and the implied upside above are all computed off that stale price and must be recomputed before this record is used for anything.\n\nTHE CASE, SO THE NEXT CYCLE DOES NOT REDISCOVER IT. Two independent Tier A confirmations are already in hand. Tier A 4: Q1 FY2027 results, Exhibit 99.1 filed with the SEC 2026-11-12 - revenue $478.6M +69%, net income $54.8M +252%, net margin 11.5% against 5.5%, adjusted EBITDA $104.9M +61%, and FY2027 guidance RAISED to $2,450-2,650M revenue and $1.30-1.44 adjusted EPS against 'backlog that fully covers our fiscal 2027 guidance'. Tier A 1: a five-insider cluster from this repo's Form 4 screener, $2.29M all dated 2026-11-16/17 - CEO Gary Niederpruem $334,261, newly promoted CFO Amy Ard $299,996, Chief Legal Officer Tyson Hottinger $244,956, director Neel Bhatia $199,121. IPS 3 A1 weights a cluster above a single buy and CEO/CFO above other officers; this is both.\n\nTHE BEAR CASE, AT THE SAME STANDARD. CFO Ryan Fiedler stepped down 2026-10-22, under nine months after the IPO, and the stock fell over 23% in a day to a record low below its $27 IPO price, about 63% below its June high of $66. Reported reason: family, moving to a consulting role, with Amy Ard promoted internally. That account is SECONDARY - the 8-K Item 5.02 has not been read, and no accounting issue was mentioned or explicitly denied in what was read. Targets cut hard: Jefferies $47 to $36, Morgan Stanley $51 to $45, JPMorgan $56 to $49. Structural items not analysed at all: total debt ~$704M, debt/equity 1.05, a tax receivable agreement payable of $483.0M, short interest 8.33% of float, and Neos Partners LP holding majority voting control through a dual-class structure (a controlled company under NYSE rules).\n\nBEFORE ANY BUY: a current price, the 8-K, and a view on the TRA and the control structure."
+    },
+    "ACCV": {
+      "asof": "2026-11-22",
+      "price": null,
+      "price_asof": "NOT SOURCED - stockanalysis.com would not serve the page to this session and yfinance is blocked",
+      "market_cap": "~3.1B as of 2026-10-21, secondary source",
+      "pe": null,
+      "forward_pe": null,
+      "eps": null,
+      "target": null,
+      "analysts": null,
+      "rating": "Buy (consensus reported, count unknown; targets reported $16-22)",
+      "gate": "PENDING",
+      "note": "NEW CANDIDATE 2026-11-22, GATE NOT RUN - NO PRICE COULD BE SOURCED AT ALL. Accelevation Holdings, NASDAQ, IPO'd early October 2026 raising about $540M priced BELOW its marketed range. Designs, manufactures and installs modular factory-built power and white-space data-centre infrastructure (SkyBridge modular platform, techFrame structures, thermal management, remote power panels, branch circuit whips, PDUs) and self-performs installation. Clears IPS 8 - NASDAQ, market cap around $3.1B, roughly $18M a day of dollar volume.\n\nWHY IT IS INTERESTING: it is the purest listed vehicle this radar has found for the inside of the data centre. Vehicle quality is the axis IPS 3b says kills most themes, and where CLF buried a monopoly inside commodity steel and POWL sells mostly to LNG and utilities, essentially all of Accelevation's revenue is data-centre infrastructure. Q3 2026: revenue ~$202M +66%, gross margin 29.3% from 26.7%, net income ~$3M against a $2.5M loss the prior quarter, adjusted EBITDA ~$38M at 18.7%, FCF $55M, backlog $1.7B on ~$770M of Q3 bookings, FY2026 guidance $905-915M revenue. Customer concentration better than expected for a company this young: largest customer under 20% of Q3 revenue.\n\nWHY THE INSIDER SIGNAL IS WEAKER THAN THE HEADLINE NUMBER. The Form 4 screener shows five insiders and $8.20M - larger than the FPS cluster - but every purchase is dated 2026-10-01, the IPO window: CEO Michael Rubiera $3.66M, directors Ginger Jones $180k, Paul Donahue $126k, Howard Heckes $90k, COO Brent Jewell $45k. That is cornerstone participation in the company's own offering, not open-market accumulation against a falling price, and the two are different signals. The stock hit a new one-year low on 2026-11-20 with no insider buying recorded since the IPO date.\n\nALSO UNRESOLVED: with about $3M of net income on $202M of quarterly revenue, a P/E gate will be distorted. Decide how IPS 3a applies here - full gate, or the pre-profit Moonshot route - BEFORE running it, not after seeing which answer is more convenient. Every figure above except the Form 4 data is from secondary sources; the company's own S-1 and quarterly releases have not been read, and two secondary sources already disagreed on its 52-week range and founding year."
     }
   }
 }

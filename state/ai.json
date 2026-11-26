@@ -3,19 +3,8 @@
   "name": "AI Trade",
   "inception": "2026-08-14",
   "starting_cash": 100000.0,
-  "cash": 63572.74,
+  "cash": 69881.16,
   "positions": {
-    "AMD": {
-      "ticker": "AMD",
-      "shares": 15.5446,
-      "cost_basis": 7999.98,
-      "avg_cost": 514.6472,
-      "opened": "2026-08-16",
-      "thesis_id": "amd",
-      "house_money_taken": false,
-      "realized": 0.0,
-      "initial_cost": 7999.98
-    },
     "CEG": {
       "ticker": "CEG",
       "shares": 24.7664,
@@ -117,6 +106,19 @@
       "initial_cost": 12000.0,
       "closed": "2026-11-10",
       "close_reason": "STOP-LOSS: NVDA at -20.7% vs cost $225.27, breaching the -20% limit for AI Trade. Automatic, not discretionary."
+    },
+    {
+      "ticker": "AMD",
+      "shares": 0.0,
+      "cost_basis": 0.0,
+      "avg_cost": 514.6472,
+      "opened": "2026-08-16",
+      "thesis_id": "amd",
+      "house_money_taken": false,
+      "realized": -1691.57,
+      "initial_cost": 7999.98,
+      "closed": "2026-11-26",
+      "close_reason": "STOP-LOSS: AMD at -21.1% vs cost $514.65, breaching the -20% limit for AI Trade. Automatic, not discretionary."
     }
   ],
   "trades": [
@@ -380,38 +382,47 @@
         "STOP"
       ],
       "price_source": "yfinance"
+    },
+    {
+      "id": "ai-0016",
+      "ts": "2026-11-26T03:32:19+00:00",
+      "date": "2026-11-26",
+      "portfolio": "ai",
+      "action": "SELL",
+      "ticker": "AMD",
+      "shares": 15.5446,
+      "price": 405.827,
+      "value": 6308.42,
+      "reason": "STOP-LOSS: AMD at -21.1% vs cost $514.65, breaching the -20% limit for AI Trade. Automatic, not discretionary.",
+      "thesis_id": "",
+      "tags": [
+        "AUTO",
+        "STOP"
+      ],
+      "price_source": "yfinance"
     }
   ],
   "high_water": 102234.66991265,
   "status": "active",
   "status_note": "",
-  "last_marked": "2026-11-25T04:09:02+00:00",
+  "last_marked": "2026-11-26T03:32:19+00:00",
   "marks": {
-    "AMD": {
-      "price": 413.27,
-      "asof": "2026-11-24",
-      "source": "yfinance",
-      "prev": {
-        "price": 453.46,
-        "asof": "2026-11-23"
-      }
-    },
     "CEG": {
-      "price": 244.84,
-      "asof": "2026-11-24",
+      "price": 235.28,
+      "asof": "2026-11-25",
       "source": "yfinance",
       "prev": {
-        "price": 251.72,
-        "asof": "2026-11-23"
+        "price": 244.84,
+        "asof": "2026-11-24"
       }
     },
     "TSM": {
-      "price": 349.2,
-      "asof": "2026-11-24",
+      "price": 342.34,
+      "asof": "2026-11-25",
       "source": "yfinance",
       "prev": {
-        "price": 363.6,
-        "asof": "2026-11-23"
+        "price": 349.2,
+        "asof": "2026-11-24"
       }
     }
   },

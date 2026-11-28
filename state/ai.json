@@ -405,24 +405,24 @@
   "high_water": 102234.66991265,
   "status": "active",
   "status_note": "",
-  "last_marked": "2026-11-27T03:37:15+00:00",
+  "last_marked": "2026-11-28T03:16:55+00:00",
   "marks": {
     "CEG": {
-      "price": 235.28,
-      "asof": "2026-11-25",
+      "price": 238.1,
+      "asof": "2026-11-27",
       "source": "yfinance",
       "prev": {
-        "price": 244.84,
-        "asof": "2026-11-24"
+        "price": 235.28,
+        "asof": "2026-11-25"
       }
     },
     "TSM": {
-      "price": 342.34,
-      "asof": "2026-11-25",
+      "price": 353.34,
+      "asof": "2026-11-27",
       "source": "yfinance",
       "prev": {
-        "price": 349.2,
-        "asof": "2026-11-24"
+        "price": 342.34,
+        "asof": "2026-11-25"
       }
     }
   },
